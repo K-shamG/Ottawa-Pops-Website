@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ottawa Pops Orchestra</title>
+  <meta name="description" content="The Ottawa Pops Orchestra is a community orchestra dedicated to performing orchestral pops repertoire.">
+  <meta name="author" content="Kshamina Ghelani">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div id="header"></div>
+
+    <div class="main">
+      <div class="row contact-row">
+        <div class="col-md-5 contact-people">
+          <div class="row">
+            <div class="profile-pic col-2">
+              <img src="img/mathieu-roy.jpg">
+            </div>
+            <div class="col contact-info">
+              <p class="contact-title"><b class="contact-name">Mathieu Roy</b> | Artistic Director</p>
+              <div class="row contact-phone">
+                <div class="col-1 icon"><i class="fas fa-phone fa-lg"></i></div>
+                <div class="col">(613) 793 - 3998</div>
+              </div>
+              <div class="row contact-email">
+                <div class="col-1 icon"><i class="far fa-envelope fa-lg"></i></div>
+                <div class="col email">
+                  <a href="mailto:mathieu.roy@ottawapopsorchestra.ca">  mathieu.roy@ottawapopsorchestra.ca</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact row">
+            <div class="profile-pic col-2">
+              <!-- <span class="profile"></span> -->
+              <img src="img/user.png">
+            </div>
+            <div class="col contact-info">
+              <p class="contact-title"><b class="contact-name">Olga Koppel</b> | Media</p>
+              <div class="row contact-phone">
+                <div class="col-1 icon"><i class="fas fa-phone fa-lg"></i></div>
+                <div class="col">(613) 688 - 2337</div>
+              </div>
+              <div class="row contact-email">
+                <div class="col-1 icon"><i class="far fa-envelope fa-lg"></i></div>
+                <div class="col email">
+                  <a href="mailto:olga.koppel@ottawapopsorchestra.ca">olga.koppel@ottawapopsorchestra.ca</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact row">
+            <div class="profile-pic col-2">
+              <!-- <span class="profile"></span> -->
+              <img src="img/user.png">
+            </div>
+            <div class="col contact-info">
+              <p class="contact-title"><b class="contact-name">Beth Lawless</b> | Donor Relations</p>
+              <div class="row contact-phone">
+                <div class="col-1 icon"><i class="fas fa-phone fa-lg"></i></div>
+                <div class="col">(613) 501 - 3576</div>
+              </div>
+              <div class="row contact-email">
+                <div class="col-1 icon"><i class="far fa-envelope fa-lg"></i></div>
+                <div class="col email">
+                  <a href="mailto:beth.lawless@ottawapopsorchestra.ca">beth.lawless@ottawapopsorchestra.ca</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-7 contact-form-div">
+          <h1 id="contact-us">CONTACT US</h1>
+          <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+            <p>For general inquiries, comments or suggestions, please contact our administrative office at <a href="mailto:info@ottawapopsorchestra.com">info@ottawapopsorchestra.com.</a></p>
+            <!--Grid row-->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <input type="text" id="name" name="name" class="form-control" placeholder="NAME">
+                </div>
+              </div>
+            </div>
+            <!--Grid row-->
+
+            <!--Grid row-->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <input type="text" id="email" name="email" class="form-control" placeholder="EMAIL">
+                </div>
+              </div>
+            </div>
+            <!--Grid row-->
+
+            <!--Grid row-->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <textarea type="text" id="message" name="message" rows="5" class="form-control" placeholder="MESSAGE"></textarea>
+                </div>
+              </div>
+            </div>
+            <!--Grid row-->
+            <div class="text-center text-md-left">
+              <button id="contact-form-button" class="btn btn-block" onclick="document.getElementById('contact-form').submit();">Send <i class="far fa-paper-plane"></i></button>
+            </div>
+            <div class="status"></div>
+        </div>
+
+        </form>
+      </div>
+    </div>
+    <!-- end main -->
+
+  </div>
+  <div id="footer"></div>
+  <!-- end container fluid -->
+
+  <!-- JQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
+
+  <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>
