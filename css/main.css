@@ -205,11 +205,11 @@ video {
 }
 
 .ticket-link {
-  color: black !important;
+  color: black;
 }
 
 .ticket-link:hover {
-  color: #920503 !important;
+  color: #920503;
 }
 
 @media screen and (max-width: 900px) {
