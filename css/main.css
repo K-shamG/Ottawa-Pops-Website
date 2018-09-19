@@ -212,6 +212,16 @@ video {
   color: #920503;
 }
 
+.conductor-name {
+  color: #920503;
+  text-transform: uppercase;
+  font-weight: 1200 !important; 
+}
+
+.conductor-bio {
+  font-size: 1.5em;
+}
+
 @media screen and (max-width: 900px) {
   .contact-title {
     font-size: 16px;
