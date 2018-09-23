@@ -19,7 +19,8 @@
 
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/footer.css">
-  <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
 
 <body>
@@ -29,7 +30,7 @@
       <img src="img/PopsSeriesSubscription.png" height="250" width="100%" />
       <div class="concert">
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-3" data-aos="fade-right" data-aos-duration="700">
             <img src="img/concerts-full/StarWarsDetail.png" height="180" />
           </div>
           <div class="col-md-9 concert-info">
@@ -77,10 +78,10 @@
           </div>
         </div>
       </div>
-      <div class="concert">
+      <div class="concert" data-aos="fade-in" data-aos-duration="1000">
         <div class="row">
           <div class="col-md-3">
-            <img src="img/concerts-full/DICDetail.png" height="180" />
+            <img src="img/concerts-full/DICDetail.png" height="180"/>
           </div>
           <div class="col-md-9 concert-info">
             <div class="row">
@@ -130,6 +131,10 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
 
   <script type="text/javascript" src="js/main.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+     AOS.init();
+   </script>
 
 </body>
 
