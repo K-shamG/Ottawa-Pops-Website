@@ -7,7 +7,7 @@ body {
   overflow: hide;
   background-color: #E6E8E5;
   font-family: 'Quicksand', sans-serif;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -223,7 +223,7 @@ video {
 }
 
 .conductor-bio {
-  font-size: 18px;
+  font-size: 1.32vw;
   padding-left: 50px;
 }
 
@@ -278,5 +278,9 @@ video {
 
   .contact-people {
     padding-left: 0%;
+  }
+
+  .conductor-bio {
+    font-size: 14px;
   }
 }
