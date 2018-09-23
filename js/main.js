@@ -27,3 +27,9 @@ if(document.location.href.includes("about-us.html")) {
     overlay.style.visibility = show? 'visible' : 'visible';
   }, false);
 }
+
+var overlay = document.getElementById('conductor');
+var img = document.getElementById('conductor-img');
+img.addEventListener('progress', function() {
+  var show = overlay.style.visibility = show? 'visible' : 'visible';
+}, false);
