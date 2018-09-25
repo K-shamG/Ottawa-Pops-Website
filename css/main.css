@@ -7,7 +7,7 @@ body {
   overflow: hide;
   background-color: #E6E8E5;
   font-family: 'Quicksand', sans-serif;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -38,11 +38,14 @@ nav a:hover {
 }
 
 #contact-us {
-  padding-top: 10px;
-  padding-bottom: 30px;
+  padding: 10px 0px;
   text-align: center;
   color: #920503;
   text-transform: uppercase
+}
+
+#contact-general {
+  font-size: 19px;
 }
 
 .contact {
@@ -77,11 +80,11 @@ nav a:hover {
 }
 
 .contact-title {
-  font-size: 22px;
+  font-size: 23px;
 }
 
 .contact-phone, .contact-email {
-  font-size: 17px;
+  font-size: 19px;
 }
 
 .email a {
@@ -259,7 +262,7 @@ video {
   }
 
   .contact-people {
-    padding-left: 2%;
+    padding-left: 0%;
   }
 }
 
