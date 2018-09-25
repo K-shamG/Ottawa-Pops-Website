@@ -21,11 +21,16 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: auto;
 }
 
-nav a:hover {
+.nav-link:hover {
   border-bottom: 3px solid #FFF;
   border-left: 0;
   -webkit-transform-origin: 0% 100%;
   transform-origin: 0% 100%;
+}
+
+.nav-link {
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .main-about {
@@ -34,7 +39,7 @@ nav a:hover {
 }
 
 .main{
-  margin-top: 160px;
+  margin-top: 140px;
 }
 
 #contact-us {
