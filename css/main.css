@@ -25,9 +25,6 @@ h1, h2, h3, h4, h5, h6 {
     text-align: right;
 }
 
-
-element.style {
-}
 .carousel-control-next {
     right: 0;
 }
@@ -39,12 +36,8 @@ element.style {
   right: -18%;
 }
 
-.blackandwhite {
-    filter: grayscale(100%);
-}
-
-.inColor {
-    filter: grayscale(0% );
+.darken {
+  filter: brightness(50%);
 }
 
 .nav-link:hover {
@@ -285,7 +278,7 @@ video {
     transform: translate(-50%, -50%);
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
   .contact-title {
     font-size: 16px;
   }
