@@ -61,6 +61,13 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 140px;
 }
 
+.about-us {
+  width: 75%;
+  margin: 150px auto;
+  padding: 50px;
+  /* background-color: rgba(255, 255, 255, 0.1); */
+}
+
 #contact-us {
   padding: 10px 0px;
   text-align: center;
@@ -154,12 +161,11 @@ a:hover {
   opacity: 0.5;
 }
 
-video {
-  margin: 0 auto;
-  height: 100vh;
-  width: auto;
-  filter: grayscale(100%) blur(3px);
+.jarallax {
+    position: relative;
+    z-index: 0;
 }
+
 
 #mission {
   position: absolute;
@@ -199,6 +205,14 @@ video {
   text-transform: uppercase;
   font-size: 28px;
   font-weight: 900;
+}
+
+#about-us {
+  /* margin-left: auto;
+  margin-right: auto;
+  width: 95vw;
+  height: 100vh; */
+  
 }
 
 .concert-description {
@@ -276,6 +290,12 @@ video {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.about-us-content {
+  color: white ;
+  font-size: 25px;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 800px) {
