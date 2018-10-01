@@ -6,11 +6,12 @@ footer {
 }
 
 .footer-col {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 40px 0px; 
 }
 
 .pages {
+  padding-top: 20px;
+  padding-bottom: 20px;
   padding-right: 50px;
   background-color: #920503;
   text-align: right;
@@ -21,10 +22,11 @@ footer {
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 400;
+  padding-right: 20px;
 }
 
 #footer-logo-full {
-  height: 125px;
+  height: 100px;
 }
 
 #footer-logo-sm {
@@ -32,8 +34,18 @@ footer {
 }
 
 .social {
-  padding-right: 20px;
+  padding-right: 30px;
+  margin: 0 auto;
   color: white;
+  align-items: center;
+}
+
+.social:hover {
+  color: #920503;
+}
+
+.social-icons {
+  /* padding-bottom: 20px; */
 }
 
 .footer-email {
@@ -59,11 +71,7 @@ footer {
   text-transform: uppercase;
   font-size: 25px;
   font-weight: 900;
-  hsl(192, 17%, 99%)
-}
-
-.footer-social a:hover {
-  color: #920503;
+  hsl(192, 17%, 99%);
 }
 
 @media screen and (max-width: 576px) {
