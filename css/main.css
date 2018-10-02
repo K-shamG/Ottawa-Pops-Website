@@ -441,6 +441,10 @@ a:hover {
   }
 
   .carousel-mobile {
-    display: block; 
+    display: block;
+  }
+
+  .carousel-control-next, .carousel-control-prev {
+    width: 10% !important;
   }
 }
