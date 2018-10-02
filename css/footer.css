@@ -6,13 +6,11 @@ footer {
 }
 
 .footer-col {
-  padding: 40px 0px; 
+  padding: 40px 0px;
 }
 
 .pages {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-right: 50px;
+  padding: 20px 0px;
   background-color: #920503;
   text-align: right;
 }
@@ -22,7 +20,6 @@ footer {
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 400;
-  padding-right: 20px;
 }
 
 #footer-logo-full {
@@ -42,10 +39,6 @@ footer {
 
 .social:hover {
   color: #920503;
-}
-
-.social-icons {
-  /* padding-bottom: 20px; */
 }
 
 .footer-email {
@@ -75,18 +68,21 @@ footer {
 }
 
 @media screen and (max-width: 576px) {
-  #footer-logo-full {
-    display: none;
-  }
-
-  #footer-logo-sm {
-    display: block;
-    margin: auto;
-    height: 80px;
-  }
-
   .footer-col {
-    padding: 30px 0px;
+    padding: 10px 0px;
     text-align: center;
+  }
+
+  .social {
+    padding-right: 10px;
+    height: 10px;
+  }
+
+  .pages {
+    padding: 0px;
+  }
+
+  .pages a {
+    font-size: 12px;
   }
 }
