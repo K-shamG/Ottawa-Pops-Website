@@ -329,6 +329,14 @@ a:hover {
   height: 180px;
 }
 
+.carousel-computer {
+
+}
+
+.carousel-mobile {
+  display: none;
+}
+
 @media screen and (max-width: 800px) {
   .contact-title {
     font-size: 16px;
@@ -426,5 +434,13 @@ a:hover {
 
   .conductor-bio {
     padding-left: 0px;
+  }
+
+  .carousel-computer {
+    display: none;
+  }
+
+  .carousel-mobile {
+    display: block; 
   }
 }
