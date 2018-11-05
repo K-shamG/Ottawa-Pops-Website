@@ -61,6 +61,41 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 140px;
 }
 
+.mission-statement {
+  height: 50vh;
+  width: 98vw;
+  margin: 0 auto;
+}
+
+.mission-statement .col,  .mission-statement .col-4{
+  background-color: white;
+}
+
+.mission-statement .col p {
+  color: #920503;
+  text-align: center;
+  margin: 12vh 50px 0px 50px;
+  font-size: 1.5rem;
+}
+
+.mission-statement .col-4 h1 {
+  color: #920503;
+  text-align: center;
+  margin: 15vh 50px 0px 50px;
+  font-size: 40px;
+}
+
+.social-media-feed {
+  height: 85vh;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.instagram-feed {
+  height: 300px;
+  overflow: auto;
+}
+
 .about-us {
   margin-top: 140px;
   margin-left: auto;
@@ -317,11 +352,12 @@ a:hover {
 }
 
 #pixlee_container {
-  width: 80%;
-  margin: 0 auto;
+  max-height: 85vh;
+  width: auto;
+  background-color: white;
 }
 
-#pixlee_container h1 {
+#pixlee_container a {
   color: #920503;
 }
 

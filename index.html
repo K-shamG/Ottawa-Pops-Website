@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/footer.css">
   <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -36,27 +37,21 @@
       <div id="carouselExampleControls" class="carousel slide carousel-computer" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img id="TOTcarousel-img" class="d-block w-100 darken" src="img/concerts-single/ToTBanner.png" alt="Trick or Toccata">
-            <div class="carousel-caption d-none d-md-block">
-              <a id="TOTcarousel" onmouseenter="unGrey(this.id)" onmouseout="grey(this.id)" href="ToT.html" class="btn btn-maroon">More Information</a>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img id="SWcarousel-img" class="d-block w-100 darken" src="img/concerts-single/StarWarsBanner.png" alt="Star Wars">
+            <img id="SWcarousel-img" class="d-block w-100" src="img/concerts-single/StarWarsBanner.png" alt="Star Wars">
             <div class="carousel-caption ">
-              <a id="SWcarousel" onmouseenter="unGrey(this.id)" onmouseout="grey(this.id)" href="StarWars.html" class="btn btn-maroon">More Information</a>
+              <a id="SWcarousel" onmouseenter="grey(this.id)" onmouseout="unGrey(this.id)" href="StarWars.html" class="btn btn-maroon">More Information</a>
             </div>
           </div>
           <div class="carousel-item">
-            <img id="SATScarousel-img" class="d-block w-100 darken" src="img/concerts-single/SATSBanner.png" alt="Storytime at the Symphony">
+            <img id="SATScarousel-img" class="d-block w-100" src="img/concerts-single/SATSBanner.png" alt="Storytime at the Symphony">
             <div class="carousel-caption d-none d-md-block">
-              <a id="SATScarousel" onmouseenter="unGrey(this.id)" onmouseout="grey(this.id)" href="SATS.html" class="btn btn-maroon">More Information</a>
+              <a id="SATScarousel" onmouseenter="grey(this.id)" onmouseout="unGrey(this.id)" href="SATS.html" class="btn btn-maroon">More Information</a>
             </div>
           </div>
           <div class="carousel-item">
-            <img id="DICcarousel-img" class="d-block w-100 darken" src="img/concerts-single/DICBanner.png" alt="Disney">
+            <img id="DICcarousel-img" class="d-block w-100" src="img/concerts-single/DICBanner.png" alt="Disney">
             <div class="carousel-caption d-none d-md-block">
-              <a id="DICcarousel" onmouseenter="unGrey(this.id)" onmouseout="grey(this.id)" href="Disney.html" class="btn btn-maroon">More Information</a>
+              <a id="DICcarousel" onmouseenter="grey(this.id)" onmouseout="unGrey(this.id)" href="Disney.html" class="btn btn-maroon">More Information</a>
             </div>
           </div>
         </div>
@@ -72,9 +67,6 @@
 
     <div id="carouselExampleControls" class="carousel slide carousel-mobile" data-ride="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item active">
-          <a href="ToT.html"><img id="TOTcarousel-img" class="d-block w-100" src="img/concerts-full/ToTDetail.png" alt="Trick or Toccata"></a>
-        </div>
         <div class="carousel-item">
           <a href="StarWars.html"><img id="SWcarousel-img" class="d-block w-100" src="img/concerts-full/StarWarsDetail.png" alt="Star Wars"></a>
         </div>
@@ -93,7 +85,36 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
-  </div>
+    </div>
+    <div class="row mission-statement">
+      <div class="col-4">
+        <h1 data-aos="fade-right" data-aos-duration="1000">Mission Statement</h1>
+      </div>
+      <div class="col">
+        <p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">The Ottawa Pops Orchestra is a community orchestra dedicated to programming orchestral pops repertoire in order to enrich and inspire the community through accessible, relevant, and passionate performances.</p>
+      </div>
+    </div>
+    <!-- SM and News Feeds -->
+    <div class="social-media-feed row">
+      <div class="col-4">
+        <a class="twitter-timeline" href="https://twitter.com/OttawaPopsOrch?ref_src=twsrc%5Etfw" data-height="85vh">Tweets by OttawaPopsOrch</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+      <div class="col-8">
+        <div class="row instagram-feed">
+          <div class="col">
+            <div id="pixlee_container">
+              <h1><a href="https://www.instagram.com/ottawapops/" target="_blank">@ottawapops</a></h1>
+            </div>
+            <script type="text/javascript">
+              window.PixleeAsyncInit = function() {
+                Pixlee.init({apiKey:'2WN5oeTtPiJG3Oeqxxvo'});
+                Pixlee.addSimpleWidget({widgetId:'9719'});};
+            </script>
+            <script src="//instafeed.assets.pixlee.com/assets/pixlee_widget_1_0_0.js"></script>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <div id="footer"></div>
   <!-- end container fluid -->
@@ -109,6 +130,10 @@
 
   <script type="text/javascript" src="js/main.js"></script>
   <script type="text/javascript" src="js/home.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+     AOS.init();
+  </script>
 
 </body>
 
