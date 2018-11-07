@@ -28,9 +28,29 @@
   <link rel="manifest" href="/site.webmanifest">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128825872-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-128825872-1');
+  </script>
+
 </head>
 
 <body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_PI/sdk.js#xfbml=1&version=v3.2';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
   <div class="container-fluid main">
     <div id="header"></div>
     <div class="main">
@@ -87,35 +107,45 @@
       </a>
     </div>
     <div class="row mission-statement">
-      <div class="col-4">
-        <h1 data-aos="fade-right" data-aos-duration="1000">Mission Statement</h1>
-      </div>
       <div class="col">
+        <h1 data-aos="fade-right" data-aos-duration="1000">Our Mission</h1>
         <p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">The Ottawa Pops Orchestra is a community orchestra dedicated to programming orchestral pops repertoire in order to enrich and inspire the community through accessible, relevant, and passionate performances.</p>
       </div>
     </div>
     <!-- SM and News Feeds -->
-    <div class="social-media-feed row">
-      <div class="col-4">
-        <a class="twitter-timeline" href="https://twitter.com/OttawaPopsOrch?ref_src=twsrc%5Etfw" data-height="85vh">Tweets by OttawaPopsOrch</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <div class="social-media-feed row" style="margin: 0 auto;">
+      <div class="col-md-6 offset-1">
+        <a class="twitter-timeline" data-height="85vh" data-theme="light" data-link-color="#920503" href="https://twitter.com/OttawaPopsOrch?ref_src=twsrc%5Etfw"></a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
-      <div class="col-8">
-        <div class="row instagram-feed">
-          <div class="col">
-            <div id="pixlee_container">
-              <h1><a href="https://www.instagram.com/ottawapops/" target="_blank">@ottawapops</a></h1>
-            </div>
-            <script type="text/javascript">
-              window.PixleeAsyncInit = function() {
-                Pixlee.init({apiKey:'2WN5oeTtPiJG3Oeqxxvo'});
-                Pixlee.addSimpleWidget({widgetId:'9719'});};
-            </script>
-            <script src="//instafeed.assets.pixlee.com/assets/pixlee_widget_1_0_0.js"></script>
-          </div>
-        </div>
+      <div class="col-md-5 fb-column">
+        <h3>Follow us on Facebook!</h3><hr>
+        <div class="fb-page" data-href="https://www.facebook.com/ottawapopsorchestra/" data-tabs="timeline" data-width="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/ottawapopsorchestra/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ottawapopsorchestra/">Cap&#039;n Ottawa Pops Orchestra</a></blockquote></div>
       </div>
     </div>
-  </div>
+    </div>
+    <div class="row instagram-feed">
+      <div class="col-md-12">
+        <div id="pixlee_container">
+          <h1><a href="https://www.instagram.com/ottawapops/" target="_blank">@ottawapops</a></h1>
+        </div>
+        <script type="text/javascript">
+          window.PixleeAsyncInit = function() {
+            Pixlee.init({apiKey:'2WN5oeTtPiJG3Oeqxxvo'});
+            Pixlee.addSimpleWidget({widgetId:'9719'});};
+        </script>
+        <script src="//instafeed.assets.pixlee.com/assets/pixlee_widget_1_0_0.js"></script>
+      </div>
+    </div>
+    <div class="row news-feed">
+      <div class="col">
+
+      </div>
+      <div class="col">
+      </div>
+      <div class="col">
+      </div>
+    </div>
   <div id="footer"></div>
   <!-- end container fluid -->
 
