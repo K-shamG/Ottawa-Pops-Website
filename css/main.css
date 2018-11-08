@@ -97,6 +97,11 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 
+.social-media-feed h3 {
+  color: #920503;
+  padding-bottom: 10px;
+}
+
 .instagram-feed {
   height: 350px;
   margin: 20px auto;
@@ -107,6 +112,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .news-feed {
   background-color: white;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.news-feed h4 {
+  text-align: center;
 }
 
 .about-us {
@@ -329,6 +340,23 @@ a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.musicians {
+  padding: 50px;
+}
+
+.musicians col-4 {
+  padding: 20px 0px;
+}
+
+.musicians h4 {
+  text-align: center;
+}
+
+.musicians p {
+  text-align: center;
+  font-size: 22px;
 }
 
 .about-us-content {
