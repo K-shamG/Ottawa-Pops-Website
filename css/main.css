@@ -61,6 +61,65 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 140px;
 }
 
+.mission-statement {
+  height: 50vh;
+  width: 100%;
+  margin: 10vh auto;
+}
+
+.mission-statement .col,  .mission-statement .col-4{
+  background-color: #920503;
+}
+
+.mission-statement .col p {
+  color: white;
+  text-align: right;
+  margin: 20px 100px 0px 50px;
+  font-size: 1.8rem;
+}
+
+.mission-statement .col h1 {
+  color: white;
+  text-align: left;
+  margin: 8vh 50px 0px 50px;
+  font-size: 2.5rem;
+}
+
+.social-media-feed {
+  height: 85vh + 40px;
+  width: 100%;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.social-media-feed [class*="col"] {
+  padding: 20px 0px 20px 20px;
+  margin: 0 auto;
+}
+
+.social-media-feed h3 {
+  color: #920503;
+  padding-bottom: 10px;
+}
+
+.instagram-feed {
+  height: 350px;
+  margin: 20px auto;
+  overflow: auto;
+  padding: 20px;
+  background-color: white;
+}
+
+.news-feed {
+  background-color: white;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.news-feed h4 {
+  text-align: center;
+}
+
 .about-us {
   margin-top: 140px;
   margin-left: auto;
@@ -283,6 +342,23 @@ a:hover {
     transform: translate(-50%, -50%);
 }
 
+.musicians {
+  padding: 50px;
+}
+
+.musicians col-4 {
+  padding: 20px 0px;
+}
+
+.musicians h4 {
+  text-align: center;
+}
+
+.musicians p {
+  text-align: center;
+  font-size: 22px;
+}
+
 .about-us-content {
   color: white ;
   font-size: 25px;
@@ -317,11 +393,11 @@ a:hover {
 }
 
 #pixlee_container {
-  width: 80%;
-  margin: 0 auto;
+  width: auto;
+  background-color: white;
 }
 
-#pixlee_container h1 {
+#pixlee_container a {
   color: #920503;
 }
 
