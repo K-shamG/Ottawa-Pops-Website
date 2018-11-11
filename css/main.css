@@ -71,14 +71,14 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #920503;
 }
 
-.mission-statement .col p {
+.mission-statement p {
   color: white;
   text-align: right;
   margin: 20px 100px 0px 50px;
   font-size: 1.8rem;
 }
 
-.mission-statement .col h1 {
+.mission-statement h1 {
   color: white;
   text-align: left;
   margin: 8vh 50px 0px 50px;
@@ -487,10 +487,6 @@ a:hover {
     font-size: 18px;
   }
 
-  #pixlee_container {
-    width: 70%;
-  }
-
   .about-us-content {
     font-size: 18px;
     padding-top: 10px;
@@ -522,5 +518,21 @@ a:hover {
 
   .carousel-control-next, .carousel-control-prev {
     width: 10% !important;
+  }
+
+  .mission-statement {
+    padding: 0px
+    height: auto;
+    margin: 5px auto;
+  }
+
+  .mission-statement p{
+    font-size: 22px;
+    text-align: center;
+    margin: 5px;
+  }
+
+  .social-media-feed {
+    height: auto;
   }
 }
