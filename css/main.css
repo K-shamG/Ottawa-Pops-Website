@@ -61,13 +61,20 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 140px;
 }
 
-.background-image {}
+.about-us-main {
+  color: white;
+  font-size: 20px;
+  margin-top: 50vh;
+  background-color: hsla(0, 0%, 0%, 0.9);
+  padding: 50px;
+}
+
 
 .parallax {
   margin: 0 auto;
   /* The image used */
   background-image:
-    url("../img/180518_150506_3517.jpg");
+    url("../img/parallax.png");
 
   /* Set a specific height */
   min-height: 500px;
@@ -443,6 +450,10 @@ a:hover {
 
 .carousel-mobile {
   display: none;
+}
+
+.carousel-computer #SWcarousel-img {
+  border: 10px solid black;
 }
 
 @media screen and (max-width: 800px) {
