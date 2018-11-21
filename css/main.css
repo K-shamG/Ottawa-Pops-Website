@@ -1,5 +1,5 @@
 html {
-
+  scroll-behavior: smooth;
 }
 
 body {
@@ -61,10 +61,32 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 140px;
 }
 
+.background-image {}
+
+.parallax {
+  margin: 0 auto;
+  /* The image used */
+  background-image:
+    url("../img/180518_150506_3517.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax background-image {
+  filter: grayscale(100%);
+}
+
 .mission-statement {
   height: 50vh;
   width: 100%;
-  margin: 10vh auto;
+  margin: 100vh auto;
 }
 
 .mission-statement .col,  .mission-statement .col-4{
@@ -86,20 +108,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .social-media-feed {
-  height: 85vh + 40px;
+  /*height: 80vh;*/
   width: 100%;
   background-color: white;
   margin: 0 auto;
 }
 
 .social-media-feed [class*="col"] {
-  padding: 20px 0px 20px 20px;
-  margin: 0 auto;
+  /* padding: 20px 0px 20px 20px; */
+  /* margin: 0 50px; */
+  overflow-y: auto;
 }
 
 .social-media-feed h3 {
   color: #920503;
   padding-bottom: 10px;
+}
+
+#curator-feed {
+  width: 100%;
 }
 
 .instagram-feed {
@@ -390,6 +417,11 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
   width: 75%;
+}
+
+#curator-feed {
+  width: auto;
+  background-color: white;
 }
 
 #pixlee_container {
