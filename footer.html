@@ -7,7 +7,7 @@
     </div>
   </div> -->
     <div class="row justify-content-center">
-      <div class="col-md-9 footer-col text-center">
+      <!-- <div class="col-md-9 footer-col text-center">
         <form id="subscribe">
           <div class="form-inline">
             <lable>Subscribe to our newsletter:</lable>
@@ -15,23 +15,44 @@
             <button id="contact-form-button" class="btn">Send <i class="far fa-envelope-open"></i></button>
           </div>
         </form>
-      </div>
+      </div> -->
       <div class="col-md footer-col text-center">
           <div class="social-icons text-center">
             <a href="https://www.facebook.com/ottawapopsorchestra/" class="social" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
             <a href="https://twitter.com/OttawaPopsOrch" class="social" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
             <a href="https://www.instagram.com/ottawapops/" class="social" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
             <a href="https://www.youtube.com/channel/UCvD4B1NFC_2HD5jxXl3U-SQ?pbjreload=10" class="social" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+            <!-- Button trigger modal -->
+            <button id="subscribe" type="button" class="btn btn-maroon" data-toggle="modal" data-target="#exampleModalCenter">
+              Subscribe to our newsletter <i class="far fa-paper-plane fa-fw"></i>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Please sign up for our newsletter <i class="far fa-paper-plane fa-fw"></i></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <iframe id="newsletter-form" src="https://docs.google.com/forms/d/e/1FAIpQLSekBrNO8yp-PczGqwwLLveQQQsu2mcJle92tW1Twc6PdiAPWg/viewform?embedded=true" width="600" height="510" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
       </div>
     </div>
 
-  <div class="row justify-content-center">
+  <div class="row justify-content-center pages-row">
       <div class="col-md-2 text-center pages"><a href="index.html">Home</a></div>
       <div class="col-md-2 text-center pages"><a href="about-us.html">About Us</a></div>
       <div class="col-md-2 text-center pages"><a href="concerts.html">Concerts</a></div>
       <div class="col-md-2 text-center pages"><a href="conductors.html">Orchestra</a></div>
-      <div class="col-md-2 text-center pages"><a href="news.html">News & Media</a></div>
+      <!-- <div class="col-md-2 text-center pages"><a href="news.html">News & Media</a></div> -->
       <div class="col-md-2 text-center pages"><a href="contact.html">Contact</a></div>
     </div>
   </div>
