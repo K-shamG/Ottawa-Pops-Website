@@ -752,5 +752,9 @@ a:hover {
     padding: 0px;
     margin: 0px;
   }
+  
+  .parallax {
+     background-image:none;
+  }
 
 }
