@@ -1,5 +1,5 @@
 html {
-
+  scroll-behavior: smooth;
 }
 
 body {
@@ -61,10 +61,39 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 140px;
 }
 
+.about-us-main {
+  color: white;
+  font-size: 20px;
+  margin-top: 50vh;
+  background-color: hsla(0, 0%, 0%, 0.9);
+  padding: 50px;
+}
+
+
+.parallax {
+  margin: 0 auto;
+  /* The image used */
+  background-image:
+    url("../img/parallax.png");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax background-image {
+  filter: grayscale(100%);
+}
+
 .mission-statement {
   height: 50vh;
   width: 100%;
-  margin: 10vh auto;
+  margin: 100vh auto;
 }
 
 .mission-statement .col,  .mission-statement .col-4{
@@ -85,21 +114,62 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 2.5rem;
 }
 
+.upcoming {
+  background-color: white;
+  margin: 0 auto 50vh;
+  padding: 15px 15px 50px;
+}
+
+.overlay:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.upcoming img:hover{
+  filter: grayscale(100%);
+}
+
+.upcoming h4 {
+  text-transform: uppercase;
+  background-color: #920503;
+  color: white;
+}
+
+.upcoming h2 {
+  text-transform: uppercase;
+}
+
+.upcoming a {
+  font-size: 17px;
+  font-weight: 900;
+}
+
+.upcoming strong {
+  background-color: #920503;
+  color: white;
+}
+
 .social-media-feed {
-  height: 85vh + 40px;
+  /*height: 80vh;*/
   width: 100%;
   background-color: white;
   margin: 0 auto;
 }
 
 .social-media-feed [class*="col"] {
-  padding: 20px 0px 20px 20px;
-  margin: 0 auto;
+  /* padding: 20px 0px 20px 20px; */
+  /* margin: 0 50px; */
+  overflow-y: auto;
 }
 
 .social-media-feed h3 {
   color: #920503;
   padding-bottom: 10px;
+}
+
+#curator-feed {
+  width: 100%;
+  margin: 0 auto;
 }
 
 .instagram-feed {
@@ -125,6 +195,38 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: auto;
   margin-right: auto;
   /* background-color: rgba(255, 255, 255, 0.1); */
+}
+
+.matinee-info {
+  padding: 50px;
+  background-color: white;
+  margin: 20px 50px;
+  font-size: 18px;
+}
+
+#matinee-form {
+  margin: 20px auto;
+  width: 100vw;
+}
+
+.matinee-info h3 {
+  text-transform: uppercase;
+  color: #920503;
+}
+
+.matinee-info a {
+  color: #920503;
+}
+
+.matinee-info #reserve{
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .modal-xl {
+    width: 90%;
+   max-width:1200px;
+  }
 }
 
 #contact-us {
@@ -271,6 +373,7 @@ a:hover {
 
 .btn-maroon {
   background-color: #920503;
+  font-size: 17px;
 }
 
 .btn-maroon:hover {
@@ -284,6 +387,8 @@ a:hover {
   border: 2px solid #920503;
   background-color: white;
   color: #920503;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .btn-outline-maroon:hover{
@@ -333,6 +438,50 @@ a:hover {
     text-align: center;
     text-transform: uppercase;
     color: white;
+}
+
+.auditions {
+  font-size: 20px;
+  font-weight: 900;
+
+}
+
+.auditions strong {
+  color: #920503;
+}
+
+.auditions h1 {
+  text-align: center;
+  color: #920503;
+  text-transform: uppercase;
+}
+
+.auditions a {
+  color: #920503;
+}
+
+.center {
+  text-align: center;
+}
+
+.parallax-auditions {
+    /* The image used */
+    background-image: url("../img/9-ConvertImage.jpg");
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.audition-row {
+  padding: 50px 75px;
+  background-color: hsla(0, 100%, 100%, 0.80);
+  margin: 0 200px;
 }
 
 #conductor {
@@ -392,6 +541,11 @@ a:hover {
   width: 75%;
 }
 
+#curator-feed {
+  width: auto;
+  background-color: white;
+}
+
 #pixlee_container {
   width: auto;
   background-color: white;
@@ -411,6 +565,10 @@ a:hover {
 
 .carousel-mobile {
   display: none;
+}
+
+.carousel-computer #SWcarousel-img {
+  border: 10px solid black;
 }
 
 @media screen and (max-width: 800px) {
@@ -479,8 +637,17 @@ a:hover {
     padding-bottom: 20px;
   }
 
+  .concert img, .read-more {
+    margin: 0 auto;
+    display: block;
+  }
+
   .concert-single {
-    padding: 30px;
+    padding: 25px;
+  }
+
+  .concert-single h5 {
+    margin: 0 auto;
   }
 
   .concert-description {
@@ -541,4 +708,49 @@ a:hover {
   .social-media-feed {
     height: auto;
   }
+
+  .upcoming {
+    padding: 0px;
+    margin: 10px 0px;
+  }
+
+  .upcoming img{
+    max-width: 60vw;
+  }
+
+  .upcoming h4 {
+    text-transform: uppercase;
+    background-color: #920503;
+    color: white;
+    text-align: center;
+  }
+
+  .upcoming h2 {
+    text-transform: uppercase;
+    font-size: 26px;
+    margin: 0 auto;
+  }
+
+  .upcoming a {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .matinee-info {
+    padding: 20px;
+    margin: 20px 0px;
+    font-size: 18px;
+  }
+
+  .auditions {
+    font-size: 20px;
+    font-weight: 400;
+
+  }
+
+  .audition-row {
+    padding: 0px;
+    margin: 0px;
+  }
+
 }
