@@ -26,6 +26,10 @@ footer {
   font-weight: 400;
 }
 
+.pages-row {
+  background-color: #920503;
+}
+
 #footer-logo-full {
   height: 100px;
 }
@@ -63,12 +67,43 @@ footer {
   text-transform: uppercase;
 }
 
-.footer-col p {
-  /* color: white; */
+.footer-col lable {
+  color: white;
   text-transform: uppercase;
-  font-size: 25px;
-  font-weight: 900;
-  hsl(192, 17%, 99%);
+  font-size: 18px;
+  font-weight: 400;
+  padding: 0 50px;
+}
+
+#email {
+  line-height: 20px;
+  width: 40%;
+}
+
+#contact-form-button {
+  height: 42px;
+}
+
+.modal-header, .modal-body {
+  background-color: #920503;
+}
+
+.modal-header h5, button {
+  color: white;
+  font-size: 26px;
+}
+
+.modal-header i {
+  margin-left: 15px;
+}
+
+#subscribe {
+  font-size: 18px;
+  margin-left: 50px;
+}
+
+#subscribe i {
+  margin-left: 10px;
 }
 
 @media screen and (max-width: 576px) {
@@ -88,5 +123,27 @@ footer {
 
   .pages a {
     font-size: 12px;
+  }
+
+  .modal-header, .modal-body {
+    max-width: 100vw;
+  }
+
+  .modal-header h5, button {
+    color: white;
+    font-size: 24px;
+  }
+
+  #subscribe {
+    font-size: 14px;
+    margin-left: 0px;
+  }
+
+  #subscribe i {
+    margin-left: 0px;
+  }
+
+  #newsletter-form {
+    max-width: 85vw;
   }
 }

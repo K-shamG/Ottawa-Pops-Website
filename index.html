@@ -22,9 +22,9 @@
   <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
@@ -33,7 +33,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128825872-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-128825872-1');
@@ -43,17 +46,20 @@
 
 <body>
   <div id="fb-root"></div>
-  <script>(function(d, s, id) {
+  <script>
+    (function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
+      js = d.createElement(s);
+      js.id = id;
       js.src = 'https://connect.facebook.net/en_PI/sdk.js#xfbml=1&version=v3.2';
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
   </script>
   <div class="container-fluid main">
     <div id="header"></div>
-    <div class="main">
+    <div class="background-image"></div>
+    <div class="parallax">
       <div id="carouselExampleControls" class="carousel slide carousel-computer" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -63,97 +69,124 @@
             </div>
           </div>
         </div>
-    </div>
+      </div>
 
-    <div id="carouselExampleControls" class="carousel slide carousel-mobile" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <a href="StarWars.html"><img id="SWcarousel-img" class="d-block w-100" src="img/concerts-full/StarWarsDetail.png" alt="Star Wars"></a>
-        </div>
-      </div>
-    </div>
-
-    <div class="row mission-statement">
-      <div class="col">
-        <h1 data-aos="fade-right" data-aos-duration="1000">Our Mission</h1>
-        <p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">The Ottawa Pops Orchestra aims to foster the next generation of musicians, redefine the orchestral experience, and create a sense of community in the Ottawa-Gatineau Region. </p>
-      </div>
-    </div>
-    <!-- SM and News Feeds -->
-    <div class="social-media-feed row" style="margin: 0 auto;">
-      <div class="col-md-6 offset-1">
-        <a class="twitter-timeline" data-height="85vh" data-theme="light" data-link-color="#920503" href="https://twitter.com/OttawaPopsOrch?ref_src=twsrc%5Etfw"></a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      </div>
-      <div class="col-md-5 fb-column">
-        <h3>Follow us on Facebook!</h3><hr>
-        <div class="fb-page" data-href="https://www.facebook.com/ottawapopsorchestra/" data-tabs="timeline" data-width="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/ottawapopsorchestra/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ottawapopsorchestra/">Cap&#039;n Ottawa Pops Orchestra</a></blockquote></div>
-      </div>
-    </div>
-    </div>
-    <div class="row instagram-feed">
-      <div class="col-md-12">
-        <div id="pixlee_container">
-          <h1><a href="https://www.instagram.com/ottawapops/" target="_blank">@ottawapops</a></h1>
-        </div>
-        <script type="text/javascript">
-          window.PixleeAsyncInit = function() {
-            Pixlee.init({apiKey:'2WN5oeTtPiJG3Oeqxxvo'});
-            Pixlee.addSimpleWidget({widgetId:'9719'});};
-        </script>
-        <script src="//instafeed.assets.pixlee.com/assets/pixlee_widget_1_0_0.js"></script>
-      </div>
-    </div>
-    <!-- <div class="row news-feed">
-      <div class="col">
-        <div class="row">
-          <div class="col">
-            <blockquote class="embedly-card" data-card-controls="0">
-              <h4>
-                <a href="https://ottawaurbansketchers.blogspot.com/2018/05/sketching-ottawa-pops-orchestra.html">Sketching the Ottawa Pops Orchestra</a>
-              </h4>
-              <p>It was an incredible turnout of Ottawa urban sketchers on the Friday before a long weekend at Centrepointe Theatre to sketch the Ottawa Pop...</p>
-            </blockquote>
-            <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
-          </div>
-          <div class="col">
-            <blockquote class="embedly-card" data-card-controls="0">
-              <h4>
-                <a href="http://ottawabeat.com/news/ottawa-pops-orchestra-grows-into-a-place-for-all/">Ottawa Pops Orchestra grows into a place for all - Ottawa Beat</a>
-              </h4>
-              <p>By Evan McKay The Ottawa Pops Orchestra is redefining what it means to be a symphony-goer. What originally started as a club for non-music majors at the University of Ottawa has quickly become one of Ottawa's most exciting and inclusive musical groups.</p>
-            </blockquote>
-            <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
-          </div>
-          <div class="col">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-2 offset-md-4">
-            <button class="btn btn-maroon btn-block">See More</button>
+      <div id="carouselExampleControls" class="carousel slide carousel-mobile" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <a href="StarWars.html"><img id="SWcarousel-img" class="d-block w-100" src="img/concerts-full/StarWarsDetail.png" alt="Star Wars"></a>
           </div>
         </div>
       </div>
-    </div> -->
-  </div>
-  <div id="footer"></div>
-  <!-- end container fluid -->
+      <div class="row mission-statement">
+        <div class="col">
+          <h1 data-aos="fade-right" data-aos-duration="1000">Our Mission</h1>
+          <p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">The Ottawa Pops Orchestra aims to foster the next generation of musicians, redefine the orchestral experience, and create a sense of community in the Ottawa-Gatineau
+            Region. </p>
+        </div>
+      </div>
+      <div class="row justify-content-md-center upcoming">
+        <div class="col-md-9">
+          <h2>Upcoming Events</h2>
+        </div>
+        <div class="col-md-3 text-right">
+          <a href="concerts.html" class="btn btn-outline-maroon show-all">Show all concerts <i class="fas fa-calendar-alt fa-fw"></i></a>
+        </div>
+        <div class="col-sm-4">
+          <a href="StarWars.html" target="_blank">
+            <div class="thumbnail center">
+              <h4><span class="label label-info">Dec 21 <i class="fas fa-caret-right"></i> 23</span></h4>
+              <img class="img-responsive" alt="a" src="img/concerts-full/StarWarsDetail.png">
+            </div>
+          </a>
+        </div>
 
-  <!-- JQuery -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
+        <div class="col-sm-4">
+          <a href="SATS.html" target="_blank">
+            <div class="thumbnail center">
+              <h4><span class="label label-info">March 23</span></h4>
+              <img class="img-responsive" alt="a" src="img/concerts-full/SATSDetail.png">
+            </div>
+          </a>
+        </div>
 
-  <script type="text/javascript" src="js/main.js"></script>
-  <script type="text/javascript" src="js/home.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-     AOS.init();
-  </script>
+        <div class="col-sm-4 center">
+          <a href="Disney.html" target="_blank">
+            <div class="thumbnail">
+              <h4><span class="label label-info">May 17 <i class="fas fa-caret-right"></i> 18</span></h4>
+              <img class="img-responsive" alt="a" src="img/concerts-full/DICDetail.png">
+            </div>
+        </div>
+        </a>
+      </div>
+      <!-- SM and About Us -->
+      <div class="row">
+        <div class="col-md-5 offset-md-1">
+          <div class="row">
+            <div class="col about-us-main" data-aos="fade-in" data-aos-duration="1000" style="margin-top: 50vh">
+              We are a young, semi-professional orchestra dedicated to performing accessible and relevant music. The “Pops” in our name is short for “popular” as the music we play is sourced from current popular culture, telling stories from once
+              upon a time in galaxies far, far away. That said, we also like to keep one foot in the world of classical music – its traditions, its rich history, and especially its romance.
+            </div>
+          </div>
+          <div class="row">
+            <div class="col about-us-main" data-aos="fade-in" data-aos-duration="1000">
+              We combine our passions by performing innovative concerts that redefine the modern orchestral experience. We’re made of people just like you, and we love to dress up and share our love for the music we play. Our mission: to foster the
+              next generation of musicians, redefine the orchestral experience, and create a sense of community in the Ottawa-Gatineau Region.
+            </div>
+          </div>
+          <div class="row">
+            <div class="col about-us-main" data-aos="fade-in" data-aos-duration="1000">
+              We have humble roots as a school club at the University of Ottawa, starting in 2012 with only a handful of eager musicians. After five years, we split from the university and ventured into the real world, this time with a sixty-person
+              orchestra and a full administrative team.
+            </div>
+          </div>
+          <div class="row">
+            <div class="col about-us-main" data-aos="fade-in" data-aos-duration="1000">
+              Our first season in 2017-2018 was a huge success, as we performed for over 3000 people over the course of three series of concerts. In the 2018-2019 season, our performances are hosted exclusively at Meridian Theatres at Centrepointe
+              as we develop educational opportunities in the Ottawa area and bring bigger and better shows to life than ever before.
+            </div>
+          </div>
+          <div class="row">
+            <div class="col about-us-main" data-aos="fade-in" data-aos-duration="1000">
+              In 2017 we gained status as a non-profit organization, and in 2018 we gained charity status. This means that every cent that goes into the organization from your donations and ticket purchases directly funds our productions. Without
+              you, our audience, we would simply not exist. As such, our love and gratitude for our patrons and your continued support truly extends across the universe.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 offset-md-1" id="curator-feed"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
+      </div>
+    </div>
+    <div id="footer"></div>
+    <!-- end container fluid -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
+
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/home.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script type="text/javascript">
+      /* curator-feed */
+      (function() {
+        var i, e, d = document,
+          s = "script";
+        i = d.createElement("script");
+        i.async = 1;
+        i.src = "https://cdn.curator.io/published/99f1d381-17cf-42e6-a316-36ec93e1b37e.js";
+        e = d.getElementsByTagName(s)[0];
+        e.parentNode.insertBefore(i, e);
+      })();
+    </script>
 
 </body>
 
