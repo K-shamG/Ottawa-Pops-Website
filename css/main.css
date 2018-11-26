@@ -693,10 +693,16 @@ a:hover {
     margin: 5px auto;
   }
 
+  .mission-statement h1 {
+    font-size: 26px;
+    text-align: center;
+  }
+
   .mission-statement p{
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
     margin: 5px;
+    padding-bottom: 5px; 
   }
 
   .social-media-feed {
