@@ -752,5 +752,16 @@ a:hover {
     padding: 0px;
     margin: 0px;
   }
+  
+  .parallax {
+     background-image:none;
+  }
+  
+  .about-us-main {
+    font-size: 20px;
+    margin-top: 10vh;
+    background-color: hsla(0, 0%, 0%, 0.9);
+    padding: 20px;
+  }
 
 }
