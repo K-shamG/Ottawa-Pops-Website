@@ -735,4 +735,16 @@ a:hover {
     margin: 20px 0px;
     font-size: 18px;
   }
+
+  .auditions {
+    font-size: 20px;
+    font-weight: 400;
+
+  }
+
+  .audition-row {
+    padding: 0px;
+    margin: 0px;
+  }
+
 }
