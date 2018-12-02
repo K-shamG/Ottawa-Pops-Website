@@ -93,7 +93,7 @@ h1, h2, h3, h4, h5, h6 {
 .mission-statement {
   height: 50vh;
   width: 100%;
-  margin: 100vh auto;
+  margin: 35vh auto;
 }
 
 .mission-statement .col,  .mission-statement .col-4{
@@ -116,7 +116,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .upcoming {
   background-color: white;
-  margin: 0 auto 50vh;
+  margin: 0 auto 35vh;
   padding: 15px 15px 50px;
 }
 
@@ -571,6 +571,20 @@ a:hover {
   border: 10px solid black;
 }
 
+.accordion {
+  width: 100vw;
+}
+
+.accordion .card-header {
+  background-color: #212529 !important;
+  padding: 0px !important;
+}
+
+.accordion .btn-link{
+  font-size: 20px !important;
+  color: white !important;
+}
+
 @media screen and (max-width: 800px) {
   .contact-title {
     font-size: 16px;
@@ -702,7 +716,7 @@ a:hover {
     font-size: 20px;
     text-align: center;
     margin: 5px;
-    padding-bottom: 5px; 
+    padding-bottom: 5px;
   }
 
   .social-media-feed {
@@ -752,11 +766,11 @@ a:hover {
     padding: 0px;
     margin: 0px;
   }
-  
+
   .parallax {
      background-image:none;
   }
-  
+
   .about-us-main {
     font-size: 20px;
     margin-top: 10vh;
