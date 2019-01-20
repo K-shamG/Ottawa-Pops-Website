@@ -1,6 +1,7 @@
 $(function(){
   $("#header").load("header.html");
   $("#footer").load("footer.html");
+  $("#upcoming").load("upcoming.html");
 });
 
 window.onscroll = () => {
