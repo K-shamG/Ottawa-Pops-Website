@@ -1,10 +1,10 @@
-html {
-  scroll-behavior: smooth;
-}
+/*html {*/
+  /*scroll-behavior: smooth;*/
+/*}*/
 
 body {
   width: 100%;
-  overflow: hide;
+  overflow: hidden;
   background-color: #E6E8E5;
   font-family: 'Quicksand', sans-serif;
   font-weight: 400;
@@ -584,6 +584,18 @@ a:hover {
   color: white !important;
 }
 
+.faq-accordion {
+  width: 100%;
+}
+
+.faq-accordion .card-header {
+  background-color: white !important;
+}
+
+.faq-accordion .btn {
+  color: #920503 !important;
+}
+
 @media screen and (max-width: 800px) {
   .contact-title {
     font-size: 16px;
@@ -701,7 +713,7 @@ a:hover {
   }
 
   .mission-statement {
-    padding: 0px
+    padding: 0px;
     height: auto;
     margin: 5px auto;
   }
