@@ -17,13 +17,13 @@
   <!-- Material Design Bootstrap -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="opo_site/public/assets/css/main.css">
-  <link rel="stylesheet" href="opo_site/public/assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
   <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
 
-  <link rel="apple-touch-icon" sizes="180x180" href="opo_site/public/favicon_package_v0.16/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="opo_site/public/favicon_package_v0.16/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="opo_site/public/favicon_package_v0.16/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
@@ -34,7 +34,7 @@
       if (f.fbq) return;
       n = f.fbq = function() {
         n.callMethod ?
-          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
       };
       if (!f._fbq) f._fbq = n;
       n.push = n;
@@ -47,7 +47,7 @@
       s = b.getElementsByTagName(e)[0];
       s.parentNode.insertBefore(t, s)
     }(window, document, 'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
+            'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '181383629171984');
     fbq('track', 'PageView');
   </script>
@@ -77,36 +77,27 @@
     gtag('config', 'AW-775314295');
   </script>
 
+  <!-- Event snippet for Leads conversion page -->
+  <script>
+    gtag('event', 'conversion', {'send_to': 'AW-775314295/evj4CNTHrpgBEPe22fEC'});
+  </script>
+
 </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
 
-<body>
-  <div class="container-fluid main">
-    <div id="header"></div>
-    <div class="main">
-      <div id="pixlee_container">
-        <h1>Instagram Feed</h1>
-      </div>
-      <script type="text/javascript">
-        window.PixleeAsyncInit = function() {
-          Pixlee.init({apiKey:'2WN5oeTtPiJG3Oeqxxvo'});
-          Pixlee.addSimpleWidget({widgetId:'9719'});};</script>
-      <script src="//instafeed.assets.pixlee.com/assets/pixlee_widget_1_0_0.js"></script>
-    </div>
-  <div id="footer"></div>
-  <!-- end container fluid -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
 
-  <!-- JQuery -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
 
-  <script type="text/javascript" src="opo_site/public/assets/js/main.js"></script>
-  <script type="text/javascript" src="opo_site/public/assets/js/home.js"></script>
-
-</body>
+  </body>
 
 </html>

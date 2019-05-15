@@ -4,7 +4,7 @@ html {
 
 body {
   width: 100%;
-  overflow: hide;
+  overflow: hidden;
   background-color: #E6E8E5;
   font-family: 'Quicksand', sans-serif;
   font-weight: 400;
@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   /* The image used */
   background-image:
-    url("../img/parallax.png");
+    url("../../img/parallax.png");
 
   /* Set a specific height */
   min-height: 500px;
@@ -298,7 +298,13 @@ input {
   border-radius: 0 !important;
 }
 
+#mc_embed_signup{background: #fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+
 /* Header styling */
+#navbar .navbar-brand {
+  padding-left: 3%;
+}
+
 .navbar {
   text-transform: uppercase;
   font-size: 15px;
@@ -465,7 +471,7 @@ a:hover {
 
 .parallax-auditions {
     /* The image used */
-    background-image: url("../img/9-ConvertImage.jpg");
+    background-image: url("../../img/9-ConvertImage.jpg");
 
     /* Set a specific height */
     min-height: 500px;
@@ -701,7 +707,7 @@ a:hover {
   }
 
   .mission-statement {
-    padding: 0px
+    padding: 0px;
     height: auto;
     margin: 5px auto;
   }
