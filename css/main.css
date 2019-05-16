@@ -4,7 +4,6 @@ html {
 
 body {
   width: 100%;
-  overflow: hide;
   background-color: #E6E8E5;
   font-family: 'Quicksand', sans-serif;
   font-weight: 400;
@@ -584,6 +583,74 @@ a:hover {
   color: white !important;
 }
 
+.season-tickets p, h6 {
+  font-size: 1.3em;
+}
+
+.col-padding {
+  padding: 50px 100px 20px;
+}
+
+.fun-col {
+  padding: 0px 100px 50px;
+}
+
+.season-banner {
+  background-color: #920503;
+  color: white;
+  padding: 50px;
+}
+
+.season-banner h4 {
+  font-size: 32px;
+}
+
+.season-graphic img {
+  width: 130px;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  filter: invert(100%);
+}
+
+.season-graphic p {
+  padding-top: 20px;
+}
+
+#people-paragraph {
+  padding-top: 60px;
+}
+
+.season-graphic {
+  text-align: center;
+  padding: 5vh 5vh 0vh;
+  margin: 0 auto;
+}
+
+.savings, .seating-renewal {
+  background-color: white;
+}
+
+.savings img {
+  height: 70vh;
+  margin: 0 auto;
+}
+
+.savings h4, p {
+  text-align: left !important;
+}
+
+.seating img {
+  height: 70vh;
+}
+
+#seating-prices {
+  width: 45vw;
+  height: auto;
+}
+
 @media screen and (max-width: 800px) {
   .contact-title {
     font-size: 16px;
@@ -701,7 +768,7 @@ a:hover {
   }
 
   .mission-statement {
-    padding: 0px
+    padding: 0px;
     height: auto;
     margin: 5px auto;
   }
@@ -775,6 +842,40 @@ a:hover {
     margin-top: 10vh;
     background-color: hsla(0, 0%, 0%, 0.9);
     padding: 20px;
+  }
+
+  .season-tickets p, h6 {
+    font-size: 16px;
+  }
+
+  .col-padding {
+    padding: 5px 10px 2px;
+  }
+
+  .fun-col {
+    padding: 0px 10px 5px;
+  }
+
+  .season-banner {
+    padding: 5px;
+  }
+
+  .season-banner h4 {
+    font-size: 22px;
+  }
+
+  .season-graphic p {
+    padding-top: 5px;
+  }
+
+  #people-paragraph {
+    padding-top: 5px;
+  }
+
+  .season-graphic {
+    text-align: center;
+    padding: 5vh;
+    margin: 0 auto;
   }
 
 }
