@@ -878,4 +878,8 @@ a:hover {
     margin: 0 auto;
   }
 
+  .seating img, #seating-prices, .savings img {
+    width: 100%;
+    height: auto;
+  }
 }
