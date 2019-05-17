@@ -583,6 +583,20 @@ a:hover {
   color: white !important;
 }
 
+.season-intro {
+  background-color: #F8A808;
+}
+
+.season-intro h4 {
+  font-size: 5.25em;
+}
+
+.season-intro h3 {
+  color: #6A66A4;
+  font-size: 42px;
+  font-weight: 900;
+}
+
 .season-tickets p, h6 {
   font-size: 1.3em;
 }
@@ -592,7 +606,12 @@ a:hover {
 }
 
 .fun-col {
-  padding: 0px 100px 50px;
+  padding: 0px 0px 50px 100px;
+}
+
+#ticket-button {
+  padding-right: 100px;
+  padding-bottom: 50px;
 }
 
 .season-banner {
@@ -606,7 +625,7 @@ a:hover {
 }
 
 .season-graphic img {
-  width: 130px;
+  width: 80px;
   margin: auto;
   top: 0;
   right: 0;
@@ -617,15 +636,17 @@ a:hover {
 
 .season-graphic p {
   padding-top: 20px;
+  font-size: 16px;
+  text-align: center !important;
 }
 
 #people-paragraph {
-  padding-top: 60px;
+  /*padding-top: 60px;*/
 }
 
 .season-graphic {
   text-align: center;
-  padding: 5vh 5vh 0vh;
+  padding: 2vh 2vh 0vh;
   margin: 0 auto;
 }
 
@@ -633,17 +654,33 @@ a:hover {
   background-color: white;
 }
 
-.savings img {
-  height: 70vh;
-  margin: 0 auto;
+.savings {
+  color: #920503;
 }
 
-.savings h4, p {
+.savings h4 {
+  font-size: 32px;
   text-align: left !important;
 }
 
+.savings img {
+  height: 50vh;
+  margin: 0 auto;
+}
+
+.savings p {
+  font-size: 18px;
+  text-align: left !important;
+}
+
+.seating h4 {
+  color: #920503;
+  font-size: 32px;
+  padding-bottom: 20px;
+}
+
 .seating img {
-  height: 70vh;
+  height: 75vh;
 }
 
 #seating-prices {
@@ -662,6 +699,65 @@ a:hover {
 
   .contact-people {
     padding-left: 2%;
+  }
+
+  .season-intro h4 {
+    font-size: 50px;
+    margin: 0 auto;
+  }
+
+  .season-intro h3 {
+    color: #6A66A4;
+    font-size: 22px;
+    font-weight: 900;
+  }
+
+  .season-tickets p, h6 {
+    font-size: 16px;
+  }
+
+  .col-padding {
+    padding: 25px 50px 25px;
+  }
+
+  .fun-col {
+    padding: 0px 50px 25px;
+  }
+
+  .season-banner {
+    padding: 5px;
+  }
+
+  .season-banner h4 {
+    font-size: 22px;
+  }
+
+  .season-graphic p {
+    padding-top: 5px;
+  }
+
+  #people-paragraph {
+    padding-top: 5px;
+  }
+
+  .season-graphic {
+    text-align: center;
+    padding: 2vh;
+    margin: 0 auto;
+  }
+
+  .seating img, #seating-prices {
+    width: 100%;
+    height: auto;
+  }
+
+  .savings img {
+    width: 100%;
+    height: auto;
+  }
+
+  .savings h4, .seating h4 {
+    font-size: 24px;
   }
 }
 
@@ -844,16 +940,27 @@ a:hover {
     padding: 20px;
   }
 
+  .season-intro h4 {
+    font-size: 32px;
+    margin: 0 auto;
+  }
+
+  .season-intro h3 {
+    color: #6A66A4;
+    font-size: 22px;
+    font-weight: 900;
+  }
+
   .season-tickets p, h6 {
     font-size: 16px;
   }
 
   .col-padding {
-    padding: 5px 10px 2px;
+    padding: 10px 20px 5px;
   }
 
   .fun-col {
-    padding: 0px 10px 5px;
+    padding: 0px 20px 10px;
   }
 
   .season-banner {
@@ -874,7 +981,7 @@ a:hover {
 
   .season-graphic {
     text-align: center;
-    padding: 5vh;
+    padding: 2vh;
     margin: 0 auto;
   }
 
@@ -886,5 +993,9 @@ a:hover {
   .savings img {
     width: 100%;
     height: auto;
+  }
+
+  .savings h4, .seating h4 {
+    font-size: 24px;
   }
 }

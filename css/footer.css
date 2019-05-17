@@ -106,6 +106,13 @@ footer {
   margin-left: 10px;
 }
 
+@media screen and (max-width: 800px) {
+  .footer-col {
+    padding: 10px 0px;
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .footer-col {
     padding: 10px 0px;
