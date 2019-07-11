@@ -2,6 +2,11 @@ $(function(){
   $("#header").load("header.html");
   $("#footer").load("footer.html");
   $("#upcoming").load("upcoming.html");
+  $('#myModal').modal('show');
+});
+
+$(window).on('load',function(){
+	
 });
 
 window.onscroll = () => {
