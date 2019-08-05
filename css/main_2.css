@@ -458,6 +458,10 @@ a:hover {
   color: #920503;
 }
 
+#audition-reg-mobile {
+  display: none;
+}
+
 .center {
   text-align: center;
 }
@@ -929,7 +933,19 @@ a:hover {
     margin: 0px;
   }
 
-  .parallax {
+  #audition-reg-web {
+    display: none;
+  }
+
+  #audition-reg-mobile {
+    display: block;
+  }
+
+  #audition-reg {
+    display: none;
+  }
+
+  .parallax, .parallax-auditions {
      background-image:none;
   }
 
