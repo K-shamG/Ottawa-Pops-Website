@@ -1,0 +1,1066 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  background-color: #E6E8E5;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.carousel-caption {
+    text-align: right;
+}
+
+.carousel-control-next {
+    right: 0;
+}
+.carousel-control-next, .carousel-control-prev {
+  width: 2% !important;
+}
+
+#TOTcarousel, #SWcarousel, #SATScarousel, #DICcarousel {
+  right: -18%;
+}
+
+.darken {
+  filter: brightness(50%);
+}
+
+.nav-link:hover {
+  border-bottom: 3px solid #FFF;
+  border-left: 0;
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+
+.nav-link {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.main-about {
+  background-color: black;
+  margin: 0 auto;
+}
+
+.main{
+  margin-top: 140px;
+}
+
+.about-us-main {
+  color: white;
+  font-size: 20px;
+  margin-top: 50vh;
+  background-color: hsla(0, 0%, 0%, 0.9);
+  padding: 50px;
+}
+
+
+.parallax {
+  margin: 0 auto;
+  /* The image used */
+  background-image:
+    url("../img/parallax.png");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax background-image {
+  filter: grayscale(100%);
+}
+
+.mission-statement {
+  height: 50vh;
+  width: 100%;
+  margin: 35vh auto;
+}
+
+.mission-statement .col,  .mission-statement .col-4{
+  background-color: #920503;
+}
+
+.mission-statement p {
+  color: white;
+  text-align: right;
+  margin: 20px 100px 0px 50px;
+  font-size: 1.8rem;
+}
+
+.mission-statement h1 {
+  color: white;
+  text-align: left;
+  margin: 8vh 50px 0px 50px;
+  font-size: 2.5rem;
+}
+
+.upcoming {
+  padding: 15px 25px 50px;
+}
+
+.upcoming-home {
+  margin: 0 35px;
+  background-color: lightgrey;
+}
+
+.overlay:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.upcoming img:hover{
+  filter: grayscale(100%);
+}
+
+.upcoming h4 {
+  color: black;
+  text-align: center;
+}
+
+.upcoming p {
+  text-transform: uppercase;
+}
+
+.upcoming h2 {
+  text-transform: uppercase;
+}
+
+.upcoming a {
+  font-size: 17px;
+  font-weight: 900;
+}
+
+.upcoming strong {
+  background-color: #920503;
+  color: white;
+}
+
+.upcoming .card {
+  width: 22rem;
+  height: auto;"
+}
+
+.social-media-feed {
+  /*height: 80vh;*/
+  width: 100%;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.social-media-feed [class*="col"] {
+  /* padding: 20px 0px 20px 20px; */
+  /* margin: 0 50px; */
+  overflow-y: auto;
+}
+
+.social-media-feed h3 {
+  color: #920503;
+  padding-bottom: 10px;
+}
+
+#curator-feed {
+  width: 100%;
+  margin: 50vh auto 0 auto;
+}
+
+.instagram-feed {
+  height: 350px;
+  margin: 20px auto;
+  overflow: auto;
+  padding: 20px;
+  background-color: white;
+}
+
+.news-feed {
+  background-color: white;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.news-feed h4 {
+  text-align: center;
+}
+
+.about-us {
+  margin-top: 140px;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: rgba(255, 255, 255, 0.1); */
+}
+
+.matinee-info {
+  padding: 50px;
+  background-color: white;
+  margin: 20px 50px;
+  font-size: 18px;
+}
+
+#matinee-form {
+  margin: 20px auto;
+  width: 100vw;
+}
+
+.matinee-info h3 {
+  text-transform: uppercase;
+  color: #920503;
+}
+
+.matinee-info a {
+  color: #920503;
+}
+
+.matinee-info #reserve{
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .modal-xl {
+    width: 90%;
+   max-width:1200px;
+  }
+}
+
+#contact-us {
+  padding: 10px 0px;
+  color: #920503;
+  text-transform: uppercase
+}
+
+#contact-general {
+  font-size: 20px;
+}
+
+.contact {
+  background-color: #D9D9D9;
+  padding-top: 50px;
+}
+
+.background-grey {
+  background-color: #D9D9D9;
+}
+
+.background-grey hr {
+  border-width: 2px;
+}
+
+.contact-people {
+  padding-top: 50px;
+  padding-left: 3%;
+  padding-bottom: 20px;
+}
+
+.box-office {
+  padding: 30px 0;
+}
+
+#contact-form-button{
+  background-color: #920503;
+}
+
+.profile-pic img {
+  height: 150px;
+  border-radius: 50% !important;
+  border: 5px solid grey;
+}
+
+.contact-info {
+  padding-left: 70px;
+  color: #920503;
+}
+
+.contact-name {
+  text-transform: uppercase;
+}
+
+.contact-title {
+  font-size: 24px;
+}
+
+.contact-phone, .contact-email {
+  font-size: 19px;
+  font-weight: 400 !important;
+}
+
+.email a {
+  color: #920503;
+}
+
+.icon {
+  text-align: center;
+}
+
+.contact-form-div {
+  padding: 0 50px;
+  padding-bottom: 20px;
+  border: 5px solid #D9D9D9;
+  border-left: 0 !important;
+}
+
+input {
+  border-radius: 0 !important;
+}
+
+/* Header styling */
+.navbar {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+/* Header items spacing */
+.nav-link {
+  padding-right: 2rem !important;
+  color: white !important;
+}
+
+/* Navbar dropdown items */
+.dropdown-item {
+  text-align: center;
+  color: white !important;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+.jarallax {
+    position: relative;
+    z-index: 0;
+}
+
+#mission {
+  position: absolute;
+  top: 100px;
+  color: #FFF;
+  text-align: center;
+  font-weight: 900;
+  font-size: 23px;
+  width: 640px;
+  padding: 20px 10px;
+  z-index: 2147483647;
+  margin: 40vh 25vw;
+  display: none;
+}
+
+#video {
+  z-index: 1;
+}
+
+.series {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 4%;
+  font-weight: 900;
+  color: #920503;
+  text-transform: uppercase
+}
+
+.concert {
+  padding: 30px;
+  margin: 50px;
+  background-color: white;
+}
+
+.concert-title {
+  color: #920503;
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.concert-description {
+  font-size: 20px;
+}
+
+.btn-maroon {
+  background-color: #920503;
+  font-size: 17px;
+}
+
+.btn-maroon:hover {
+  border: 2px solid #920503;
+  background-color: white;
+  color: #920503;
+  opacity: 1;
+}
+
+.btn-outline-maroon {
+  border: 2px solid #920503;
+  background-color: white;
+  color: #920503;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.btn-outline-maroon:hover{
+  background-color: #920503;
+  color: white;
+  opacity: 1;
+}
+
+.concert-single {
+  padding: 50px 80px;
+  background-color: white;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.ticket-link {
+  color: black;
+}
+
+.ticket-link:hover {
+  color: #920503;
+}
+
+.conductor-name {
+  color: #920503;
+  text-transform: uppercase;
+  padding-left: 50px;
+}
+
+.conductor-bio {
+  font-size: 1.32vw;
+  padding-left: 50px;
+}
+
+.conductor {
+  padding: 50px;
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.conductor-banner {
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+
+.auditions {
+  font-size: 20px;
+  font-weight: 900;
+
+}
+
+.auditions strong {
+  color: #920503;
+}
+
+.auditions h1 {
+  text-align: center;
+  color: #920503;
+  text-transform: uppercase;
+}
+
+.auditions a {
+  color: #920503;
+}
+
+#audition-reg-mobile {
+  display: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.parallax-auditions {
+    /* The image used */
+    background-image: url("../img/9-ConvertImage.jpg");
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.audition-row {
+  padding: 50px 75px;
+  background-color: hsla(0, 100%, 100%, 0.80);
+  margin: 0 200px;
+}
+
+#conductor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.musicians {
+  padding: 50px;
+}
+
+.musicians col-4 {
+  padding: 20px 0px;
+}
+
+.musicians h4 {
+  text-align: center;
+}
+
+.musicians p {
+  text-align: center;
+  font-size: 22px;
+}
+
+.about-us-content {
+  color: white ;
+  font-size: 25px;
+  font-weight: 700;
+  width: 75%;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 45rem;
+}
+
+#mySVG {
+  position: fixed;
+  top: 10%;
+  width: 400px;
+  height: 500px;
+}
+
+#about-us-last {
+  padding-bottom: 45rem;
+}
+
+.about-us-title {
+  opacity: 1;
+  color: white;
+  font-size: 50px;
+
+  padding-top: 8rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+#curator-feed {
+  width: auto;
+  background-color: white;
+}
+
+#pixlee_container {
+  width: auto;
+  background-color: white;
+}
+
+#pixlee_container a {
+  color: #920503;
+}
+
+.concert-detail {
+  height: 180px;
+}
+
+.carousel-computer {
+
+}
+
+.carousel-mobile {
+  display: none;
+}
+
+.carousel-computer #SWcarousel-img {
+  border: 10px solid black;
+}
+
+.accordion {
+  width: 100vw;
+}
+
+.accordion .card-header {
+  background-color: #212529 !important;
+  padding: 0px !important;
+}
+
+.accordion .btn-link{
+  font-size: 20px !important;
+  color: white !important;
+}
+
+.season-intro {
+  background-color: #F8A808;
+}
+
+.season-intro h4 {
+  font-size: 5.25em;
+}
+
+.season-intro h3 {
+  color: #6A66A4;
+  font-size: 42px;
+  font-weight: 900;
+}
+
+.season-tickets p, h6 {
+  font-size: 1.3em;
+}
+
+.col-padding {
+  padding: 50px 100px 20px;
+}
+
+.fun-col {
+  padding: 0px 0px 50px 100px;
+}
+
+#ticket-button {
+  padding-right: 100px;
+  padding-bottom: 50px;
+}
+
+.season-banner {
+  background-color: #920503;
+  color: white;
+  padding: 50px;
+}
+
+.season-banner h4 {
+  font-size: 32px;
+}
+
+.season-graphic img {
+  width: 80px;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  filter: invert(100%);
+}
+
+.season-graphic p {
+  padding-top: 20px;
+  font-size: 16px;
+  text-align: center !important;
+}
+
+#people-paragraph {
+  /*padding-top: 60px;*/
+}
+
+.season-graphic {
+  text-align: center;
+  padding: 2vh 2vh 0vh;
+  margin: 0 auto;
+}
+
+.savings, .seating-renewal {
+  background-color: white;
+}
+
+.savings {
+  color: #920503;
+}
+
+.savings h4 {
+  font-size: 32px;
+  text-align: left !important;
+}
+
+.savings img {
+  height: 50vh;
+  margin: 0 auto;
+}
+
+.savings p {
+  font-size: 18px;
+  text-align: left !important;
+}
+
+.seating h4 {
+  color: #920503;
+  font-size: 32px;
+  padding-bottom: 20px;
+}
+
+.seating img {
+  height: 75vh;
+}
+
+#seating-prices {
+  width: 45vw;
+  height: auto;
+}
+
+@media screen and (max-width: 800px) {
+  .contact-title {
+    font-size: 16px;
+  }
+
+  .contact-phone, .contact-email {
+    font-size: 15px;
+  }
+
+  .contact-people {
+    padding-left: 2%;
+  }
+
+  .season-intro h4 {
+    font-size: 50px;
+    margin: 0 auto;
+  }
+
+  .season-intro h3 {
+    color: #6A66A4;
+    font-size: 22px;
+    font-weight: 900;
+  }
+
+  .season-tickets p, h6 {
+    font-size: 16px;
+  }
+
+  .col-padding {
+    padding: 25px 50px 25px;
+  }
+
+  .fun-col {
+    padding: 0px 50px 25px;
+  }
+
+  .season-banner {
+    padding: 5px;
+  }
+
+  .season-banner h4 {
+    font-size: 22px;
+  }
+
+  .season-graphic p {
+    padding-top: 5px;
+  }
+
+  #people-paragraph {
+    padding-top: 5px;
+  }
+
+  .season-graphic {
+    text-align: center;
+    padding: 2vh;
+    margin: 0 auto;
+  }
+
+  .seating img, #seating-prices {
+    width: 100%;
+    height: auto;
+  }
+
+  .savings img {
+    width: 100%;
+    height: auto;
+  }
+
+  .savings h4, .seating h4 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #contact-us {
+    font-size: 30px;
+  }
+
+  .contact-title {
+    font-size: 18px;
+    text-align: center
+  }
+
+  .contact-phone, .contact-email {
+    font-size: 14px;
+    text-align: left;
+    padding-left: 40px;
+  }
+
+  .contact-people {
+    padding-left: 0;
+    padding-top: 10px;
+    text-align: center
+  }
+
+  .conductor-bio {
+    font-size: 14px;
+  }
+
+  .contact-info {
+    padding-left: 5px;
+  }
+
+  .concert-title {
+    font-size: 22px;
+  }
+
+  .concert-detail {
+    padding-bottom: 20px;
+    align: center;
+  }
+
+  .concert {
+    padding: 10px;
+    margin: 0 0 20px;
+  }
+
+  .btn-maroon {
+    height: 47px;
+  }
+
+  .ticket, .ticket-link {
+    padding-bottom: 20px;
+  }
+
+  .concert img, .read-more {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .concert-single {
+    padding: 25px;
+  }
+
+  .concert-single h5 {
+    margin: 0 auto;
+  }
+
+  .concert-description {
+    font-size: 18px;
+  }
+
+  .about-us-content {
+    font-size: 18px;
+    padding-top: 10px;
+  }
+
+  #conductor {
+    font-size: 25px;
+  }
+
+  .conductor-name {
+    padding-left: 0px;
+  }
+
+  .conductor-name h1 {
+    font-size: 25px;
+  }
+
+  .conductor-bio {
+    padding-left: 0px;
+  }
+
+  .carousel-computer {
+    display: none;
+  }
+
+  .carousel-mobile {
+    display: block;
+  }
+
+  .carousel-control-next, .carousel-control-prev {
+    width: 10% !important;
+  }
+
+  .mission-statement {
+    padding: 0px;
+    height: auto;
+    margin: 5px auto;
+  }
+
+  .mission-statement h1 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .mission-statement p{
+    font-size: 20px;
+    text-align: center;
+    margin: 5px;
+    padding-bottom: 48px;
+  }
+
+  .about-us-main {
+    margin-top: 10vh;
+  }
+
+  .social-media-feed {
+    height: auto;
+  }
+
+  .upcoming {
+    padding: 10px;
+    margin: 10px 0px;
+    background: none;
+    color: white;
+  }
+
+  .upcoming h4 {
+    color: black;
+    text-align: center;
+  }
+
+  .upcoming .card-text {
+    color: #920503 !important;
+    font-size: 1.3rem !important;
+    font-weight: 900 !important;
+  }
+
+  .upcoming h2 {
+    text-transform: uppercase;
+    font-size: 26px;
+    margin: 0 auto;
+    text-align: center;
+    color: black;
+  }
+
+  .upcoming a {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .upcoming-home {
+    margin: 0 auto;
+    background-color: transparent;
+  }
+
+  #showAll {
+    text-align: center !important;
+  }
+
+  .upcoming .card {
+    width: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  #curator-feed {
+    margin-top: 60px;
+  }
+
+  .matinee-info {
+    padding: 20px;
+    margin: 20px 0px;
+    font-size: 18px;
+  }
+
+  .auditions {
+    font-size: 20px;
+    font-weight: 400;
+
+  }
+
+  .audition-row {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  #audition-reg-web {
+    display: none;
+  }
+
+  #audition-reg-mobile {
+    display: block;
+  }
+
+  #audition-reg {
+    display: none;
+  }
+
+  .parallax-auditions {
+    background-image: none;
+  }
+
+  .about-us-main {
+    font-size: 20px;
+    margin: 10vh 30px 0px;
+    background-color: hsla(0, 0%, 0%, 0.9);
+    padding: 25px;
+  }
+
+  .season-intro h4 {
+    font-size: 32px;
+    margin: 0 auto;
+  }
+
+  .season-intro h3 {
+    color: #6A66A4;
+    font-size: 22px;
+    font-weight: 900;
+  }
+
+  .season-tickets p, h6 {
+    font-size: 16px;
+  }
+
+  .col-padding {
+    padding: 10px 20px 5px;
+  }
+
+  .fun-col {
+    padding: 0px 20px 10px;
+  }
+
+  .season-banner {
+    padding: 5px;
+  }
+
+  .season-banner h4 {
+    font-size: 22px;
+  }
+
+  .season-graphic p {
+    padding-top: 5px;
+  }
+
+  #people-paragraph {
+    padding-top: 5px;
+  }
+
+  .season-graphic {
+    text-align: center;
+    padding: 2vh;
+    margin: 0 auto;
+  }
+
+  .seating img, #seating-prices {
+    width: 100%;
+    height: auto;
+  }
+
+  .savings img {
+    width: 100%;
+    height: auto;
+  }
+
+  .savings h4, .seating h4 {
+    font-size: 24px;
+  }
+}
