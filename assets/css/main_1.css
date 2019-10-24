@@ -974,6 +974,14 @@ a:hover {
     font-size: 18px;
   }
 
+  .matinee-info a {
+    height: 72px !important;
+   }
+
+  .matinee-info a:hover {
+    font-size: initial !important;
+   }
+
   .auditions {
     font-size: 20px;
     font-weight: 400;
