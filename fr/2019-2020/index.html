@@ -61,43 +61,52 @@
 
     <!-- Facebook Pixel Code -->
 
-<script>
+    <script>
+      !(function(f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function() {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
 
-!function(f,b,e,v,n,t,s)
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
 
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
 
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
 
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
 
-n.queue=[];t=b.createElement(e);t.async=!0;
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
 
-t.src=v;s=b.getElementsByTagName(e)[0];
+      fbq("init", "181383629171984");
 
-s.parentNode.insertBefore(t,s)}(window,document,'script',
+      fbq("track", "PageView");
+    </script>
 
-'https://connect.facebook.net/en_US/fbevents.js');
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        src="https://www.facebook.com/tr?id=181383629171984&ev=PageView
 
+  &noscript=1"
+      />
+    </noscript>
 
-fbq('init', '181383629171984');
-
-fbq('track', 'PageView');
-
-</script>
-
-<noscript>
-
-<img height="1" width="1"
-
-src="https://www.facebook.com/tr?id=181383629171984&ev=PageView
-
-&noscript=1"/>
-
-</noscript>
-
-<!-- End Facebook Pixel Code -->
-
+    <!-- End Facebook Pixel Code -->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
@@ -147,15 +156,48 @@ src="https://www.facebook.com/tr?id=181383629171984&ev=PageView
 
       gtag("config", "AW-775314295");
     </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5TGMTQZ");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google Ad Sense -->
+    <script
+      data-ad-client="ca-pub-5242559934063718"
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
+    <!-- End Google Ad Sense -->
   </head>
 
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5TGMTQZ"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!--Navbar-->
 <nav id="navbar" class="navbar navbar-expand-lg navbar-dark grey darken-1 justify-content-center fixed-top scrolling-navbar">
     <!-- Navbar brand -->
-
+    
     <a style="padding-left: 3%" class="navbar-brand" href="/fr">
-
+        
             <img id="logo" src="/assets/img/OPO-Logo-Primary.png" height="100" alt="">
         </a>
         <!-- Collapse button -->
@@ -202,15 +244,14 @@ src="https://www.facebook.com/tr?id=181383629171984&ev=PageView
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="nav-item ">
-
+                    
                     <a class="nav-link" href="/2019-2020/">EN</a>
-
+                    
                 </li>
             </ul>
         </div>
 </nav>
-<!--/.Navbar-->
-    <div class="content main container-fluid">
+<!--/.Navbar--> <div class="content main container-fluid">
     <div class="concert">
         <p style="margin: 0 auto; color: #920503; text-transform: uppercase;font-weight: 700">Billets vendus à la billetterie des Théâtres Meridian à Centrepointe</p><br />
         <p style="margin: 0 auto; color: #920503; text-transform: uppercase;font-weight: 400">
@@ -324,8 +365,7 @@ src="https://www.facebook.com/tr?id=181383629171984&ev=PageView
         </div>
     </div>
 </div>
-
-    <footer class="elegant-color">
+ <footer class="elegant-color">
     <div class="row justify-content-center" style="display: flex; align-items: center;">
         <div class="col-lg-2 col-9 footer-col text-center">
             <img id="footer-logo-full" class="center-block" src="/assets/img/OPO Logo Symbol White.png">
@@ -426,9 +466,9 @@ src="https://www.facebook.com/tr?id=181383629171984&ev=PageView
     </div>
 
     <div class="row justify-content-center pages-row">
-
+        
             <div class="col-md-2 text-center pages"><a href="/fr">Page principale</a></div>
-
+        
         <div class="col-md-2 text-center pages"><a href="/fr/about">À propos</a></div>
         <div class="col-md-2 text-center pages"><a href="/fr/2019-2020/">Concerts</a></div>
         <div class="col-md-2 text-center pages"><a href="/fr/conductors/">Orchestre</a></div>

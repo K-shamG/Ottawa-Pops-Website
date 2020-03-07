@@ -61,43 +61,52 @@
 
     <!-- Facebook Pixel Code -->
 
-<script>
+    <script>
+      !(function(f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function() {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
 
-!function(f,b,e,v,n,t,s)
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
 
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
 
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
 
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
 
-n.queue=[];t=b.createElement(e);t.async=!0;
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
 
-t.src=v;s=b.getElementsByTagName(e)[0];
+      fbq("init", "181383629171984");
 
-s.parentNode.insertBefore(t,s)}(window,document,'script',
+      fbq("track", "PageView");
+    </script>
 
-'https://connect.facebook.net/en_US/fbevents.js');
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        src="https://www.facebook.com/tr?id=181383629171984&ev=PageView
 
+  &noscript=1"
+      />
+    </noscript>
 
-fbq('init', '181383629171984');
-
-fbq('track', 'PageView');
-
-</script>
-
-<noscript>
-
-<img height="1" width="1"
-
-src="https://www.facebook.com/tr?id=181383629171984&ev=PageView
-
-&noscript=1"/>
-
-</noscript>
-
-<!-- End Facebook Pixel Code -->
-
+    <!-- End Facebook Pixel Code -->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
@@ -147,15 +156,48 @@ src="https://www.facebook.com/tr?id=181383629171984&ev=PageView
 
       gtag("config", "AW-775314295");
     </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5TGMTQZ");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google Ad Sense -->
+    <script
+      data-ad-client="ca-pub-5242559934063718"
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
+    <!-- End Google Ad Sense -->
   </head>
 
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5TGMTQZ"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!--Navbar-->
 <nav id="navbar" class="navbar navbar-expand-lg navbar-dark grey darken-1 justify-content-center fixed-top scrolling-navbar">
     <!-- Navbar brand -->
-
+    
         <a style="padding-left: 3%" class="navbar-brand" href="/">
-
+            
             <img id="logo" src="/assets/img/OPO-Logo-Primary.png" height="100" alt="">
         </a>
         <!-- Collapse button -->
@@ -202,15 +244,14 @@ src="https://www.facebook.com/tr?id=181383629171984&ev=PageView
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="nav-item ">
-
+                    
                     <a class="nav-link" href="/fr/conductors/">FR</a>
-
+                    
                 </li>
             </ul>
         </div>
 </nav>
-<!--/.Navbar-->
-    <div class="main content container-fluid">
+<!--/.Navbar--> <div class="main content container-fluid">
     <div class="conductor-banner">
         <img id="conductor-img" src="/assets/img/conductors/conductor.jpg" width="100%" />
         <h1 id="conductor" data-aos="fade-in" data-aos-delay="100" data-aos-duration="2000">Meet Our Conductors</h1>
@@ -247,7 +288,7 @@ src="https://www.facebook.com/tr?id=181383629171984&ev=PageView
                   <p>Trevor Wilson is an Ottawa-born conductor, composer, and violinist currently completing his master’s degree in orchestral conducting at the Peabody Institute under Marin Alsop. As a violinist he has performed frequently as a member of the Ottawa Symphony Orchestra and toured with the National Youth Orchestra of Canada in 2015. During his undergraduate degree Trevor served for two years as conductor of the University of Ottawa Pops Orchestra and performed as a guest conductor with the Pembroke Symphony Orchestra. After obtaining his bachelor’s degree in violin performance at the University of Ottawa under Yehonatan Berick he was appointed Music Director of the newly formed Ottawa Pops Orchestra in Fall 2017. In recent times Trevor has participated in several international conducting festivals and workshops, having studied under such renowned pedagogues as Mark Shapiro, David Effron, and Neil Varon. This has also led him to Budapest where he performed with the Dohnányi Orchestra Budafok as a participant of the 2018 Dohnányi Conducting Academy under the instruction of Maestro Gábor Hollerung. This summer Trevor will be working with Maestro Boris Brott as Assistant Conductor of the National Academy Orchestra.</p>
                 </div>
               </div>
-          </div>
+          </div>      
       <div class="row conductor">
         <div class="col-md-3 offset-md-1" data-aos="fade-right" data-aos-duration="700">
           <img id="scroll" src="/assets/img/conductors/matthew_larkin.jpeg" width="100%" />
@@ -262,8 +303,7 @@ src="https://www.facebook.com/tr?id=181383629171984&ev=PageView
         </div>
     </div>
 </div>
-
-    <footer class="elegant-color">
+ <footer class="elegant-color">
     <div class="row justify-content-center" style="display: flex; align-items: center;">
         <div class="col-lg-2 col-9 footer-col text-center">
             <img id="footer-logo-full" class="center-block" src="/assets/img/OPO Logo Symbol White.png">
@@ -364,9 +404,9 @@ src="https://www.facebook.com/tr?id=181383629171984&ev=PageView
     </div>
 
     <div class="row justify-content-center pages-row">
-
+        
             <div class="col-md-2 text-center pages"><a href="/">home</a></div>
-
+        
         <div class="col-md-2 text-center pages"><a href="/about">About Us</a></div>
         <div class="col-md-2 text-center pages"><a href="/2019-2020/">Concerts</a></div>
         <div class="col-md-2 text-center pages"><a href="/conductors/">Orchestra</a></div>
