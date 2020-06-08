@@ -4,13 +4,23 @@ html {
 
 body {
   width: 100%;
-  background-color: #E6E8E5;
-  font-family: 'Quicksand', sans-serif;
+  background-color: #e6e8e5;
+  font-family: "Quicksand", sans-serif;
   font-weight: 400;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
+}
+
+@font-face {
+  font-family: FuturaPTMedium;
+  src: url(FuturaPTMedium.otf);
 }
 
 .container-fluid {
@@ -20,18 +30,117 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: auto;
 }
 
+.stories {
+  background-color: white;
+  margin: 0 auto;
+  padding: 2em 10em;
+  font-family: FuturaPTMedium, "Trebuchet MS", Arial, sans-serif;
+}
+
+.stories-header {
+  padding-bottom: 3em;
+}
+
+.stories-header > h3 {
+  margin: 0 auto;
+  color: #6a66a4;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.stories-preview {
+  margin: 0 auto;
+  color: #6a66a4;
+  font-weight: 700;
+  font-family: FuturaPTMedium, "Trebuchet MS", Arial, sans-serif;
+}
+
+.stories-row > * img {
+  border-radius: 10px;
+}
+
+.stories-row > * .concert-info {
+  padding-left: 2em;
+}
+
+.story-title {
+  color: #6a66a4;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.story-description {
+  font-size: 18px;
+}
+
+.story-single {
+  font-family: "Helvetica", Helvetica, Arial, sans-serif;
+  background-color: white !important;
+}
+
+.story-single-content {
+  margin: 0em auto;
+  width: 70%;
+}
+
+.story-single-content > img {
+  padding: 1em 0em;
+  width: inherit;
+}
+
+.story-single-title {
+  font-family: FuturaPTMedium, "Trebuchet MS", Arial, sans-serif;
+  padding-top: 1em;
+  color: #6a66a4;
+  font-size: 2em;
+  text-align: center;
+}
+
+.story-author-publish {
+  font-family: FuturaPTMedium, "Trebuchet MS", Arial, sans-serif;
+  text-align: center;
+}
+
+.story-icon {
+  background-color: lightgrey;
+  padding: 10px;
+  border-radius: 50%;
+  color: grey;
+  margin: 0 5px;
+}
+
+.story-description {
+  font-size: 15px;
+  padding-top: 1em;
+}
+
+.story-description > h5 {
+  padding-top: 1em;
+}
+
+.center-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .carousel-caption {
-    text-align: right;
+  text-align: right;
 }
 
 .carousel-control-next {
-    right: 0;
+  right: 0;
 }
-.carousel-control-next, .carousel-control-prev {
+.carousel-control-next,
+.carousel-control-prev {
   width: 2% !important;
 }
 
-#TOTcarousel, #SWcarousel, #SATScarousel, #DICcarousel {
+#TOTcarousel,
+#SWcarousel,
+#SATScarousel,
+#DICcarousel {
   right: -18%;
 }
 
@@ -40,7 +149,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-link:hover {
-  border-bottom: 3px solid #FFF;
+  border-bottom: 3px solid #fff;
   border-left: 0;
   -webkit-transform-origin: 0 100%;
   transform-origin: 0 100%;
@@ -56,7 +165,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 
-.main{
+.main {
   margin-top: 140px;
 }
 
@@ -68,12 +177,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 50px;
 }
 
-
 .parallax {
   margin: 0 auto;
   /* The image used */
-  background-image:
-    url("../img/parallax.png");
+  background-image: url("../img/parallax.png");
 
   /* Set a specific height */
   min-height: 500px;
@@ -95,7 +202,8 @@ h1, h2, h3, h4, h5, h6 {
   margin: 35vh auto;
 }
 
-.mission-statement .col,  .mission-statement .col-4{
+.mission-statement .col,
+.mission-statement .col-4 {
   background-color: #920503;
 }
 
@@ -127,7 +235,7 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
 }
 
-.upcoming img:hover{
+.upcoming img:hover {
   filter: grayscale(100%);
 }
 
@@ -156,7 +264,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .upcoming .card {
   width: 22rem;
-  height: auto;"
+  height: auto;
 }
 
 .social-media-feed {
@@ -225,27 +333,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .matinee-info a:hover {
- font-size: large !important;
- background-color: #920503;
- color: white; 
- border: none; 
+  font-size: large !important;
+  background-color: #920503;
+  color: white;
+  border: none;
 }
 
-.matinee-info #reserve{
+.matinee-info #reserve {
   color: white;
 }
 
 @media (min-width: 768px) {
   .modal-xl {
     width: 90%;
-   max-width:1200px;
+    max-width: 1200px;
   }
 }
 
 #contact-us {
   padding: 10px 0px;
   color: #920503;
-  text-transform: uppercase
+  text-transform: uppercase;
 }
 
 #contact-general {
@@ -253,12 +361,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contact {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   padding-top: 50px;
 }
 
 .background-grey {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
 
 .background-grey hr {
@@ -275,7 +383,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 30px 0;
 }
 
-#contact-form-button{
+#contact-form-button {
   background-color: #920503;
 }
 
@@ -298,7 +406,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
 }
 
-.contact-phone, .contact-email {
+.contact-phone,
+.contact-email {
   font-size: 19px;
   font-weight: 400 !important;
 }
@@ -314,7 +423,7 @@ h1, h2, h3, h4, h5, h6 {
 .contact-form-div {
   padding: 0 50px;
   padding-bottom: 20px;
-  border: 5px solid #D9D9D9;
+  border: 5px solid #d9d9d9;
   border-left: 0 !important;
 }
 
@@ -346,14 +455,14 @@ a:hover {
 }
 
 .jarallax {
-    position: relative;
-    z-index: 0;
+  position: relative;
+  z-index: 0;
 }
 
 #mission {
   position: absolute;
   top: 100px;
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-weight: 900;
   font-size: 23px;
@@ -374,7 +483,7 @@ a:hover {
   padding-left: 4%;
   font-weight: 900;
   color: #920503;
-  text-transform: uppercase
+  text-transform: uppercase;
 }
 
 .concert {
@@ -414,9 +523,27 @@ a:hover {
   font-weight: 700;
 }
 
-.btn-outline-maroon:hover{
+.btn-outline-maroon:hover {
   background-color: #920503;
   color: white;
+  opacity: 1;
+}
+
+.btn-outline-purple {
+  border: 2px solid #6a66a4 !important;
+  background-color: white;
+  color: #6a66a4 !important;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 10px;
+  font-family: "Helvetica", Helvetica, Arial, sans-serif;
+  letter-spacing: 1.8px;
+}
+
+.btn-outline-purple:hover {
+  border: 2px solid #6a66a4 !important;
+  background-color: #6a66a4 !important;
+  color: white !important;
   opacity: 1;
 }
 
@@ -452,21 +579,20 @@ a:hover {
   padding: 50px;
 }
 
-.dropdown:hover>.dropdown-menu {
+.dropdown:hover > .dropdown-menu {
   display: block;
 }
 
 .conductor-banner {
-    position: relative;
-    text-align: center;
-    text-transform: uppercase;
-    color: white;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
 }
 
 .auditions {
   font-size: 20px;
   font-weight: 900;
-
 }
 
 .auditions strong {
@@ -492,30 +618,30 @@ a:hover {
 }
 
 .parallax-auditions {
-    /* The image used */
-    background-image: url("../img/9-ConvertImage.jpg");
+  /* The image used */
+  background-image: url("../img/9-ConvertImage.jpg");
 
-    /* Set a specific height */
-    min-height: 500px;
+  /* Set a specific height */
+  min-height: 500px;
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .audition-row {
   padding: 50px 75px;
-  background-color: hsla(0, 100%, 100%, 0.80);
+  background-color: hsla(0, 100%, 100%, 0.8);
   margin: 0 200px;
 }
 
 #conductor {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .musicians {
@@ -536,7 +662,7 @@ a:hover {
 }
 
 .about-us-content {
-  color: white ;
+  color: white;
   font-size: 25px;
   font-weight: 700;
   width: 75%;
@@ -587,7 +713,6 @@ a:hover {
 }
 
 .carousel-computer {
-
 }
 
 .carousel-mobile {
@@ -607,13 +732,13 @@ a:hover {
   padding: 0px !important;
 }
 
-.accordion .btn-link{
+.accordion .btn-link {
   font-size: 20px !important;
   color: white !important;
 }
 
 .season-intro {
-  background-color: #F8A808;
+  background-color: #f8a808;
 }
 
 .season-intro h4 {
@@ -621,12 +746,13 @@ a:hover {
 }
 
 .season-intro h3 {
-  color: #6A66A4;
+  color: #6a66a4;
   font-size: 42px;
   font-weight: 900;
 }
 
-.season-tickets p, h6 {
+.season-tickets p,
+h6 {
   font-size: 1.3em;
 }
 
@@ -679,7 +805,8 @@ a:hover {
   margin: 0 auto;
 }
 
-.savings, .seating-renewal {
+.savings,
+.seating-renewal {
   background-color: white;
 }
 
@@ -722,7 +849,8 @@ a:hover {
     font-size: 16px;
   }
 
-  .contact-phone, .contact-email {
+  .contact-phone,
+  .contact-email {
     font-size: 15px;
   }
 
@@ -736,12 +864,13 @@ a:hover {
   }
 
   .season-intro h3 {
-    color: #6A66A4;
+    color: #6a66a4;
     font-size: 22px;
     font-weight: 900;
   }
 
-  .season-tickets p, h6 {
+  .season-tickets p,
+  h6 {
     font-size: 16px;
   }
 
@@ -775,7 +904,8 @@ a:hover {
     margin: 0 auto;
   }
 
-  .seating img, #seating-prices {
+  .seating img,
+  #seating-prices {
     width: 100%;
     height: auto;
   }
@@ -785,7 +915,8 @@ a:hover {
     height: auto;
   }
 
-  .savings h4, .seating h4 {
+  .savings h4,
+  .seating h4 {
     font-size: 24px;
   }
 }
@@ -797,10 +928,11 @@ a:hover {
 
   .contact-title {
     font-size: 18px;
-    text-align: center
+    text-align: center;
   }
 
-  .contact-phone, .contact-email {
+  .contact-phone,
+  .contact-email {
     font-size: 14px;
     text-align: left;
     padding-left: 40px;
@@ -809,7 +941,7 @@ a:hover {
   .contact-people {
     padding-left: 0;
     padding-top: 10px;
-    text-align: center
+    text-align: center;
   }
 
   .conductor-bio {
@@ -838,11 +970,13 @@ a:hover {
     height: 47px;
   }
 
-  .ticket, .ticket-link {
+  .ticket,
+  .ticket-link {
     padding-bottom: 20px;
   }
 
-  .concert img, .read-more {
+  .concert img,
+  .read-more {
     margin: 0 auto;
     display: block;
   }
@@ -888,7 +1022,8 @@ a:hover {
     display: block;
   }
 
-  .carousel-control-next, .carousel-control-prev {
+  .carousel-control-next,
+  .carousel-control-prev {
     width: 10% !important;
   }
 
@@ -903,7 +1038,7 @@ a:hover {
     text-align: center;
   }
 
-  .mission-statement p{
+  .mission-statement p {
     font-size: 20px;
     text-align: center;
     margin: 5px;
@@ -976,16 +1111,15 @@ a:hover {
 
   .matinee-info a {
     height: 72px !important;
-   }
+  }
 
   .matinee-info a:hover {
     font-size: initial !important;
-   }
+  }
 
   .auditions {
     font-size: 20px;
     font-weight: 400;
-
   }
 
   .audition-row {
@@ -1022,12 +1156,13 @@ a:hover {
   }
 
   .season-intro h3 {
-    color: #6A66A4;
+    color: #6a66a4;
     font-size: 22px;
     font-weight: 900;
   }
 
-  .season-tickets p, h6 {
+  .season-tickets p,
+  h6 {
     font-size: 16px;
   }
 
@@ -1061,7 +1196,8 @@ a:hover {
     margin: 0 auto;
   }
 
-  .seating img, #seating-prices {
+  .seating img,
+  #seating-prices {
     width: 100%;
     height: auto;
   }
@@ -1071,7 +1207,44 @@ a:hover {
     height: auto;
   }
 
-  .savings h4, .seating h4 {
+  .savings h4,
+  .seating h4 {
     font-size: 24px;
+  }
+
+  .stories {
+    padding: 1em;
+    text-align: center;
+  }
+
+  .stories-header {
+    padding-bottom: 3em;
+  }
+
+  .stories-row > * img {
+    margin: 0 auto 1em;
+    padding-bottom: 0 !important;
+    display: block;
+  }
+
+  .stories-row > * .concert-info {
+    padding-left: 0em;
+  }
+
+  .story-single-content {
+    width: 100%;
+  }
+
+  .story-single-title {
+    padding-top: 1em;
+    font-size: 28px;
+  }
+
+  .story-description {
+    font-size: 16px;
+  }
+
+  .story-description > h5 {
+    padding-top: 1em;
   }
 }
