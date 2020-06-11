@@ -62,9 +62,9 @@
     <!-- Facebook Pixel Code -->
 
     <script>
-      !(function(f, b, e, v, n, t, s) {
+      !(function (f, b, e, v, n, t, s) {
         if (f.fbq) return;
-        n = f.fbq = function() {
+        n = f.fbq = function () {
           n.callMethod
             ? n.callMethod.apply(n, arguments)
             : n.queue.push(arguments);
@@ -129,14 +129,14 @@
   In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
     <script>
       function gtag_report_conversion(url) {
-        var callback = function() {
+        var callback = function () {
           if (typeof url != "undefined") {
             window.location = url;
           }
         };
         gtag("event", "conversion", {
           send_to: "AW-705441703/kqN2CJr0ubEBEKffsNAC",
-          event_callback: callback
+          event_callback: callback,
         });
         return false;
       }
@@ -159,7 +159,7 @@
 
     <!-- Google Tag Manager -->
     <script>
-      (function(w, d, s, l, i) {
+      (function (w, d, s, l, i) {
         w[l] = w[l] || [];
         w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
         var f = d.getElementsByTagName(s)[0],
@@ -179,6 +179,54 @@
       src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
     ></script>
     <!-- End Google Ad Sense -->
+
+    <!-- Flodesk Newsletter -->
+    <script>
+      (function (w, d, t, s, n) {
+        w.FlodeskObject = n;
+        var fn = function () {
+          (w[n].q = w[n].q || []).push(arguments);
+        };
+        w[n] = w[n] || fn;
+        var f = d.getElementsByTagName(t)[0];
+        var e = d.createElement(t);
+        var h = "?v=" + new Date().getTime();
+        e.async = true;
+        e.src = s + h;
+        f.parentNode.insertBefore(e, f);
+      })(
+        window,
+        document,
+        "script",
+        "https://assets.flodesk.com/universal.js",
+        "fd"
+      );
+    </script>
+    <!-- End Flowdesk Newsletter -->
+
+    <!-- Flodesk Newsletter FR-->
+    <script>
+      (function (w, d, t, s, n) {
+        w.FlodeskObject = n;
+        var fn = function () {
+          (w[n].q = w[n].q || []).push(arguments);
+        };
+        w[n] = w[n] || fn;
+        var f = d.getElementsByTagName(t)[0];
+        var e = d.createElement(t);
+        var h = "?v=" + new Date().getTime();
+        e.async = true;
+        e.src = s + h;
+        f.parentNode.insertBefore(e, f);
+      })(
+        window,
+        document,
+        "script",
+        "https://assets.flodesk.com/universal.js",
+        "fd"
+      );
+    </script>
+    <!-- End Flodesk Newsletter FR-->
   </head>
 
   <body>
@@ -188,80 +236,145 @@
         src="https://www.googletagmanager.com/ns.html?id=GTM-5TGMTQZ"
         height="0"
         width="0"
-        style="display:none;visibility:hidden"
+        style="display: none; visibility: hidden;"
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!--Navbar-->
-<nav id="navbar" class="navbar navbar-expand-lg navbar-dark grey darken-1 justify-content-center fixed-top scrolling-navbar">
-    <!-- Navbar brand -->
-    
-    <a style="padding-left: 3%" class="navbar-brand" href="/fr">
-        
-            <img id="logo" src="/assets/img/OPO-Logo-Primary.png" height="100" alt="">
-        </a>
-        <!-- Collapse button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Collapsible content -->
-        <div class="collapse navbar-collapse" id="basicExampleNav">
-            <!-- Links -->
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="/fr/about">À propos</a>
-                </li>
-                <!-- Concerts -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Concerts</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <!-- <a class="dropdown-item" href="/fr/2018-2019/">2018 - 2019</a> -->
-                        <a class="dropdown-item" href="/fr/2019-2020/">2019 - 2020</a>
-                        <a class="dropdown-item" href="/fr/season-tickets/">Billets de saison</a>
-                    </div>
-                </li>
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-lg navbar-dark grey darken-1 justify-content-center fixed-top scrolling-navbar"
+    >
+      <!-- Navbar brand -->
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Orchestre</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/fr/auditions/">Auditions</a>
-                        <a class="dropdown-item" href="/fr/conductors/">Chefs d’orchestre</a>
-                        <!-- <a class="dropdown-item" href="musicians.html">Musicians</a> -->
-                    </div>
-                </li>
+      <a style="padding-left: 3%;" class="navbar-brand" href="/fr">
+        <img
+          id="logo"
+          src="/assets/img/OPO-Logo-Primary.png"
+          height="100"
+          alt=""
+        />
+      </a>
+      <!-- Collapse button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#basicExampleNav"
+        aria-controls="basicExampleNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="basicExampleNav">
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/fr/about">À propos</a>
+          </li>
+          <!-- Concerts -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Concerts</a
+            >
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <!-- <a class="dropdown-item" href="/fr/2018-2019/">2018 - 2019</a> -->
+              <a class="dropdown-item" href="/fr/2019-2020/">2019 - 2020</a>
+              <a class="dropdown-item" href="/fr/season-tickets/"
+                >Billets de saison</a
+              >
+            </div>
+          </li>
 
-                <li class="nav-item dropdown">
-                    <div class="btn-group">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Communauté</a>
-                    </div>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/fr/student-matinees/">LA MATINÉE SCOLAIRE</a>
-                        <a class="dropdown-item" href="/fr/stories/">Histoires de l'OPO</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/fr/contact/">Contactez-nous</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/fr/covid-19/">COVID-19</a>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li class="nav-item ">
-                    
-                    <a class="nav-link" href="/auditions/">EN</a>
-                    
-                </li>
-            </ul>
-        </div>
-</nav>
-<!--/.Navbar--> <div class="main auditions content container-fluid">
-    <div class="parallax-auditions">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink2"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Orchestre</a
+            >
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/fr/auditions/">Auditions</a>
+              <a class="dropdown-item" href="/fr/conductors/"
+                >Chefs d’orchestre</a
+              >
+              <!-- <a class="dropdown-item" href="musicians.html">Musicians</a> -->
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <div class="btn-group">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink3"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Communauté</a
+              >
+            </div>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/fr/student-matinees/"
+                >LA MATINÉE SCOLAIRE</a
+              >
+              <a class="dropdown-item" href="/fr/stories/"
+                >Histoires de l'OPO</a
+              >
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/fr/contact/">Contactez-nous</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/fr/covid-19/">COVID-19</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item">
+            <a class="nav-link" href="/auditions/">EN</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--/.Navbar-->
+    <div class="main auditions content container-fluid">
+      <div class="parallax-auditions">
         <div class="row audition-row">
           <div class="col">
             <h1>Auditions</h1>
-            <p style="font-size: large;font-weight: 700;border: 2px solid #920503;color: #920503;padding: 0.8em;border-radius: 25px;text-align: center;box-shadow: 10px 10px 8px grey;">Les auditions générales pour la saison 2019-2020 sont terminées.</p>
-            <p>Nous acceptons encore des auditions pour les instruments suivants :</p>
+            <p
+              style="
+                font-size: large;
+                font-weight: 700;
+                border: 2px solid #920503;
+                color: #920503;
+                padding: 0.8em;
+                border-radius: 25px;
+                text-align: center;
+                box-shadow: 10px 10px 8px grey;
+              "
+            >
+              Les auditions générales pour la saison 2019-2020 sont terminées.
+            </p>
+            <p>
+              Nous acceptons encore des auditions pour les instruments suivants
+              :
+            </p>
             <ul>
               <li>Violon</li>
               <li>Alto</li>
@@ -270,417 +383,420 @@
               <li>Clarinette (si bémol, mi bémol, basse)</li>
               <li>Percussion</li>
             </ul>
-            <p>Veuillez envoyer un courriel à 
-            <a href="mailto: auditions@ottawapopsorchestra.ca">   auditions@ottawapopsorchestra.ca </a> 
-            pour faire passer une audition.</p>
+            <p>
+              Veuillez envoyer un courriel à
+              <a href="mailto: auditions@ottawapopsorchestra.ca">
+                auditions@ottawapopsorchestra.ca
+              </a>
+              pour faire passer une audition.
+            </p>
             <hr style="border: 1px solid #920503;" />
             <!-- <p>Les auditions pour la saison 2019-2020 auront lieu les 14 et 15 septembre 2019 dans la salle 109 du pavillon Perez, 610, rue Cumberland.</p>
             <div class="center">
               <a id="audition-reg-web" href="#audition-reg" class="btn-outline-maroon btn center">Inscrivez-vous</a>
               <a id="audition-reg-mobile" href="https://docs.google.com/forms/d/e/1FAIpQLScdT5pkOrHJoy5CQCtg096rid4OGPWdKgW2d7QON5qAm8g5Gg/viewform?usp=sf_link" target="_blank" class="btn-outline-maroon btn center">Inscrivez-vous</a> 
-            </div> -->           
-            <p>Les candidats seront acceptés selon leur prestation durant l’audition. Il n’y a aucun âge minimal pour participer dans l’OPO.</p>
-            <p>L’audition consiste d’une gamme, 2 pièces contrastantes, une lecture à première vue (sur la caisse claire pour percussion) et une entrevue informelle. Les candidats devraient sélectionner deux pièces contrastantes qui démontrent leurs habiletés et leur facilité technique. La durée totale des pièces ne devrait dépasser 12 minutes. Les candidats sont priés d’arriver 10-15 minutes avant l’heure prévue pour l’audition et d’apporter 2 copies supplémentaires de leurs partitions pour les membres du panel. Il est possible que les juges vous interrompent durant vos pièces. Ne vous inquiétez pas, cela indique que l’extrait joué était suffisant et qu’ils souhaiteraient poursuivre à la prochaine étape de l’audition.</p>
-            <p>Les candidats préparant une audition pour la doublure d’instruments devraient préparer 1 pièce supplémentaire pour chacune des doublures. Des extraits orchestraux sont acceptables.</p>
-            
-            <div style="margin-top: 20px; width: 100%;" class="accordion" id="accordionExample">
+            </div> -->
+            <p>
+              Les candidats seront acceptés selon leur prestation durant
+              l’audition. Il n’y a aucun âge minimal pour participer dans l’OPO.
+            </p>
+            <p>
+              L’audition consiste d’une gamme, 2 pièces contrastantes, une
+              lecture à première vue (sur la caisse claire pour percussion) et
+              une entrevue informelle. Les candidats devraient sélectionner deux
+              pièces contrastantes qui démontrent leurs habiletés et leur
+              facilité technique. La durée totale des pièces ne devrait dépasser
+              12 minutes. Les candidats sont priés d’arriver 10-15 minutes avant
+              l’heure prévue pour l’audition et d’apporter 2 copies
+              supplémentaires de leurs partitions pour les membres du panel. Il
+              est possible que les juges vous interrompent durant vos pièces. Ne
+              vous inquiétez pas, cela indique que l’extrait joué était
+              suffisant et qu’ils souhaiteraient poursuivre à la prochaine étape
+              de l’audition.
+            </p>
+            <p>
+              Les candidats préparant une audition pour la doublure
+              d’instruments devraient préparer 1 pièce supplémentaire pour
+              chacune des doublures. Des extraits orchestraux sont acceptables.
+            </p>
+
+            <div
+              style="margin-top: 20px; width: 100%;"
+              class="accordion"
+              id="accordionExample"
+            >
               <div class="card">
                 <div class="card-header" id="headingOne">
                   <h6>
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <button
+                      class="btn btn-link"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
                       Percussionists <i class="fas fa-caret-down"></i>
                     </button>
                   </h6>
                 </div>
 
-                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div
+                  id="collapseOne"
+                  class="collapse"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordionExample"
+                >
                   <div class="card-body">
-                    <p>Les percussionnistes doivent préparer un extrait à la caisse claire et au maillet au minimum. Les candidats peuvent préparer des pièces supplémentaires pour d’autres instruments s’ils le souhaitent, pourvu que la durée totale de prestation ne dépasse 12 minutes.</p>
-                    <p>L’OPO ne fournira aucun bâton ni maillet pour l’audition.</p>
-                    <p>Les candidats peuvent apporter leur propre caisse claire à l’audition</p>
+                    <p>
+                      Les percussionnistes doivent préparer un extrait à la
+                      caisse claire et au maillet au minimum. Les candidats
+                      peuvent préparer des pièces supplémentaires pour d’autres
+                      instruments s’ils le souhaitent, pourvu que la durée
+                      totale de prestation ne dépasse 12 minutes.
+                    </p>
+                    <p>
+                      L’OPO ne fournira aucun bâton ni maillet pour l’audition.
+                    </p>
+                    <p>
+                      Les candidats peuvent apporter leur propre caisse claire à
+                      l’audition
+                    </p>
 
                     <h6>Instruments fournis pour l’audition en personne</h6>
                     <ul>
-                      <li>Deagan 1558 2.5 Octave Glockenspiel  </li>
-                      <li>Musser 4.0 Octave Xylophone </li>
+                      <li>Deagan 1558 2.5 Octave Glockenspiel</li>
+                      <li>Musser 4.0 Octave Xylophone</li>
                       <li>Yamaha 4.3 Octave Acoustalon Marimba</li>
-                      <li>Fibes 14x4 Maple Shell Single Ply with die cast rims</li>
-                      <li>Ensemble de 4 timbales Ludwig (23 po, 26 po, 29 po, 32 po)</li>
+                      <li>
+                        Fibes 14x4 Maple Shell Single Ply with die cast rims
+                      </li>
+                      <li>
+                        Ensemble de 4 timbales Ludwig (23 po, 26 po, 29 po, 32
+                        po)
+                      </li>
                     </ul>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div style="margin-top: 20px; width: 100%;" class="accordion" id="accordionExample2">
-                  <div class="card">
-                    <div class="card-header" id="headingOne-2">
-                      <h6>
-                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne-2" aria-expanded="true" aria-controls="collapseOne">
-                          AUDITIONS DE PREMIER VIOLON <i class="fas fa-caret-down"></i>
-                        </button>
-                      </h6>
+            <div
+              style="margin-top: 20px; width: 100%;"
+              class="accordion"
+              id="accordionExample2"
+            >
+              <div class="card">
+                <div class="card-header" id="headingOne-2">
+                  <h6>
+                    <button
+                      class="btn btn-link"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseOne-2"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      AUDITIONS DE PREMIER VIOLON
+                      <i class="fas fa-caret-down"></i>
+                    </button>
+                  </h6>
+                </div>
+
+                <div
+                  id="collapseOne-2"
+                  class="collapse"
+                  aria-labelledby="headingOne-2"
+                  data-parent="#accordionExample2"
+                >
+                  <div class="card-body">
+                    <p>
+                      Les candidats qui souhaitent devenir le premier violon de
+                      l’Orchestre Pop d’Ottawa pour la saison 2019-2020 devront
+                      preparer une audition enregistrée par vidéo et envoyer un
+                      lien Youtube, les partitions et un CV à
+                      auditions@ottawapopsorchestra.ca avant le 10 septembre
+                      2019 à 17 h (heure de l’Est).
+                    </p>
+
+                    <h5><strong>Critères d’audition</strong></h5>
+                    <p>
+                      Toutes les gammes doivent être jouées à 60 PPM (minimum),
+                      en double-croches ascendantes et descendantes avec 8 notes
+                      par coup d’archet.
+                    </p>
+
+                    <div style="margin-left: 20px;">
+                      <h5><strong>Gamme</strong></h5>
+                      <p>ré majeur 3 octaves</p>
+
+                      <h5><strong>Extraits</strong></h5>
+                      <ul>
+                        <li>Strauss – Don Juan, op. 20, mesures 1-62</li>
+                        <li>
+                          Mendelsohn – Midsummer Night’s Dream : Ouverture,
+                          mesures 6-81
+                        </li>
+                      </ul>
+
+                      <h5><strong>Pièces</strong></h5>
+                      <p>
+                        2 pièces contrastées sans dépasser une durée totale de
+                        10 minutes
+                      </p>
                     </div>
 
-                    <div id="collapseOne-2" class="collapse" aria-labelledby="headingOne-2" data-parent="#accordionExample2">
-                      <div class="card-body">
-                        <p>Les candidats qui souhaitent devenir le premier violon de l’Orchestre Pop d’Ottawa pour la saison 2019-2020 devront preparer une audition enregistrée par vidéo et envoyer un lien Youtube, les partitions et un CV à auditions@ottawapopsorchestra.ca avant le 10 septembre 2019 à 17 h (heure de l’Est).</p>
+                    <h5><strong>Rémunération</strong></h5>
+                    <p>
+                      Le/la candidat.e recevra une rémunération de 150,00$ (CENT
+                      CINQUANTE) pour chaque service éligible, y comprises
+                      toutes les répétitions générales et les prestations.
+                      Toutes les autres répétitions ne sont pas sujettes à
+                      compensation.
+                    </p>
 
-                        <h5><strong>Critères d’audition</strong></h5>
-                        <p>Toutes les gammes doivent être jouées à 60 PPM (minimum), en double-croches ascendantes et descendantes avec 8 notes par coup d’archet.</p>
-
-                        <div style="margin-left: 20px;">
-                            <h5><strong>Gamme</strong></h5>
-                            <p>ré majeur 3 octaves</p>
-
-                            <h5><strong>Extraits</strong></h5>
-                            <ul>
-                              <li>Strauss – Don Juan, op. 20, mesures 1-62</li>
-                              <li>Mendelsohn – Midsummer Night’s Dream : Ouverture, mesures 6-81</li>
-                            </ul>
-
-                            <h5><strong>Pièces</strong></h5>
-                            <p>2 pièces contrastées sans dépasser une durée totale de 10 minutes</p>
-                        </div>
-
-                        <h5><strong>Rémunération</strong></h5>
-                        <p>Le/la candidat.e recevra une rémunération de 150,00$ (CENT CINQUANTE) pour chaque service éligible, y comprises toutes les répétitions générales et les prestations. Toutes les autres répétitions ne sont pas sujettes à compensation.</p>
-
-                        <h5><strong>Détails</strong></h5>
-                        <p>Le/la candidat.e choisi.e sera contacté.e avant 17 h (heure de l’Est) le 12 septembre 2019 par courriel ou par téléphone. Cette personne sera invitée à participer au panel d’audition pour les auditions générales les 14 et 15 septembre 2019 de 10 h à 18 h. Le premier violon est prié d’assister à toutes les répétitions prévues à l’horaire, de diriger les répétitions en section et de préparer les coup d’archet en avance. Le premier violon sera à la tête de l’ensemble et recevra le premier droit de refus pour toute fonction supplémentaire de la saison régulière.</p>
-
-                      </div>
-                    </div>
+                    <h5><strong>Détails</strong></h5>
+                    <p>
+                      Le/la candidat.e choisi.e sera contacté.e avant 17 h
+                      (heure de l’Est) le 12 septembre 2019 par courriel ou par
+                      téléphone. Cette personne sera invitée à participer au
+                      panel d’audition pour les auditions générales les 14 et 15
+                      septembre 2019 de 10 h à 18 h. Le premier violon est prié
+                      d’assister à toutes les répétitions prévues à l’horaire,
+                      de diriger les répétitions en section et de préparer les
+                      coup d’archet en avance. Le premier violon sera à la tête
+                      de l’ensemble et recevra le premier droit de refus pour
+                      toute fonction supplémentaire de la saison régulière.
+                    </p>
                   </div>
                 </div>
+              </div>
+            </div>
 
-            <br /><p>Toutes les gammes doivent être jouées à 60 PPM (minimum) à moins d’indication contraire, en doubles croches ascendantes et descendantes (8 notes par coup d’archet pour les cordes).</p>
+            <br />
+            <p>
+              Toutes les gammes doivent être jouées à 60 PPM (minimum) à moins
+              d’indication contraire, en doubles croches ascendantes et
+              descendantes (8 notes par coup d’archet pour les cordes).
+            </p>
             <ul>
-              <li><strong><em>Violon, violoncelle, flûte/piccolo:</em></strong> ré majeur de 2 octaves.</li>
-              <li><strong><em>Alto:</em></strong> sol majeur de 3 octaves.</li>
-              <li><strong><em>Hautbois/cor anglais:</em></strong> mi bémol majeur de 2 octaves.</li>
-              <li><strong><em>Clarinette/clarinette-basse:</em></strong> mi majeur de 3 octaves.</li>
-              <li><strong><em>Cuivres, basson et contrebasse:</em></strong> gamme de 2 octaves de votre choix.</li>
-              <li><strong><em>Percussion (au xylophone):</em></strong> si bémol majeur de 2 octaves et un troisième (si bémol à ré), alternation de bâtons à partir de la main gauche. 80 PPM.</li>
-              <li><strong><em>Harpe:</em></strong> 3 octaves de votre choix ME, 80+PPM.</li>
-              <li><strong><em>Piano:</em></strong> sol mineur mélodique à motion parallèle de 4 octaves, 104 PPM. Accord brisé à 4 notes si majeur tonique avec alternation des notes de 2 octaves (finissant avec la progression d’accord I-IV-164-V-I) ME, 80 PPM.</li>
+              <li>
+                <strong><em>Violon, violoncelle, flûte/piccolo:</em></strong> ré
+                majeur de 2 octaves.
+              </li>
+              <li>
+                <strong><em>Alto:</em></strong> sol majeur de 3 octaves.
+              </li>
+              <li>
+                <strong><em>Hautbois/cor anglais:</em></strong> mi bémol majeur
+                de 2 octaves.
+              </li>
+              <li>
+                <strong><em>Clarinette/clarinette-basse:</em></strong> mi majeur
+                de 3 octaves.
+              </li>
+              <li>
+                <strong><em>Cuivres, basson et contrebasse:</em></strong> gamme
+                de 2 octaves de votre choix.
+              </li>
+              <li>
+                <strong><em>Percussion (au xylophone):</em></strong> si bémol
+                majeur de 2 octaves et un troisième (si bémol à ré), alternation
+                de bâtons à partir de la main gauche. 80 PPM.
+              </li>
+              <li>
+                <strong><em>Harpe:</em></strong> 3 octaves de votre choix ME,
+                80+PPM.
+              </li>
+              <li>
+                <strong><em>Piano:</em></strong> sol mineur mélodique à motion
+                parallèle de 4 octaves, 104 PPM. Accord brisé à 4 notes si
+                majeur tonique avec alternation des notes de 2 octaves
+                (finissant avec la progression d’accord I-IV-164-V-I) ME, 80
+                PPM.
+              </li>
             </ul>
 
-            <br /><h1>RÉSULTATS D’AUDITION</h1>
-            <p>Tous les candidats seront informés des résultats des auditions. Il est possible que les musiciens acceptés seront appelés à jouer pour tout ou quelques-uns des concerts. Tous les candidats seront avisés de quelle classe de musiciens à laquelle ils appartiennent et si la Bourse de développement orchestral leur a été décernée.</p>
+            <br />
+            <h1>RÉSULTATS D’AUDITION</h1>
+            <p>
+              Tous les candidats seront informés des résultats des auditions. Il
+              est possible que les musiciens acceptés seront appelés à jouer
+              pour tout ou quelques-uns des concerts. Tous les candidats seront
+              avisés de quelle classe de musiciens à laquelle ils appartiennent
+              et si la Bourse de développement orchestral leur a été décernée.
+            </p>
 
-            <br /><h1>INFORMATION DE MEMBRIÉTÉ</h1>
-            <p>L’OPO se qualifie d’orchestre semi-professionnel comprenant un mélange de musiciens communautaires et professionnels. La saison de l’OPO se déroule de septembre à mi-mai avec des répétitions hebdomadaires les dimanches soirs de 18 h à 21 h (avec certaines répétitions par section les vendredis de 18 h 30 à 21 h 30) dans la salle 109 du pavillon Perez, 610, rue Cumberland. Les candidats sont demandés d’assister à toutes les répétitions à l’horaire pour la période de répétitions à laquelle ils participent. Les musiciens acceptés ne peuvent rater plus qu’une répétition par période de concert. Les répétitions générales sont obligatoires, sans exception. Les candidats devraient être disponibles pour tous les concerts de la saison (8 et 9 novembre 2019, 20 et 21 mars 2020, 15 et 16 mai 2020) et devraient spécifier à l’audition s’il y a un conflit d’horaire avec les répétitions générales ou les concerts.</p>
-            <p>Tous les membres doivent repasser en audition à chaque saison.</p>
+            <br />
+            <h1>INFORMATION DE MEMBRIÉTÉ</h1>
+            <p>
+              L’OPO se qualifie d’orchestre semi-professionnel comprenant un
+              mélange de musiciens communautaires et professionnels. La saison
+              de l’OPO se déroule de septembre à mi-mai avec des répétitions
+              hebdomadaires les dimanches soirs de 18 h à 21 h (avec certaines
+              répétitions par section les vendredis de 18 h 30 à 21 h 30) dans
+              la salle 109 du pavillon Perez, 610, rue Cumberland. Les candidats
+              sont demandés d’assister à toutes les répétitions à l’horaire pour
+              la période de répétitions à laquelle ils participent. Les
+              musiciens acceptés ne peuvent rater plus qu’une répétition par
+              période de concert. Les répétitions générales sont obligatoires,
+              sans exception. Les candidats devraient être disponibles pour tous
+              les concerts de la saison (8 et 9 novembre 2019, 20 et 21 mars
+              2020, 15 et 16 mai 2020) et devraient spécifier à l’audition s’il
+              y a un conflit d’horaire avec les répétitions générales ou les
+              concerts.
+            </p>
+            <p>
+              Tous les membres doivent repasser en audition à chaque saison.
+            </p>
 
-            <div><a href="/assets/pdf/Ottawa%20Pops%20Orchestra%20Musician%20Policy%20updated%20July%202019.pdf" target="_blank">Ottawa Pops Orchestra Musician Policy</a><br />
+            <div>
+              <a
+                href="/assets/pdf/Ottawa%20Pops%20Orchestra%20Musician%20Policy%20updated%20July%202019.pdf"
+                target="_blank"
+                >Ottawa Pops Orchestra Musician Policy</a
+              ><br />
 
-            <div><a href="/assets/pdf/Orchestral%20Development%20Bursary.pdf" target="_blank">Orchestral Development Bursary</a><br /></div>
+              <div>
+                <a
+                  href="/assets/pdf/Orchestral%20Development%20Bursary.pdf"
+                  target="_blank"
+                  >Orchestral Development Bursary</a
+                ><br />
+              </div>
 
-            <!-- <div  id="audition-reg" style="margin-top: 20px;" class="center">
+              <!-- <div  id="audition-reg" style="margin-top: 20px;" class="center">
               <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScdT5pkOrHJoy5CQCtg096rid4OGPWdKgW2d7QON5qAm8g5Gg/viewform?embedded=true" width="640" height="2520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </div> -->
-
-          </div>
-        </div>
-      </div>
-    </div>
-</div>
- <footer class="elegant-color">
-  <div
-    class="row justify-content-center"
-    style="display: flex; align-items: center;"
-  >
-    <div class="col-lg-2 col-9 footer-col text-center">
-      <img
-        id="footer-logo-full"
-        class="center-block"
-        src="/assets/img/OPO Logo Symbol White.png"
-      />
-      <p style="color: white; margin-top: 1rem;">L’Orchestre Pop d’Ottawa est un organisme sans but lucratif 1017269-3</p>
-    </div>
-    <div class="col-lg-6 footer-col text-center">
-      <hr class="footer-hr-mobile" />
-      <div class="row">
-        <div class="col">
-          <!-- Button trigger modal -->
-          <!-- <button id="subscribe" type="button" class="btn btn-maroon" data-toggle="modal" data-target="#exampleModalCenter">
-                        Inscrivez-vous à notre infolettre <i class="far fa-paper-plane fa-fw"></i>
-                    </button> -->
-        </div>
-      </div>
-      <div class="social-icons text-center row">
-        <div class="col-lg-1 col-2 offset-lg-4 offset-2">
-          <a
-            href="https://www.facebook.com/ottawapopsorchestra/"
-            class="social"
-            target="_blank"
-            ><i class="fab fa-facebook-f fa-2x"></i
-          ></a>
-        </div>
-        <div class="col-lg-1 col-2">
-          <a
-            href="https://twitter.com/OttawaPopsOrch"
-            class="social"
-            target="_blank"
-            ><i class="fab fa-twitter fa-2x"></i
-          ></a>
-        </div>
-        <div class="col-lg-1 col-2">
-          <a
-            href="https://www.instagram.com/ottawapops/"
-            class="social"
-            target="_blank"
-            ><i class="fab fa-instagram fa-2x"></i
-          ></a>
-        </div>
-        <div class="col-lg-1 col-2">
-          <a
-            href="https://www.youtube.com/channel/UCvD4B1NFC_2HD5jxXl3U-SQ?pbjreload=10"
-            class="social"
-            target="_blank"
-            ><i class="fab fa-youtube fa-2x"></i
-          ></a>
-        </div>
-        <!-- Modal -->
-        <div
-          class="modal fade"
-          id="exampleModalCenter"
-          tabindex="-1"
-          role="dialog"
-          aria-labelledby="exampleModalCenterTitle"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-body">
-                <link
-                  href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css"
-                  rel="stylesheet"
-                  type="text/css"
-                />
-                <style type="text/css">
-                  #mc_embed_signup {
-                    background: #fff;
-                    clear: left;
-                    font: 14px Helvetica, Arial, sans-serif;
-                  }
-                  /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-                                       We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-                </style>
-                <div id="mc_embed_signup">
-                  <form
-                    action="https://ottawapopsorchestra.us20.list-manage.com/subscribe/post?u=b1f09a6ff661dacb3f98fcfe3&amp;id=71f457fdc4"
-                    method="post"
-                    id="mc-embedded-subscribe-form"
-                    name="mc-embedded-subscribe-form"
-                    class="validate"
-                    target="_blank"
-                    novalidate
-                  >
-                    <div id="mc_embed_signup_scroll">
-                      <h2>Subscribe to our mailing list</h2>
-                      <div class="indicates-required">
-                        <span class="asterisk">*</span> indicates required
-                      </div>
-                      <div class="mc-field-group">
-                        <label for="mce-EMAIL"
-                          >Email Address <span class="asterisk">*</span>
-                        </label>
-                        <input
-                          type="email"
-                          value=""
-                          name="EMAIL"
-                          class="required email"
-                          id="mce-EMAIL"
-                        />
-                      </div>
-                      <div class="mc-field-group">
-                        <label for="mce-FNAME">First Name </label>
-                        <input
-                          type="text"
-                          value=""
-                          name="FNAME"
-                          class=""
-                          id="mce-FNAME"
-                        />
-                      </div>
-                      <div class="mc-field-group">
-                        <label for="mce-LNAME">Last Name </label>
-                        <input
-                          type="text"
-                          value=""
-                          name="LNAME"
-                          class=""
-                          id="mce-LNAME"
-                        />
-                      </div>
-                      <div class="mc-field-group">
-                        <label for="mce-MMERGE5">Age </label>
-                        <input
-                          type="text"
-                          value=""
-                          name="MMERGE5"
-                          class=""
-                          id="mce-MMERGE5"
-                        />
-                      </div>
-                      <div class="mc-field-group input-group">
-                        <strong>Would you like to subscribe to: </strong>
-                        <ul>
-                          <li>
-                            <input
-                              type="checkbox"
-                              value="1"
-                              name="group[881][1]"
-                              id="mce-group[881]-881-0"
-                            /><label for="mce-group[881]-881-0"
-                              >News and Special Offers</label
-                            >
-                          </li>
-                          <li>
-                            <input
-                              type="checkbox"
-                              value="2"
-                              name="group[881][2]"
-                              id="mce-group[881]-881-1"
-                            /><label for="mce-group[881]-881-1"
-                              >Pops Series</label
-                            >
-                          </li>
-                          <li>
-                            <input
-                              type="checkbox"
-                              value="4"
-                              name="group[881][4]"
-                              id="mce-group[881]-881-2"
-                            /><label for="mce-group[881]-881-2"
-                              >Classics Series</label
-                            >
-                          </li>
-                          <li>
-                            <input
-                              type="checkbox"
-                              value="8"
-                              name="group[881][8]"
-                              id="mce-group[881]-881-3"
-                            /><label for="mce-group[881]-881-3"
-                              >Season Updates</label
-                            >
-                          </li>
-                          <li>
-                            <input
-                              type="checkbox"
-                              value="16"
-                              name="group[881][16]"
-                              id="mce-group[881]-881-4"
-                            /><label for="mce-group[881]-881-4"
-                              >Education</label
-                            >
-                          </li>
-                        </ul>
-                      </div>
-                      <div id="mce-responses" class="clear">
-                        <div
-                          class="response"
-                          id="mce-error-response"
-                          style="display: none;"
-                        ></div>
-                        <div
-                          class="response"
-                          id="mce-success-response"
-                          style="display: none;"
-                        ></div>
-                      </div>
-                      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                      <div
-                        style="position: absolute; left: -5000px;"
-                        aria-hidden="true"
-                      >
-                        <input
-                          type="text"
-                          name="b_b1f09a6ff661dacb3f98fcfe3_71f457fdc4"
-                          tabindex="-1"
-                          value=""
-                        />
-                      </div>
-                      <div class="clear">
-                        <input
-                          type="submit"
-                          value="Subscribe"
-                          name="subscribe"
-                          id="mc-embedded-subscribe"
-                          class="button"
-                        />
-                      </div>
-                    </div>
-                  </form>
-                </div>
-                <script
-                  type="text/javascript"
-                  src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
-                ></script>
-                <script type="text/javascript">
-                  (function ($) {
-                    window.fnames = new Array();
-                    window.ftypes = new Array();
-                    fnames[0] = "EMAIL";
-                    ftypes[0] = "email";
-                    fnames[1] = "FNAME";
-                    ftypes[1] = "text";
-                    fnames[2] = "LNAME";
-                    ftypes[2] = "text";
-                    fnames[3] = "ADDRESS";
-                    ftypes[3] = "address";
-                    fnames[4] = "PHONE";
-                    ftypes[4] = "phone";
-                    fnames[5] = "MMERGE5";
-                    ftypes[5] = "text";
-                  })(jQuery);
-                  var $mcj = jQuery.noConflict(true);
-                </script>
-                <!--End mc_embed_signup-->
-              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="col-lg-3 footer-col" style="color: white;">
-      <hr class="footer-hr-mobile" />
-      <p style="font-size: 22px;">Billetterie</p>
-      <hr class="footer-hr" />
-      <p id="box_office">
-        Téléphone : 613-580-2700, 10 h à 20 h tous les jours<br />
-        Sans frais : 1-866 752-5231 <br />
-        En personne : lundi au samedi, 17 h à 20 h 30<br />
-        En ligne : 24/7<br />
-      </p>
-    </div>
-  </div>
+    <footer class="elegant-color">
+      <div
+        class="row justify-content-center"
+        style="display: flex; align-items: center;"
+      >
+        <div class="col-lg-2 col-9 footer-col text-center">
+          <img
+            id="footer-logo-full"
+            class="center-block"
+            src="/assets/img/OPO Logo Symbol White.png"
+          />
+          <p style="color: white; margin-top: 1rem;">
+            L’Orchestre Pop d’Ottawa est un organisme sans but lucratif
+            1017269-3
+          </p>
+        </div>
+        <div class="col-lg-6 footer-col text-center">
+          <hr class="footer-hr-mobile" />
+          <div class="row">
+            <div class="col">
+              <!-- Button trigger modal -->
+              <button
+                id="subscribe"
+                type="button"
+                class="btn btn-maroon"
+                data-toggle="modal"
+                data-target="#exampleModalCenter"
+              >
+                Inscrivez-vous à notre infolettre
+                <i class="far fa-paper-plane fa-fw"></i>
+              </button>
+            </div>
+          </div>
+          <div class="social-icons text-center row">
+            <div class="col-lg-1 col-2 offset-lg-4 offset-2">
+              <a
+                href="https://www.facebook.com/ottawapopsorchestra/"
+                class="social"
+                target="_blank"
+                ><i class="fab fa-facebook-f fa-2x"></i
+              ></a>
+            </div>
+            <div class="col-lg-1 col-2">
+              <a
+                href="https://twitter.com/OttawaPopsOrch"
+                class="social"
+                target="_blank"
+                ><i class="fab fa-twitter fa-2x"></i
+              ></a>
+            </div>
+            <div class="col-lg-1 col-2">
+              <a
+                href="https://www.instagram.com/ottawapops/"
+                class="social"
+                target="_blank"
+                ><i class="fab fa-instagram fa-2x"></i
+              ></a>
+            </div>
+            <div class="col-lg-1 col-2">
+              <a
+                href="https://www.youtube.com/channel/UCvD4B1NFC_2HD5jxXl3U-SQ?pbjreload=10"
+                class="social"
+                target="_blank"
+                ><i class="fab fa-youtube fa-2x"></i
+              ></a>
+            </div>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModalCenter"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalCenterTitle"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div id="fd-form-5ede4dd1b9c153002b5adc11"></div>
+                    <script>
+                      window.fd("form", {
+                        formId: "5ede4dd1b9c153002b5adc11",
+                        containerEl: "#fd-form-5ede4dd1b9c153002b5adc11",
+                      });
+                    </script>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 footer-col" style="color: white;">
+          <hr class="footer-hr-mobile" />
+          <p style="font-size: 22px;">Billetterie</p>
+          <hr class="footer-hr" />
+          <p id="box_office">
+            Téléphone : 613-580-2700, 10 h à 20 h tous les jours<br />
+            Sans frais : 1-866 752-5231 <br />
+            En personne : lundi au samedi, 17 h à 20 h 30<br />
+            En ligne : 24/7<br />
+          </p>
+        </div>
+      </div>
 
-  <div class="row justify-content-center pages-row">
-    
-    <div class="col-md-2 text-center pages">
-      <a href="/fr">Page principale</a>
-    </div>
-    
-    <div class="col-md-2 text-center pages">
-      <a href="/fr/about">À propos</a>
-    </div>
-    <div class="col-md-2 text-center pages">
-      <a href="/fr/2019-2020/">Concerts</a>
-    </div>
-    <div class="col-md-2 text-center pages">
-      <a href="/fr/conductors/">Orchestre</a>
-    </div>
-    <!-- <div class="col-md-2 text-center pages"><a href="news.html">News & Media</a></div> -->
-    <div class="col-md-2 text-center pages">
-      <a href="/fr/contact/">Contactez-nous</a>
-    </div>
-  </div>
-</footer>
+      <div class="row justify-content-center pages-row">
+        <div class="col-md-2 text-center pages">
+          <a href="/fr">Page principale</a>
+        </div>
 
+        <div class="col-md-2 text-center pages">
+          <a href="/fr/about">À propos</a>
+        </div>
+        <div class="col-md-2 text-center pages">
+          <a href="/fr/2019-2020/">Concerts</a>
+        </div>
+        <div class="col-md-2 text-center pages">
+          <a href="/fr/conductors/">Orchestre</a>
+        </div>
+        <!-- <div class="col-md-2 text-center pages"><a href="news.html">News & Media</a></div> -->
+        <div class="col-md-2 text-center pages">
+          <a href="/fr/contact/">Contactez-nous</a>
+        </div>
+      </div>
+    </footer>
 
     <!-- JQuery -->
     <script
@@ -722,7 +838,7 @@
 
     <script type="text/javascript">
       /* curator-feed */
-      (function() {
+      (function () {
         var i,
           e,
           d = document,

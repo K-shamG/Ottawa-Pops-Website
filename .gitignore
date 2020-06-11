@@ -1,6 +1,12 @@
 
-# Created by https://www.gitignore.io/api/webstorm
-# Edit at https://www.gitignore.io/?templates=webstorm
+# Created by https://www.gitignore.io/api/jekyll,webstorm
+# Edit at https://www.gitignore.io/?templates=jekyll,webstorm
+
+### Jekyll ###
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
 
 ### WebStorm ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
@@ -36,6 +42,11 @@
 # .idea/modules.xml
 # .idea/*.iml
 # .idea/modules
+<<<<<<< HEAD
+# *.iml
+# *.ipr
+=======
+>>>>>>> f8e0104d2fb7d6e2eb4b582ba5c71876b93e2ba4
 
 # CMake
 cmake-build-*/
@@ -70,9 +81,12 @@ fabric.properties
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
 
+<<<<<<< HEAD
+=======
 # JetBrains templates
 **___jb_tmp___
 
+>>>>>>> f8e0104d2fb7d6e2eb4b582ba5c71876b93e2ba4
 ### WebStorm Patch ###
 # Comment Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-215987721
 
@@ -84,4 +98,8 @@ fabric.properties
 # Sonarlint plugin
 .idea/sonarlint
 
+<<<<<<< HEAD
+# End of https://www.gitignore.io/api/jekyll,webstorm
+=======
 # End of https://www.gitignore.io/api/webstorm
+>>>>>>> f8e0104d2fb7d6e2eb4b582ba5c71876b93e2ba4

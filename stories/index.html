@@ -62,9 +62,9 @@
     <!-- Facebook Pixel Code -->
 
     <script>
-      !(function(f, b, e, v, n, t, s) {
+      !(function (f, b, e, v, n, t, s) {
         if (f.fbq) return;
-        n = f.fbq = function() {
+        n = f.fbq = function () {
           n.callMethod
             ? n.callMethod.apply(n, arguments)
             : n.queue.push(arguments);
@@ -129,14 +129,14 @@
   In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
     <script>
       function gtag_report_conversion(url) {
-        var callback = function() {
+        var callback = function () {
           if (typeof url != "undefined") {
             window.location = url;
           }
         };
         gtag("event", "conversion", {
           send_to: "AW-705441703/kqN2CJr0ubEBEKffsNAC",
-          event_callback: callback
+          event_callback: callback,
         });
         return false;
       }
@@ -159,7 +159,7 @@
 
     <!-- Google Tag Manager -->
     <script>
-      (function(w, d, s, l, i) {
+      (function (w, d, s, l, i) {
         w[l] = w[l] || [];
         w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
         var f = d.getElementsByTagName(s)[0],
@@ -179,6 +179,80 @@
       src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
     ></script>
     <!-- End Google Ad Sense -->
+
+    <!-- Flodesk Newsletter -->
+    <script>
+      (function (w, d, t, s, n) {
+        w.FlodeskObject = n;
+        var fn = function () {
+          (w[n].q = w[n].q || []).push(arguments);
+        };
+        w[n] = w[n] || fn;
+        var f = d.getElementsByTagName(t)[0];
+        var e = d.createElement(t);
+        var h = "?v=" + new Date().getTime();
+        e.async = true;
+        e.src = s + h;
+        f.parentNode.insertBefore(e, f);
+      })(
+        window,
+        document,
+        "script",
+        "https://assets.flodesk.com/universal.js",
+        "fd"
+      );
+    </script>
+    <!-- End Flowdesk Newsletter -->
+
+    <!-- Flodesk Newsletter FR-->
+    <script>
+      (function (w, d, t, s, n) {
+        w.FlodeskObject = n;
+        var fn = function () {
+          (w[n].q = w[n].q || []).push(arguments);
+        };
+        w[n] = w[n] || fn;
+        var f = d.getElementsByTagName(t)[0];
+        var e = d.createElement(t);
+        var h = "?v=" + new Date().getTime();
+        e.async = true;
+        e.src = s + h;
+        f.parentNode.insertBefore(e, f);
+      })(
+        window,
+        document,
+        "script",
+        "https://assets.flodesk.com/universal.js",
+        "fd"
+      );
+    </script>
+    <!-- End Flodesk Newsletter FR-->
+    <!-- Flodesk Stories Only -->
+    <script>
+      (function (w, d, t, s, n) {
+        w.FlodeskObject = n;
+        var fn = function () {
+          (w[n].q = w[n].q || []).push(arguments);
+        };
+        w[n] = w[n] || fn;
+        var f = d.getElementsByTagName(t)[0];
+        var e = d.createElement(t);
+        var h = "?v=" + new Date().getTime();
+        e.async = true;
+        e.src = s + h;
+        f.parentNode.insertBefore(e, f);
+      })(
+        window,
+        document,
+        "script",
+        "https://assets.flodesk.com/universal.js",
+        "fd"
+      );
+      window.fd("form", {
+        formId: "5ede5170d832e40026fdb90a",
+      });
+    </script>
+    <!-- End Flodesk Stories Only -->
   </head>
 
   <body>
@@ -188,401 +262,296 @@
         src="https://www.googletagmanager.com/ns.html?id=GTM-5TGMTQZ"
         height="0"
         width="0"
-        style="display:none;visibility:hidden"
+        style="display: none; visibility: hidden;"
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!--Navbar-->
-<nav id="navbar" class="navbar navbar-expand-lg navbar-dark grey darken-1 justify-content-center fixed-top scrolling-navbar">
-    <!-- Navbar brand -->
-    
-        <a style="padding-left: 3%" class="navbar-brand" href="/">
-            
-            <img id="logo" src="/assets/img/OPO-Logo-Primary.png" height="100" alt="">
-        </a>
-        <!-- Collapse button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Collapsible content -->
-        <div class="collapse navbar-collapse" id="basicExampleNav">
-            <!-- Links -->
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="/about">About Us</a>
-                </li>
-                <!-- Concerts -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Concerts</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <!-- <a class="dropdown-item" href="/2018-2019/">2018 - 2019</a> -->
-                        <a class="dropdown-item" href="/2019-2020/">2019 - 2020</a>
-                        <a class="dropdown-item" href="/season-tickets/">Season Tickets</a>
-                    </div>
-                </li>
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-lg navbar-dark grey darken-1 justify-content-center fixed-top scrolling-navbar"
+    >
+      <!-- Navbar brand -->
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Orchestra</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/auditions/">Auditions</a>
-                        <a class="dropdown-item" href="/conductors/">Conductors</a>
-                        <!-- <a class="dropdown-item" href="musicians.html">Musicians</a> -->
-                    </div>
-                </li>
-
-                <li class="nav-item dropdown">
-                    <div class="btn-group">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">community</a>
-                    </div>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/student-matinees/">Student Matinees</a>
-                        <a class="dropdown-item" href="/stories/">OPO Stories</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/contact/">contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/covid-19/">COVID-19</a>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li class="nav-item ">
-                    
-                    <a class="nav-link" href="/fr/stories/">FR</a>
-                    
-                </li>
-            </ul>
-        </div>
-</nav>
-<!--/.Navbar--> <div class="content main container-fluid">
-    <img src="/assets/img/stories/OPO Stories Banner.png" width="100%" />
-    <div class="stories">
-        <div class="stories-row">
-            <div class="row">
-                <div class="col-lg-4">
-                    <a href="/stories/story1" target="_blank"><img title="The Ottawa Pops Orchestra Presents Stories Through Music Series " alt="The Ottawa Pops Orchestra Presents Stories Through Music Series " class="concert-detail" src="/assets/img/stories/story1/Photo 1- Neon Sign.jpg" /></a>
-                </div>
-                <div class="col-lg-8 concert-info">
-                    <div class="row">
-                        <div class="col-md">
-                            <a href="/stories/story1" target="_blank"><h5 class="story-title">The Ottawa Pops Orchestra Presents Stories Through Music Series </h5></a>
-                            <p class="story-preview">Music inspires stories and we want to help tell them. Each week, we’ll be sharing a unique playlist and story chosen by diverse members of our community and we invite you to listen and read along! </p>
-                        </div>
-                    </div>
-                    <div class="story-description">
-                        <div class="row">
-                            <div class="col-md-12 col-sm">
-                                <strong>Written By: </strong>Ottawa Pops Orchestra
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 col-sm">
-                                <strong>Published On: </strong>June 8 2020
-                            </div>
-                        </div>
-                        <button class="btn btn-outline-purple read-more" onclick="location.href='/stories/story1';">read more</button>
-                    </div>
-                </div>
+      <a style="padding-left: 3%;" class="navbar-brand" href="/">
+        <img
+          id="logo"
+          src="/assets/img/OPO-Logo-Primary.png"
+          height="100"
+          alt=""
+        />
+      </a>
+      <!-- Collapse button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#basicExampleNav"
+        aria-controls="basicExampleNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="basicExampleNav">
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About Us</a>
+          </li>
+          <!-- Concerts -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Concerts</a
+            >
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <!-- <a class="dropdown-item" href="/2018-2019/">2018 - 2019</a> -->
+              <a class="dropdown-item" href="/2019-2020/">2019 - 2020</a>
+              <a class="dropdown-item" href="/season-tickets/"
+                >Season Tickets</a
+              >
             </div>
-        </div>
-    </div>
-</div>
- <footer class="elegant-color">
-  <div
-    class="row justify-content-center"
-    style="display: flex; align-items: center;"
-  >
-    <div class="col-lg-2 col-9 footer-col text-center">
-      <img
-        id="footer-logo-full"
-        class="center-block"
-        src="/assets/img/OPO Logo Symbol White.png"
-      />
-      <p style="color: white; margin-top: 1rem;">The Ottawa Pops Orchestra is a Registered Not-for-Profit Corporation 1017269-3</p>
-    </div>
-    <div class="col-lg-6 footer-col text-center">
-      <hr class="footer-hr-mobile" />
-      <div class="row">
-        <div class="col">
-          <!-- Button trigger modal -->
-          <!-- <button id="subscribe" type="button" class="btn btn-maroon" data-toggle="modal" data-target="#exampleModalCenter">
-                        Subscribe to our newsletter <i class="far fa-paper-plane fa-fw"></i>
-                    </button> -->
-        </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink2"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Orchestra</a
+            >
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/auditions/">Auditions</a>
+              <a class="dropdown-item" href="/conductors/">Conductors</a>
+              <!-- <a class="dropdown-item" href="musicians.html">Musicians</a> -->
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <div class="btn-group">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink3"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >community</a
+              >
+            </div>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/student-matinees/"
+                >Student Matinees</a
+              >
+              <a class="dropdown-item" href="/stories/">OPO Stories</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact/">contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/covid-19/">COVID-19</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item">
+            <a class="nav-link" href="/fr/stories/">FR</a>
+          </li>
+        </ul>
       </div>
-      <div class="social-icons text-center row">
-        <div class="col-lg-1 col-2 offset-lg-4 offset-2">
-          <a
-            href="https://www.facebook.com/ottawapopsorchestra/"
-            class="social"
-            target="_blank"
-            ><i class="fab fa-facebook-f fa-2x"></i
-          ></a>
-        </div>
-        <div class="col-lg-1 col-2">
-          <a
-            href="https://twitter.com/OttawaPopsOrch"
-            class="social"
-            target="_blank"
-            ><i class="fab fa-twitter fa-2x"></i
-          ></a>
-        </div>
-        <div class="col-lg-1 col-2">
-          <a
-            href="https://www.instagram.com/ottawapops/"
-            class="social"
-            target="_blank"
-            ><i class="fab fa-instagram fa-2x"></i
-          ></a>
-        </div>
-        <div class="col-lg-1 col-2">
-          <a
-            href="https://www.youtube.com/channel/UCvD4B1NFC_2HD5jxXl3U-SQ?pbjreload=10"
-            class="social"
-            target="_blank"
-            ><i class="fab fa-youtube fa-2x"></i
-          ></a>
-        </div>
-        <!-- Modal -->
-        <div
-          class="modal fade"
-          id="exampleModalCenter"
-          tabindex="-1"
-          role="dialog"
-          aria-labelledby="exampleModalCenterTitle"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-body">
-                <link
-                  href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css"
-                  rel="stylesheet"
-                  type="text/css"
-                />
-                <style type="text/css">
-                  #mc_embed_signup {
-                    background: #fff;
-                    clear: left;
-                    font: 14px Helvetica, Arial, sans-serif;
-                  }
-                  /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-                                       We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-                </style>
-                <div id="mc_embed_signup">
-                  <form
-                    action="https://ottawapopsorchestra.us20.list-manage.com/subscribe/post?u=b1f09a6ff661dacb3f98fcfe3&amp;id=71f457fdc4"
-                    method="post"
-                    id="mc-embedded-subscribe-form"
-                    name="mc-embedded-subscribe-form"
-                    class="validate"
-                    target="_blank"
-                    novalidate
+    </nav>
+    <!--/.Navbar-->
+    <div class="content main container-fluid">
+      <img src="/assets/img/stories/OPO Stories Banner.png" width="100%" />
+      <div class="stories">
+        <div class="stories-row">
+          <div class="row">
+            <div class="col-lg-4">
+              <a href="/stories/story1" target="_blank"
+                ><img
+                  title="The Ottawa Pops Orchestra Presents Stories Through Music Series "
+                  alt="The Ottawa Pops Orchestra Presents Stories Through Music Series "
+                  class="concert-detail"
+                  src="/assets/img/stories/story1/Photo 1- Neon Sign.jpg"
+              /></a>
+            </div>
+            <div class="col-lg-8 concert-info">
+              <div class="row">
+                <div class="col-md">
+                  <a href="/stories/story1" target="_blank"
+                    ><h5 class="story-title">
+                      The Ottawa Pops Orchestra Presents Stories Through Music
+                      Series
+                    </h5></a
                   >
-                    <div id="mc_embed_signup_scroll">
-                      <h2>Subscribe to our mailing list</h2>
-                      <div class="indicates-required">
-                        <span class="asterisk">*</span> indicates required
-                      </div>
-                      <div class="mc-field-group">
-                        <label for="mce-EMAIL"
-                          >Email Address <span class="asterisk">*</span>
-                        </label>
-                        <input
-                          type="email"
-                          value=""
-                          name="EMAIL"
-                          class="required email"
-                          id="mce-EMAIL"
-                        />
-                      </div>
-                      <div class="mc-field-group">
-                        <label for="mce-FNAME">First Name </label>
-                        <input
-                          type="text"
-                          value=""
-                          name="FNAME"
-                          class=""
-                          id="mce-FNAME"
-                        />
-                      </div>
-                      <div class="mc-field-group">
-                        <label for="mce-LNAME">Last Name </label>
-                        <input
-                          type="text"
-                          value=""
-                          name="LNAME"
-                          class=""
-                          id="mce-LNAME"
-                        />
-                      </div>
-                      <div class="mc-field-group">
-                        <label for="mce-MMERGE5">Age </label>
-                        <input
-                          type="text"
-                          value=""
-                          name="MMERGE5"
-                          class=""
-                          id="mce-MMERGE5"
-                        />
-                      </div>
-                      <div class="mc-field-group input-group">
-                        <strong>Would you like to subscribe to: </strong>
-                        <ul>
-                          <li>
-                            <input
-                              type="checkbox"
-                              value="1"
-                              name="group[881][1]"
-                              id="mce-group[881]-881-0"
-                            /><label for="mce-group[881]-881-0"
-                              >News and Special Offers</label
-                            >
-                          </li>
-                          <li>
-                            <input
-                              type="checkbox"
-                              value="2"
-                              name="group[881][2]"
-                              id="mce-group[881]-881-1"
-                            /><label for="mce-group[881]-881-1"
-                              >Pops Series</label
-                            >
-                          </li>
-                          <li>
-                            <input
-                              type="checkbox"
-                              value="4"
-                              name="group[881][4]"
-                              id="mce-group[881]-881-2"
-                            /><label for="mce-group[881]-881-2"
-                              >Classics Series</label
-                            >
-                          </li>
-                          <li>
-                            <input
-                              type="checkbox"
-                              value="8"
-                              name="group[881][8]"
-                              id="mce-group[881]-881-3"
-                            /><label for="mce-group[881]-881-3"
-                              >Season Updates</label
-                            >
-                          </li>
-                          <li>
-                            <input
-                              type="checkbox"
-                              value="16"
-                              name="group[881][16]"
-                              id="mce-group[881]-881-4"
-                            /><label for="mce-group[881]-881-4"
-                              >Education</label
-                            >
-                          </li>
-                        </ul>
-                      </div>
-                      <div id="mce-responses" class="clear">
-                        <div
-                          class="response"
-                          id="mce-error-response"
-                          style="display: none;"
-                        ></div>
-                        <div
-                          class="response"
-                          id="mce-success-response"
-                          style="display: none;"
-                        ></div>
-                      </div>
-                      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                      <div
-                        style="position: absolute; left: -5000px;"
-                        aria-hidden="true"
-                      >
-                        <input
-                          type="text"
-                          name="b_b1f09a6ff661dacb3f98fcfe3_71f457fdc4"
-                          tabindex="-1"
-                          value=""
-                        />
-                      </div>
-                      <div class="clear">
-                        <input
-                          type="submit"
-                          value="Subscribe"
-                          name="subscribe"
-                          id="mc-embedded-subscribe"
-                          class="button"
-                        />
-                      </div>
-                    </div>
-                  </form>
+                  <p class="story-preview">
+                    Music inspires stories and we want to help tell them. Each
+                    week, we’ll be sharing a unique playlist and story chosen by
+                    diverse members of our community and we invite you to listen
+                    and read along!
+                  </p>
                 </div>
-                <script
-                  type="text/javascript"
-                  src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
-                ></script>
-                <script type="text/javascript">
-                  (function ($) {
-                    window.fnames = new Array();
-                    window.ftypes = new Array();
-                    fnames[0] = "EMAIL";
-                    ftypes[0] = "email";
-                    fnames[1] = "FNAME";
-                    ftypes[1] = "text";
-                    fnames[2] = "LNAME";
-                    ftypes[2] = "text";
-                    fnames[3] = "ADDRESS";
-                    ftypes[3] = "address";
-                    fnames[4] = "PHONE";
-                    ftypes[4] = "phone";
-                    fnames[5] = "MMERGE5";
-                    ftypes[5] = "text";
-                  })(jQuery);
-                  var $mcj = jQuery.noConflict(true);
-                </script>
-                <!--End mc_embed_signup-->
+              </div>
+              <div class="story-description">
+                <div class="row">
+                  <div class="col-md-12 col-sm">
+                    <strong>Written By: </strong>Ottawa Pops Orchestra
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 col-sm">
+                    <strong>Published On: </strong>June 8 2020
+                  </div>
+                </div>
+                <button
+                  class="btn btn-outline-purple read-more"
+                  onclick="location.href='/stories/story1';"
+                >
+                  read more
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="col-lg-3 footer-col" style="color: white;">
-      <hr class="footer-hr-mobile" />
-      <p style="font-size: 22px;">Box Office</p>
-      <hr class="footer-hr" />
-      <p id="box_office">
-        Telephone: 613-580-2700, 10 am to 8pm daily<br />
-        Toll-free: 1-866-752-5231<br />
-        In Person: Mon to Sat, 5 pm to 8:30 pm<br />
-        Online: 24/7<br />
-      </p>
-    </div>
-  </div>
+    <footer class="elegant-color">
+      <div
+        class="row justify-content-center"
+        style="display: flex; align-items: center;"
+      >
+        <div class="col-lg-2 col-9 footer-col text-center">
+          <img
+            id="footer-logo-full"
+            class="center-block"
+            src="/assets/img/OPO Logo Symbol White.png"
+          />
+          <p style="color: white; margin-top: 1rem;">
+            The Ottawa Pops Orchestra is a Registered Not-for-Profit Corporation
+            1017269-3
+          </p>
+        </div>
+        <div class="col-lg-6 footer-col text-center">
+          <hr class="footer-hr-mobile" />
+          <div class="row">
+            <div class="col">
+              <!-- Button trigger modal -->
+              <button
+                id="subscribe"
+                type="button"
+                class="btn btn-maroon"
+                data-toggle="modal"
+                data-target="#exampleModalCenter"
+              >
+                Subscribe to our newsletter
+                <i class="far fa-paper-plane fa-fw"></i>
+              </button>
+            </div>
+          </div>
+          <div class="social-icons text-center row">
+            <div class="col-lg-1 col-2 offset-lg-4 offset-2">
+              <a
+                href="https://www.facebook.com/ottawapopsorchestra/"
+                class="social"
+                target="_blank"
+                ><i class="fab fa-facebook-f fa-2x"></i
+              ></a>
+            </div>
+            <div class="col-lg-1 col-2">
+              <a
+                href="https://twitter.com/OttawaPopsOrch"
+                class="social"
+                target="_blank"
+                ><i class="fab fa-twitter fa-2x"></i
+              ></a>
+            </div>
+            <div class="col-lg-1 col-2">
+              <a
+                href="https://www.instagram.com/ottawapops/"
+                class="social"
+                target="_blank"
+                ><i class="fab fa-instagram fa-2x"></i
+              ></a>
+            </div>
+            <div class="col-lg-1 col-2">
+              <a
+                href="https://www.youtube.com/channel/UCvD4B1NFC_2HD5jxXl3U-SQ?pbjreload=10"
+                class="social"
+                target="_blank"
+                ><i class="fab fa-youtube fa-2x"></i
+              ></a>
+            </div>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModalCenter"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalCenterTitle"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div id="fd-form-5ede4946b9c153002b5adc0f"></div>
+                    <script>
+                      window.fd("form", {
+                        formId: "5ede4946b9c153002b5adc0f",
+                        containerEl: "#fd-form-5ede4946b9c153002b5adc0f",
+                      });
+                    </script>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 footer-col" style="color: white;">
+          <hr class="footer-hr-mobile" />
+          <p style="font-size: 22px;">Box Office</p>
+          <hr class="footer-hr" />
+          <p id="box_office">
+            Telephone: 613-580-2700, 10 am to 8pm daily<br />
+            Toll-free: 1-866-752-5231<br />
+            In Person: Mon to Sat, 5 pm to 8:30 pm<br />
+            Online: 24/7<br />
+          </p>
+        </div>
+      </div>
 
-  <div class="row justify-content-center pages-row">
-    
-    <div class="col-md-2 text-center pages">
-      <a href="/">home</a>
-    </div>
-    
-    <div class="col-md-2 text-center pages">
-      <a href="/about">About Us</a>
-    </div>
-    <div class="col-md-2 text-center pages">
-      <a href="/2019-2020/">Concerts</a>
-    </div>
-    <div class="col-md-2 text-center pages">
-      <a href="/conductors/">Orchestra</a>
-    </div>
-    <!-- <div class="col-md-2 text-center pages"><a href="news.html">News & Media</a></div> -->
-    <div class="col-md-2 text-center pages">
-      <a href="/contact/">contact</a>
-    </div>
-  </div>
-</footer>
+      <div class="row justify-content-center pages-row">
+        <div class="col-md-2 text-center pages">
+          <a href="/">home</a>
+        </div>
 
+        <div class="col-md-2 text-center pages">
+          <a href="/about">About Us</a>
+        </div>
+        <div class="col-md-2 text-center pages">
+          <a href="/2019-2020/">Concerts</a>
+        </div>
+        <div class="col-md-2 text-center pages">
+          <a href="/conductors/">Orchestra</a>
+        </div>
+        <!-- <div class="col-md-2 text-center pages"><a href="news.html">News & Media</a></div> -->
+        <div class="col-md-2 text-center pages">
+          <a href="/contact/">contact</a>
+        </div>
+      </div>
+    </footer>
 
     <!-- JQuery -->
     <script
@@ -624,7 +593,7 @@
 
     <script type="text/javascript">
       /* curator-feed */
-      (function() {
+      (function () {
         var i,
           e,
           d = document,
