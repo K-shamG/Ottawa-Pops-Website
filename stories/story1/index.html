@@ -202,6 +202,30 @@
       );
     </script>
     <!-- End Flowdesk Newsletter -->
+
+    <!-- Flodesk Newsletter FR-->
+    <script>
+      (function (w, d, t, s, n) {
+        w.FlodeskObject = n;
+        var fn = function () {
+          (w[n].q = w[n].q || []).push(arguments);
+        };
+        w[n] = w[n] || fn;
+        var f = d.getElementsByTagName(t)[0];
+        var e = d.createElement(t);
+        var h = "?v=" + new Date().getTime();
+        e.async = true;
+        e.src = s + h;
+        f.parentNode.insertBefore(e, f);
+      })(
+        window,
+        document,
+        "script",
+        "https://assets.flodesk.com/universal.js",
+        "fd"
+      );
+    </script>
+    <!-- End Flodesk Newsletter FR-->
   </head>
 
   <body>
@@ -216,358 +240,242 @@
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!--Navbar-->
-    <nav
-      id="navbar"
-      class="navbar navbar-expand-lg navbar-dark grey darken-1 justify-content-center fixed-top scrolling-navbar"
-    >
-      <!-- Navbar brand -->
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark grey darken-1 justify-content-center fixed-top scrolling-navbar">
+    <!-- Navbar brand -->
+    
+        <a style="padding-left: 3%" class="navbar-brand" href="/">
+            
+            <img id="logo" src="/assets/img/OPO-Logo-Primary.png" height="100" alt="">
+        </a>
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="basicExampleNav">
+            <!-- Links -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">About Us</a>
+                </li>
+                <!-- Concerts -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Concerts</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <!-- <a class="dropdown-item" href="/2018-2019/">2018 - 2019</a> -->
+                        <a class="dropdown-item" href="/2019-2020/">2019 - 2020</a>
+                        <a class="dropdown-item" href="/season-tickets/">Season Tickets</a>
+                    </div>
+                </li>
 
-      <a style="padding-left: 3%;" class="navbar-brand" href="/">
-        <img
-          id="logo"
-          src="/assets/img/OPO-Logo-Primary.png"
-          height="100"
-          alt=""
-        />
-      </a>
-      <!-- Collapse button -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#basicExampleNav"
-        aria-controls="basicExampleNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- Collapsible content -->
-      <div class="collapse navbar-collapse" id="basicExampleNav">
-        <!-- Links -->
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="/about">About Us</a>
-          </li>
-          <!-- Concerts -->
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdownMenuLink"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              >Concerts</a
-            >
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <!-- <a class="dropdown-item" href="/2018-2019/">2018 - 2019</a> -->
-              <a class="dropdown-item" href="/2019-2020/">2019 - 2020</a>
-              <a class="dropdown-item" href="/season-tickets/"
-                >Season Tickets</a
-              >
-            </div>
-          </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Orchestra</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/auditions/">Auditions</a>
+                        <a class="dropdown-item" href="/conductors/">Conductors</a>
+                        <!-- <a class="dropdown-item" href="musicians.html">Musicians</a> -->
+                    </div>
+                </li>
 
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdownMenuLink2"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              >Orchestra</a
-            >
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="/auditions/">Auditions</a>
-              <a class="dropdown-item" href="/conductors/">Conductors</a>
-              <!-- <a class="dropdown-item" href="musicians.html">Musicians</a> -->
-            </div>
-          </li>
-
-          <li class="nav-item dropdown">
-            <div class="btn-group">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdownMenuLink3"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-                >community</a
-              >
-            </div>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="/student-matinees/"
-                >Student Matinees</a
-              >
-              <a class="dropdown-item" href="/stories/">OPO Stories</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/contact/">contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/covid-19/">COVID-19</a>
-          </li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li class="nav-item">
-            <a class="nav-link" href="/fr/stories/story1/">FR</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!--/.Navbar-->
-    <div class="content main container-fluid story-single">
-      <div class="story-single-content">
-        <h5 class="story-single-title">
-          The Ottawa Pops Orchestra Presents Stories Through Music Series
-        </h5>
+                <li class="nav-item dropdown">
+                    <div class="btn-group">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">community</a>
+                    </div>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/student-matinees/">Student Matinees</a>
+                        <a class="dropdown-item" href="/stories/">OPO Stories</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact/">contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/covid-19/">COVID-19</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item ">
+                    
+                    <a class="nav-link" href="/fr/stories/story1/">FR</a>
+                    
+                </li>
+            </ul>
+        </div>
+</nav>
+<!--/.Navbar--> <div class="content main container-fluid story-single">
+    <div class="story-single-content">
+        <h5 class="story-single-title">The Ottawa Pops Orchestra Presents Stories Through Music Series </h5>
         <p class="story-author-publish">
-          June 8 2020
-          <i class="far fa-user story-icon"></i>
-          <i>Ottawa Pops Orchestra</i>
+            June 8 2020
+            <i class="far fa-user story-icon"></i>
+            <i>Ottawa Pops Orchestra</i>
         </p>
-        <img
-          class="center-img"
-          src="/assets/img/stories/story1/Photo 1- Neon Sign.jpg"
-        />
+        <img class="center-img" src="/assets/img/stories/story1/Photo 1- Neon Sign.jpg" />
         <div class="single-story-content">
-          <div class="row">
+        <div class="row">
             <div class="col-md concert-info">
-              <div class="row">
-                <div class="col-md-5 col-sm center-margin">
-                  <a
-                    class="btn btn-outline-purple btn-block"
-                    role="button"
-                    href="#listenStory1"
-                    >Listen <i class="fas fa-music"></i
-                  ></a>
+                <div class="row">
+                    <div class="col-md-5 col-sm center-margin">
+                        <a class="btn btn-outline-purple btn-block" role="button" href="#listenStory1">Listen <i class="fas fa-music"></i></a>
+                    </div>
                 </div>
-              </div>
-              <div class="story-description" style="padding-top: 1em;">
+            <div class="story-description" style="padding-top: 1em;">
                 <p>
-                  Music inspires us at the Ottawa Pops Orchestra. For so long,
-                  this has meant the live presentation of over 20 performances
-                  since 2016. By now, the Ottawa Pops Orchestra would have
-                  wrapped up our 2019-2020 season with our
-                  <a href="/2019-2020/videogamesymphony" target="_blank"
-                    >Video Game Symphony</a
-                  >
-                  and
-                  <a href="/2019-2020/popsonbroadway/" target="_blank"
-                    >Pops: On Broadway</a
-                  >
-                  performances. As you know, due to the unprecedented COVID-19
-                  crisis, we have had to postpone all our performances into the
-                  2020-2021 season. This year has been very different for all of
-                  us, but our passion for sharing music hasn’t changed.
+                    Music inspires us at the Ottawa Pops Orchestra. For so long, this has meant the live presentation of over 20 performances since 2016. By now, the Ottawa Pops Orchestra would have wrapped up our 2019-2020 season with our 
+                    <a href="/2019-2020/videogamesymphony" target="_blank">Video Game Symphony</a>
+                     and 
+                    <a href="/2019-2020/popsonbroadway/" target="_blank">Pops: On Broadway</a>
+                     performances.  As you know, due to the unprecedented COVID-19 crisis, we have had to postpone all our performances into the 2020-2021 season. This year has been very different for all of us, but our passion for sharing music hasn’t changed.  
                 </p>
+                <p>While we are grateful to be looking towards the future when we can safely present these postponed symphonic experiences with you, we miss you and miss sharing music with you. Because we miss you, the Ottawa Pops Orchestra is excited to share a new musical initiative to be enjoyed from the comfort of your own home! </p>
                 <p>
-                  While we are grateful to be looking towards the future when we
-                  can safely present these postponed symphonic experiences with
-                  you, we miss you and miss sharing music with you. Because we
-                  miss you, the Ottawa Pops Orchestra is excited to share a new
-                  musical initiative to be enjoyed from the comfort of your own
-                  home!
-                </p>
-                <p>
-                  We are proud to present OPO’s
-                  <strong>Stories Through Music Series, </strong>
-                  beginning June 21st.
+                    We are proud to present OPO’s 
+                    <strong>Stories Through Music Series, </strong>
+                    beginning June 21st.
                 </p>
                 <h5>What is the Stories Through Music Series?</h5>
-                <p>
-                  The Ottawa Pops Orchestra’s Stories Through Music Series
-                  engages different members of our community who will be sharing
-                  a playlist of their favourite songs and telling a story about
-                  why this music is so important to them. The songs and themes
-                  chosen will be incredibly varied as we want to encourage and
-                  promote myriad of musical experiences. We have connected with
-                  many different members of our community, from local artists,
-                  to city councillors, to arts journalists and beyond for a
-                  diverse presentation of music that inspires them and hopefully
-                  inspires you as well.
-                </p>
-                <img
-                  class="center-img"
-                  src="/assets/img/stories/story1/Photo 2- Ottawa_Gatineau.jpg"
-                  width="100%"
-                />
+                <p>The Ottawa Pops Orchestra’s Stories Through Music Series engages different members of our community who will be sharing a playlist of their favourite songs and telling a story about why this music is so important to them. The songs and themes chosen will be incredibly varied as we want to encourage and promote myriad of musical experiences. We have connected with many different members of our community, from local artists, to city councillors, to arts journalists and beyond for a diverse presentation of music that inspires them and hopefully inspires you as well. </p>
+                <img class="center-img" src="/assets/img/stories/story1/Photo 2- Ottawa_Gatineau.jpg" width="100%" />
                 <h5>How does it work?</h5>
+                <p>Each week, we’ll be featuring a selected playlist for you to enjoy, accompanied by a written personal story about why the individual chose the songs they did. We will be sending the featured playlist and story each week directly to your inbox for you to enjoy! The playlist will be embedded into the email and on our website, so you can listen along without any unnecessary downloads. We will also be sharing the music and stories on our social media platforms, so be sure to engage with us there and let us know what songs or stories are your favourite!</p>
                 <p>
-                  Each week, we’ll be featuring a selected playlist for you to
-                  enjoy, accompanied by a written personal story about why the
-                  individual chose the songs they did. We will be sending the
-                  featured playlist and story each week directly to your inbox
-                  for you to enjoy! The playlist will be embedded into the email
-                  and on our website, so you can listen along without any
-                  unnecessary downloads. We will also be sharing the music and
-                  stories on our social media platforms, so be sure to engage
-                  with us there and let us know what songs or stories are your
-                  favourite!
+                    We are thrilled to have the opportunity to elevate voices from diverse musical, professional, and cultural backgrounds with our 
+                    <strong>Stories through Music Series. </strong>
+                    Please join us each week to listen and read along!
                 </p>
-                <p>
-                  We are thrilled to have the opportunity to elevate voices from
-                  diverse musical, professional, and cultural backgrounds with
-                  our
-                  <strong>Stories through Music Series. </strong>
-                  Please join us each week to listen and read along!
-                </p>
-                <p>
-                  All of us at the Ottawa Pops Orchestra want to extend our
-                  continued best wishes for your health, safety and happiness,
-                  and are excited to be able to connect with you through music
-                  during this challenging time.
-                </p>
-                <p>
-                  While we wait for our first guest, please enjoy this first
-                  selection of pieces that have been performed by the Ottawa
-                  Pops Orchestra!
-                </p>
-              </div>
-              <div id="listenStory1" style="padding-bottom: 5em;">
-                <iframe
-                  src="https://open.spotify.com/embed/playlist/6wXiN6S4626e3hdcMOb0fx"
-                  style="border: 0; width: 100%; height: 380px;"
-                  allowfullscreen=""
-                  allow="autoplay; encrypted-media"
-                ></iframe>
+                <p>All of us at the Ottawa Pops Orchestra want to extend our continued best wishes for your health, safety and happiness, and are excited to be able to connect with you through music during this challenging time. </p>
+                <p>While we wait for our first guest, please enjoy this first selection of pieces that have been performed by the Ottawa Pops Orchestra!</p>
+            </div>
+            <div id="listenStory1" style="padding-bottom: 5em;">
+                <iframe src="https://open.spotify.com/embed/playlist/6wXiN6S4626e3hdcMOb0fx" style="border: 0; width: 100%; height: 380px;" allowfullscreen="" allow="autoplay; encrypted-media"></iframe>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+</div>
+ <footer class="elegant-color">
+  <div
+    class="row justify-content-center"
+    style="display: flex; align-items: center;"
+  >
+    <div class="col-lg-2 col-9 footer-col text-center">
+      <img
+        id="footer-logo-full"
+        class="center-block"
+        src="/assets/img/OPO Logo Symbol White.png"
+      />
+      <p style="color: white; margin-top: 1rem;">The Ottawa Pops Orchestra is a Registered Not-for-Profit Corporation 1017269-3</p>
+    </div>
+    <div class="col-lg-6 footer-col text-center">
+      <hr class="footer-hr-mobile" />
+      <div class="row">
+        <div class="col">
+          <!-- Button trigger modal -->
+          <button
+            id="subscribe"
+            type="button"
+            class="btn btn-maroon"
+            data-toggle="modal"
+            data-target="#exampleModalCenter"
+          >
+            Subscribe to our newsletter <i class="far fa-paper-plane fa-fw"></i>
+          </button>
+        </div>
+      </div>
+      <div class="social-icons text-center row">
+        <div class="col-lg-1 col-2 offset-lg-4 offset-2">
+          <a
+            href="https://www.facebook.com/ottawapopsorchestra/"
+            class="social"
+            target="_blank"
+            ><i class="fab fa-facebook-f fa-2x"></i
+          ></a>
+        </div>
+        <div class="col-lg-1 col-2">
+          <a
+            href="https://twitter.com/OttawaPopsOrch"
+            class="social"
+            target="_blank"
+            ><i class="fab fa-twitter fa-2x"></i
+          ></a>
+        </div>
+        <div class="col-lg-1 col-2">
+          <a
+            href="https://www.instagram.com/ottawapops/"
+            class="social"
+            target="_blank"
+            ><i class="fab fa-instagram fa-2x"></i
+          ></a>
+        </div>
+        <div class="col-lg-1 col-2">
+          <a
+            href="https://www.youtube.com/channel/UCvD4B1NFC_2HD5jxXl3U-SQ?pbjreload=10"
+            class="social"
+            target="_blank"
+            ><i class="fab fa-youtube fa-2x"></i
+          ></a>
+        </div>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModalCenter"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalCenterTitle"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div id="fd-form-5ede4946b9c153002b5adc0f"></div>
+                <script>
+                  window.fd("form", {
+                    formId: "5ede4946b9c153002b5adc0f",
+                    containerEl: "#fd-form-5ede4946b9c153002b5adc0f",
+                  });
+                </script>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <footer class="elegant-color">
-      <div
-        class="row justify-content-center"
-        style="display: flex; align-items: center;"
-      >
-        <div class="col-lg-2 col-9 footer-col text-center">
-          <img
-            id="footer-logo-full"
-            class="center-block"
-            src="/assets/img/OPO Logo Symbol White.png"
-          />
-          <p style="color: white; margin-top: 1rem;">
-            The Ottawa Pops Orchestra is a Registered Not-for-Profit Corporation
-            1017269-3
-          </p>
-        </div>
-        <div class="col-lg-6 footer-col text-center">
-          <hr class="footer-hr-mobile" />
-          <div class="row">
-            <div class="col">
-              <!-- Button trigger modal -->
-              <button
-                id="subscribe"
-                type="button"
-                class="btn btn-maroon"
-                data-toggle="modal"
-                data-target="#exampleModalCenter"
-              >
-                Subscribe to our newsletter
-                <i class="far fa-paper-plane fa-fw"></i>
-              </button>
-            </div>
-          </div>
-          <div class="social-icons text-center row">
-            <div class="col-lg-1 col-2 offset-lg-4 offset-2">
-              <a
-                href="https://www.facebook.com/ottawapopsorchestra/"
-                class="social"
-                target="_blank"
-                ><i class="fab fa-facebook-f fa-2x"></i
-              ></a>
-            </div>
-            <div class="col-lg-1 col-2">
-              <a
-                href="https://twitter.com/OttawaPopsOrch"
-                class="social"
-                target="_blank"
-                ><i class="fab fa-twitter fa-2x"></i
-              ></a>
-            </div>
-            <div class="col-lg-1 col-2">
-              <a
-                href="https://www.instagram.com/ottawapops/"
-                class="social"
-                target="_blank"
-                ><i class="fab fa-instagram fa-2x"></i
-              ></a>
-            </div>
-            <div class="col-lg-1 col-2">
-              <a
-                href="https://www.youtube.com/channel/UCvD4B1NFC_2HD5jxXl3U-SQ?pbjreload=10"
-                class="social"
-                target="_blank"
-                ><i class="fab fa-youtube fa-2x"></i
-              ></a>
-            </div>
-            <!-- Modal -->
-            <div
-              class="modal fade"
-              id="exampleModalCenter"
-              tabindex="-1"
-              role="dialog"
-              aria-labelledby="exampleModalCenterTitle"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                  <div class="modal-body">
-                    <div id="fd-form-5ede4946b9c153002b5adc0f"></div>
-                    <script>
-                      window.fd("form", {
-                        formId: "5ede4946b9c153002b5adc0f",
-                        containerEl: "#fd-form-5ede4946b9c153002b5adc0f",
-                      });
-                    </script>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 footer-col" style="color: white;">
-          <hr class="footer-hr-mobile" />
-          <p style="font-size: 22px;">Box Office</p>
-          <hr class="footer-hr" />
-          <p id="box_office">
-            Telephone: 613-580-2700, 10 am to 8pm daily<br />
-            Toll-free: 1-866-752-5231<br />
-            In Person: Mon to Sat, 5 pm to 8:30 pm<br />
-            Online: 24/7<br />
-          </p>
-        </div>
-      </div>
+    <div class="col-lg-3 footer-col" style="color: white;">
+      <hr class="footer-hr-mobile" />
+      <p style="font-size: 22px;">Box Office</p>
+      <hr class="footer-hr" />
+      <p id="box_office">
+        Telephone: 613-580-2700, 10 am to 8pm daily<br />
+        Toll-free: 1-866-752-5231<br />
+        In Person: Mon to Sat, 5 pm to 8:30 pm<br />
+        Online: 24/7<br />
+      </p>
+    </div>
+  </div>
 
-      <div class="row justify-content-center pages-row">
-        <div class="col-md-2 text-center pages">
-          <a href="/">home</a>
-        </div>
+  <div class="row justify-content-center pages-row">
+    
+    <div class="col-md-2 text-center pages">
+      <a href="/">home</a>
+    </div>
+    
+    <div class="col-md-2 text-center pages">
+      <a href="/about">About Us</a>
+    </div>
+    <div class="col-md-2 text-center pages">
+      <a href="/2019-2020/">Concerts</a>
+    </div>
+    <div class="col-md-2 text-center pages">
+      <a href="/conductors/">Orchestra</a>
+    </div>
+    <!-- <div class="col-md-2 text-center pages"><a href="news.html">News & Media</a></div> -->
+    <div class="col-md-2 text-center pages">
+      <a href="/contact/">contact</a>
+    </div>
+  </div>
+</footer>
 
-        <div class="col-md-2 text-center pages">
-          <a href="/about">About Us</a>
-        </div>
-        <div class="col-md-2 text-center pages">
-          <a href="/2019-2020/">Concerts</a>
-        </div>
-        <div class="col-md-2 text-center pages">
-          <a href="/conductors/">Orchestra</a>
-        </div>
-        <!-- <div class="col-md-2 text-center pages"><a href="news.html">News & Media</a></div> -->
-        <div class="col-md-2 text-center pages">
-          <a href="/contact/">contact</a>
-        </div>
-      </div>
-    </footer>
 
     <!-- JQuery -->
     <script
