@@ -448,7 +448,11 @@ h6 {
 }
 
 #contact-general {
-  font-size: 20px;
+  font-size: 24px;
+}
+
+#contact-general > a {
+  color: #920503;
 }
 
 .contact {
@@ -462,6 +466,10 @@ h6 {
 
 .background-grey hr {
   border-width: 2px;
+}
+
+.contact-page {
+  padding: 2em 8em;
 }
 
 .contact-people {
@@ -479,9 +487,22 @@ h6 {
 }
 
 .profile-pic img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50% !important;
+  border: 5px solid grey;
+}
+
+.profile-pic i {
+  width: 150px;
   height: 150px;
   border-radius: 50% !important;
   border: 5px solid grey;
+  color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-info {
@@ -1021,6 +1042,11 @@ h6 {
     font-size: 30px;
   }
 
+  .contact-page {
+    padding: 2em 1em;
+    width: 95%;
+  }
+
   .contact-title {
     font-size: 18px;
     text-align: center;
@@ -1037,6 +1063,10 @@ h6 {
     padding-left: 0;
     padding-top: 10px;
     text-align: center;
+  }
+
+  .profile-pic i {
+    margin: 0 auto;
   }
 
   .conductor-bio {
