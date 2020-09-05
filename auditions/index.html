@@ -202,30 +202,6 @@
       );
     </script>
     <!-- End Flowdesk Newsletter -->
-
-    <!-- Flodesk Newsletter FR-->
-    <script>
-      (function (w, d, t, s, n) {
-        w.FlodeskObject = n;
-        var fn = function () {
-          (w[n].q = w[n].q || []).push(arguments);
-        };
-        w[n] = w[n] || fn;
-        var f = d.getElementsByTagName(t)[0];
-        var e = d.createElement(t);
-        var h = "?v=" + new Date().getTime();
-        e.async = true;
-        e.src = s + h;
-        f.parentNode.insertBefore(e, f);
-      })(
-        window,
-        document,
-        "script",
-        "https://assets.flodesk.com/universal.js",
-        "fd"
-      );
-    </script>
-    <!-- End Flodesk Newsletter FR-->
   </head>
 
   <body>
@@ -240,78 +216,138 @@
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!--Navbar-->
-<nav id="navbar" class="navbar navbar-expand-lg navbar-dark grey darken-1 justify-content-center fixed-top scrolling-navbar">
-    <!-- Navbar brand -->
-    
-        <a style="padding-left: 3%" class="navbar-brand" href="/">
-            
-            <img id="logo" src="/assets/img/OPO-Logo-Primary.png" height="100" alt="">
-        </a>
-        <!-- Collapse button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Collapsible content -->
-        <div class="collapse navbar-collapse" id="basicExampleNav">
-            <!-- Links -->
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="/about">About Us</a>
-                </li>
-                <!-- Concerts -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Concerts</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <!-- <a class="dropdown-item" href="/2018-2019/">2018 - 2019</a> -->
-                        <a class="dropdown-item" href="/2019-2020/">2019 - 2020</a>
-                        <a class="dropdown-item" href="/season-tickets/">Season Tickets</a>
-                    </div>
-                </li>
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-lg navbar-dark grey darken-1 justify-content-center fixed-top scrolling-navbar"
+    >
+      <!-- Navbar brand -->
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Orchestra</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/auditions/">Auditions</a>
-                        <a class="dropdown-item" href="/conductors/">Conductors</a>
-                        <!-- <a class="dropdown-item" href="musicians.html">Musicians</a> -->
-                    </div>
-                </li>
+      <a style="padding-left: 3%" class="navbar-brand" href="/">
+        <img
+          id="logo"
+          src="/assets/img/OPO-Logo-Primary.png"
+          height="100"
+          alt=""
+        />
+      </a>
+      <!-- Collapse button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#basicExampleNav"
+        aria-controls="basicExampleNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="basicExampleNav">
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About Us</a>
+          </li>
+          <!-- Concerts -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Concerts</a
+            >
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <!-- <a class="dropdown-item" href="/2018-2019/">2018 - 2019</a> -->
+              <a class="dropdown-item" href="/2019-2020/">2019 - 2020</a>
+              <a class="dropdown-item" href="/season-tickets/"
+                >Season Tickets</a
+              >
+            </div>
+          </li>
 
-                <li class="nav-item dropdown">
-                    <div class="btn-group">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">community</a>
-                    </div>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/student-matinees/">Student Matinees</a>
-                        <a class="dropdown-item" href="/stories/">OPO Stories</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/support/">Support Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/contact/">contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/covid-19/">COVID-19</a>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li class="nav-item ">
-                    
-                    <a class="nav-link" href="/fr/auditions/">FR</a>
-                    
-                </li>
-            </ul>
-        </div>
-</nav>
-<!--/.Navbar--> <div class="main auditions content container-fluid">
-    <div class="parallax-auditions">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink2"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Orchestra</a
+            >
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/auditions/">Auditions</a>
+              <a class="dropdown-item" href="/conductors/">Conductors</a>
+              <!-- <a class="dropdown-item" href="musicians.html">Musicians</a> -->
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <div class="btn-group">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink3"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >community</a
+              >
+            </div>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/student-matinees/"
+                >Student Matinees</a
+              >
+              <a class="dropdown-item" href="/stories/">OPO Stories</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/support/">Support Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact/">contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/covid-19/">COVID-19</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item">
+            <a class="nav-link" href="/fr/auditions/">FR</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--/.Navbar-->
+    <div class="main auditions content container-fluid">
+      <div class="parallax-auditions">
         <div class="row audition-row">
           <div class="col">
             <h1>Auditions</h1>
-            <p style="font-size: large;font-weight: 700;border: 2px solid #920503;color: #920503;padding: 0.8em;border-radius: 25px;text-align: center;box-shadow: 10px 10px 8px grey;">Regular auditions for the 2019-2020 season have closed.</p>
-            <p>We are still accepting auditions on the following instruments:</p>
+            <p
+              style="
+                font-size: large;
+                font-weight: 700;
+                border: 2px solid #920503;
+                color: #920503;
+                padding: 0.8em;
+                border-radius: 25px;
+                text-align: center;
+                box-shadow: 10px 10px 8px grey;
+              "
+            >
+              Regular auditions for the 2019-2020 season have closed.
+            </p>
+            <p>
+              We are still accepting auditions on the following instruments:
+            </p>
             <ul>
               <li>Violin</li>
               <li>Viola</li>
@@ -320,41 +356,95 @@
               <li>Auxiliary clarinet (Bb, Eb, Bass)</li>
               <li>Percussion</li>
             </ul>
-            <p>Please email 
-            <a href="mailto: auditions@ottawapopsorchestra.ca">   auditions@ottawapopsorchestra.ca </a> 
-            to request an audition.</p>
-            <hr style="border: 1px solid #920503;" />
+            <p>
+              Please email
+              <a href="mailto: auditions@ottawapopsorchestra.ca">
+                auditions@ottawapopsorchestra.ca
+              </a>
+              to request an audition.
+            </p>
+            <hr style="border: 1px solid #920503" />
             <!-- <p>2019-2020 Season Auditions will be held Saturday September 14 and Sunday September 15 2019 in room 109 of Perez Hall, 610 Cumberland St.</p>
             <div class="center">
               <a id="audition-reg-web" href="#audition-reg" class="btn-outline-maroon btn center">Register Here</a>
-              <a id="audition-reg-mobile" href="https://docs.google.com/forms/d/e/1FAIpQLScdT5pkOrHJoy5CQCtg096rid4OGPWdKgW2d7QON5qAm8g5Gg/viewform?usp=sf_link" target="_blank" class="btn-outline-maroon btn center">Register Here</a> 
-            </div> -->           
-            <p>Applicants are accepted into the orchestra based on their audition performance. There is no minimum age requirement for participation in the OPO.</p>
-            <p>The audition will consist of a scale, 2 contrasting pieces, sight reading (on snare drum for percussion), and a short informal interview. Applicants should select two contrasting pieces that demonstrate their playing level and technical facility. The total playing time of excerpts should not exceed 12 minutes. Applicants are asked to arrive 10-15 minutes before their scheduled time and to bring 2 extra copies of their sheet music for the audition panel.  It is possible that the examiners will stop you in the middle of a piece. Don’t worry, this just means they have heard enough and would like to move on to the next portion of the audition.</p>
-            <p>Applicants auditioning for doubling instrument positions should prepare 1 additional piece for each doubling instrument. Orchestral excerpts are acceptable.</p>
-            
-            <div style="margin-top: 20px; width: 100%;" class="accordion" id="accordionExample">
+              <a id="audition-reg-mobile" href="https://docs.google.com/forms/d/e/1FAIpQLScdT5pkOrHJoy5CQCtg096rid4OGPWdKgW2d7QON5qAm8g5Gg/viewform?usp=sf_link" target="_blank" class="btn-outline-maroon btn center">Register Here</a>
+            </div> -->
+            <p>
+              Applicants are accepted into the orchestra based on their audition
+              performance. There is no minimum age requirement for participation
+              in the OPO.
+            </p>
+            <p>
+              The audition will consist of a scale, 2 contrasting pieces, sight
+              reading (on snare drum for percussion), and a short informal
+              interview. Applicants should select two contrasting pieces that
+              demonstrate their playing level and technical facility. The total
+              playing time of excerpts should not exceed 12 minutes. Applicants
+              are asked to arrive 10-15 minutes before their scheduled time and
+              to bring 2 extra copies of their sheet music for the audition
+              panel. It is possible that the examiners will stop you in the
+              middle of a piece. Don’t worry, this just means they have heard
+              enough and would like to move on to the next portion of the
+              audition.
+            </p>
+            <p>
+              Applicants auditioning for doubling instrument positions should
+              prepare 1 additional piece for each doubling instrument.
+              Orchestral excerpts are acceptable.
+            </p>
+
+            <div
+              style="margin-top: 20px; width: 100%"
+              class="accordion"
+              id="accordionExample"
+            >
               <div class="card">
                 <div class="card-header" id="headingOne">
                   <h6>
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <button
+                      class="btn btn-link"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
                       Percussionists <i class="fas fa-caret-down"></i>
                     </button>
                   </h6>
                 </div>
 
-                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div
+                  id="collapseOne"
+                  class="collapse"
+                  aria-labelledby="headingOne"
+                  data-parent="#accordionExample"
+                >
                   <div class="card-body">
-                    <p>Percussionist must prepare a snare drum and a mallet excerpt at minimum. Applicants may prepare additional pieces on one or more instruments if they wish so long as the total playing time does not exceed 12 minutes.</p>
-                    <p>The OPO will not provide any sticks or mallets at the audition. Live audition candidates must provide their own sticks and mallets.</p>
-                    <p>Live audition candidates may bring their own snare drum to the audition</p>
+                    <p>
+                      Percussionist must prepare a snare drum and a mallet
+                      excerpt at minimum. Applicants may prepare additional
+                      pieces on one or more instruments if they wish so long as
+                      the total playing time does not exceed 12 minutes.
+                    </p>
+                    <p>
+                      The OPO will not provide any sticks or mallets at the
+                      audition. Live audition candidates must provide their own
+                      sticks and mallets.
+                    </p>
+                    <p>
+                      Live audition candidates may bring their own snare drum to
+                      the audition
+                    </p>
 
                     <h6>Instruments Provided for Live Audition</h6>
                     <ul>
-                      <li>Deagan 1558 2.5 Octave Glockenspiel  </li>
-                      <li>Musser 4.0 Octave Xylophone </li>
+                      <li>Deagan 1558 2.5 Octave Glockenspiel</li>
+                      <li>Musser 4.0 Octave Xylophone</li>
                       <li>Yamaha 4.3 Octave Acoustalon Marimba</li>
-                      <li>Fibes 14x4 Maple Shell Single Ply with die cast rims</li>
+                      <li>
+                        Fibes 14x4 Maple Shell Single Ply with die cast rims
+                      </li>
                       <li>Set of 4 Ludwig Timpani (23’’, 26’’, 29’’, 32’’)</li>
                     </ul>
                   </div>
@@ -362,202 +452,314 @@
               </div>
             </div>
 
-            <div style="margin-top: 20px; width: 100%;" class="accordion" id="accordionExample2">
-                  <div class="card">
-                    <div class="card-header" id="headingOne-2">
-                      <h6>
-                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne-2" aria-expanded="true" aria-controls="collapseOne">
-                          CONCERTMASTER AUDITIONS <i class="fas fa-caret-down"></i>
-                        </button>
-                      </h6>
-                    </div>
-
-                    <div id="collapseOne-2" class="collapse" aria-labelledby="headingOne-2" data-parent="#accordionExample2">
-                      <div class="card-body">
-                        <p>Applicants wishing to be considered for Concertmaster for the Ottawa Pops Orchestra 2018-2019 season should prepare a video audition and send a Youtube link, sheet music, and CV to auditions@ottawapopsorchestra.ca by no later than September 10th 2019 17:00 EST.</p>
-
-                        <h5><strong>Audition Requirements</strong></h5>
-                        <p>All scales are to be played at BPM=60 (minimum), in 16th notes ascending and descending 8 to a bow.</p>
-
-                        <div style="margin-left: 20px;">
-                            <h5><strong>Scales</strong></h5>
-                            <p>D-Major 3 octaves</p>
-
-                            <h5><strong>Excerpts</strong></h5>
-                            <ul>
-                              <li>Strauss - Don Juan, Op. 20, m. 1-62.</li>
-                              <li>Mendelsohn - Midsummer Night’s Dream: Overture, mm 6-81.</li>
-                            </ul>
-
-                            <h5><strong>Pieces</strong></h5>
-                            <p>2 contrasting pieces not exceeding 10 minutes of combined playing time.</p>
-                        </div>
-
-                        <h5><strong>Compensation</strong></h5>
-                        <p>The successful candidate will receive a compensation of $150.00 (ONE HUNDRED AND FIFTY) CDN for each eligible service. Eligible services include all dress rehearsals and performances. All other rehearsals are not eligible for compensation.</p>
-
-                        <h5><strong>Details</strong></h5>
-                        <p>The successful candidate will be notified by no later than September 12th, 2019 17:00 EST via email or phone. The successful candidate is invited to participate on the audition panel for regular auditions on September 14th and 15th 2019 from 10:00-18:00. The concertmaster is expected to attend all regular prescheduled rehearsals, lead all sectionals and prepare bowings in advance. The Concertmaster will serve as figurehead for the ensemble and will receive priority right of refusal for any functions outside of the regular season.</p>
-
-                      </div>
-                    </div>
-                  </div>
+            <div
+              style="margin-top: 20px; width: 100%"
+              class="accordion"
+              id="accordionExample2"
+            >
+              <div class="card">
+                <div class="card-header" id="headingOne-2">
+                  <h6>
+                    <button
+                      class="btn btn-link"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseOne-2"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      CONCERTMASTER AUDITIONS <i class="fas fa-caret-down"></i>
+                    </button>
+                  </h6>
                 </div>
 
-            <br /><p>Applicants auditioning for doubling instrument positions should prepare 1 additional piece for each doubling instrument. Orchestral excerpts are acceptable.</p>
+                <div
+                  id="collapseOne-2"
+                  class="collapse"
+                  aria-labelledby="headingOne-2"
+                  data-parent="#accordionExample2"
+                >
+                  <div class="card-body">
+                    <p>
+                      Applicants wishing to be considered for Concertmaster for
+                      the Ottawa Pops Orchestra 2018-2019 season should prepare
+                      a video audition and send a Youtube link, sheet music, and
+                      CV to auditions@ottawapopsorchestra.ca by no later than
+                      September 10th 2019 17:00 EST.
+                    </p>
+
+                    <h5><strong>Audition Requirements</strong></h5>
+                    <p>
+                      All scales are to be played at BPM=60 (minimum), in 16th
+                      notes ascending and descending 8 to a bow.
+                    </p>
+
+                    <div style="margin-left: 20px">
+                      <h5><strong>Scales</strong></h5>
+                      <p>D-Major 3 octaves</p>
+
+                      <h5><strong>Excerpts</strong></h5>
+                      <ul>
+                        <li>Strauss - Don Juan, Op. 20, m. 1-62.</li>
+                        <li>
+                          Mendelsohn - Midsummer Night’s Dream: Overture, mm
+                          6-81.
+                        </li>
+                      </ul>
+
+                      <h5><strong>Pieces</strong></h5>
+                      <p>
+                        2 contrasting pieces not exceeding 10 minutes of
+                        combined playing time.
+                      </p>
+                    </div>
+
+                    <h5><strong>Compensation</strong></h5>
+                    <p>
+                      The successful candidate will receive a compensation of
+                      $150.00 (ONE HUNDRED AND FIFTY) CDN for each eligible
+                      service. Eligible services include all dress rehearsals
+                      and performances. All other rehearsals are not eligible
+                      for compensation.
+                    </p>
+
+                    <h5><strong>Details</strong></h5>
+                    <p>
+                      The successful candidate will be notified by no later than
+                      September 12th, 2019 17:00 EST via email or phone. The
+                      successful candidate is invited to participate on the
+                      audition panel for regular auditions on September 14th and
+                      15th 2019 from 10:00-18:00. The concertmaster is expected
+                      to attend all regular prescheduled rehearsals, lead all
+                      sectionals and prepare bowings in advance. The
+                      Concertmaster will serve as figurehead for the ensemble
+                      and will receive priority right of refusal for any
+                      functions outside of the regular season.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <br />
+            <p>
+              Applicants auditioning for doubling instrument positions should
+              prepare 1 additional piece for each doubling instrument.
+              Orchestral excerpts are acceptable.
+            </p>
             <ul>
-              <li><strong><em>Violin, Cello, Flute/Piccolo:</em></strong> D major 3 octaves.</li>
-              <li><strong><em>Viola:</em></strong> G major 3 octaves.</li>
-              <li><strong><em>Oboe/English Horn:</em></strong> E-flat major 2 octaves.</li>
-              <li><strong><em>Clarinet/Bass Clarinet:</em></strong> F major 3 octaves.</li>
-              <li><strong><em>Brass, Bassoon, &amp; Bass:</em></strong> any 2 octave scale.</li>
-              <li><strong><em>Percussion (on the Xylophone):</em></strong> Bb major 2 octaves and a third (Bb to D), alternating sticks starting on the left hand. BPM=80.</li>
-              <li><strong><em>Harp:</em></strong> Any 3 octaves HT, BPM+80.</li>
-              <li><strong><em>Piano:</em></strong> Ab major parallel motion scale 4 octaves HT, BPM=104. F# minor tonic four note chord broken alternate-note pattern 2 octaves (ending with I-IV-164-V-I chord progression) HT, BPM=80.</li>
+              <li>
+                <strong><em>Violin, Cello, Flute/Piccolo:</em></strong> D major
+                3 octaves.
+              </li>
+              <li>
+                <strong><em>Viola:</em></strong> G major 3 octaves.
+              </li>
+              <li>
+                <strong><em>Oboe/English Horn:</em></strong> E-flat major 2
+                octaves.
+              </li>
+              <li>
+                <strong><em>Clarinet/Bass Clarinet:</em></strong> F major 3
+                octaves.
+              </li>
+              <li>
+                <strong><em>Brass, Bassoon, &amp; Bass:</em></strong> any 2
+                octave scale.
+              </li>
+              <li>
+                <strong><em>Percussion (on the Xylophone):</em></strong> Bb
+                major 2 octaves and a third (Bb to D), alternating sticks
+                starting on the left hand. BPM=80.
+              </li>
+              <li>
+                <strong><em>Harp:</em></strong> Any 3 octaves HT, BPM+80.
+              </li>
+              <li>
+                <strong><em>Piano:</em></strong> Ab major parallel motion scale
+                4 octaves HT, BPM=104. F# minor tonic four note chord broken
+                alternate-note pattern 2 octaves (ending with I-IV-164-V-I chord
+                progression) HT, BPM=80.
+              </li>
             </ul>
 
-            <br /><h1>Audition Results</h1>
-            <p>All applicants will be informed of the outcome of their audition. It is possible that successful musicians be called for all, or some concerts. All applicants will be made aware of which class of musicians they belong to as well as if they have been selected for the Orchestral Development Bursary or any other form of remuneration.</p>
+            <br />
+            <h1>Audition Results</h1>
+            <p>
+              All applicants will be informed of the outcome of their audition.
+              It is possible that successful musicians be called for all, or
+              some concerts. All applicants will be made aware of which class of
+              musicians they belong to as well as if they have been selected for
+              the Orchestral Development Bursary or any other form of
+              remuneration.
+            </p>
 
-            <br /><h1>Membership Information</h1>
-            <p>The OPO is classified as a semi professional orchestra consisting of a mixture of community and professional musicians. The OPO concert season runs from September to mid-May, with weekly rehearsals occurring on Sunday evenings from 6pm to 9pm (with occasional sectionals Fridays 6:30pm to 9:30pm) in room 109 of Perez Hall, 610 Cumberland St. Applicants are asked to ensure they can fully commit to the concert schedule for which they are participating. Accepted musicians may not miss more than one rehearsal per concert period. Dress rehearsals are mandatory, no exceptions. Applicants should be available for all concerts of the season (November 8-9 2019, March 20-21 2020, May 15-16 2020) and should indicate at the audition if they have a scheduling conflict with dress rehearsals or concerts.</p>
+            <br />
+            <h1>Membership Information</h1>
+            <p>
+              The OPO is classified as a semi professional orchestra consisting
+              of a mixture of community and professional musicians. The OPO
+              concert season runs from September to mid-May, with weekly
+              rehearsals occurring on Sunday evenings from 6pm to 9pm (with
+              occasional sectionals Fridays 6:30pm to 9:30pm) in room 109 of
+              Perez Hall, 610 Cumberland St. Applicants are asked to ensure they
+              can fully commit to the concert schedule for which they are
+              participating. Accepted musicians may not miss more than one
+              rehearsal per concert period. Dress rehearsals are mandatory, no
+              exceptions. Applicants should be available for all concerts of the
+              season (November 8-9 2019, March 20-21 2020, May 15-16 2020) and
+              should indicate at the audition if they have a scheduling conflict
+              with dress rehearsals or concerts.
+            </p>
             <p>All members must re-audition each season for placement.</p>
 
-            <div><a href="/assets/pdf/Ottawa%20Pops%20Orchestra%20Musician%20Policy%20updated%20July%202019.pdf" target="_blank">Ottawa Pops Orchestra Musician Policy</a><br />
+            <div>
+              <a
+                href="/assets/pdf/Ottawa%20Pops%20Orchestra%20Musician%20Policy%20updated%20July%202019.pdf"
+                target="_blank"
+                >Ottawa Pops Orchestra Musician Policy</a
+              ><br />
 
-            <div><a href="/assets/pdf/Orchestral%20Development%20Bursary.pdf" target="_blank">Orchestral Development Bursary</a><br /></div>
+              <div>
+                <a
+                  href="/assets/pdf/Orchestral%20Development%20Bursary.pdf"
+                  target="_blank"
+                  >Orchestral Development Bursary</a
+                ><br />
+              </div>
 
-            <!-- <div  id="audition-reg" style="margin-top: 20px;" class="center">
+              <!-- <div  id="audition-reg" style="margin-top: 20px;" class="center">
               <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScdT5pkOrHJoy5CQCtg096rid4OGPWdKgW2d7QON5qAm8g5Gg/viewform?embedded=true" width="640" height="2520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </div> -->
-
-          </div>
-        </div>
-      </div>
-    </div>
-</div>
- <footer class="elegant-color">
-  <div
-    class="row justify-content-center"
-    style="display: flex; align-items: center;"
-  >
-    <div class="col-lg-2 col-9 footer-col text-center">
-      <img
-        id="footer-logo-full"
-        class="center-block"
-        src="/assets/img/OPO Logo Symbol White.png"
-      />
-      <p style="color: white; margin-top: 1rem;">The Ottawa Pops Orchestra is a Registered Not-for-Profit Corporation 1017269-3</p>
-    </div>
-    <div class="col-lg-6 footer-col text-center">
-      <hr class="footer-hr-mobile" />
-      <div class="row">
-        <div class="col">
-          <!-- Button trigger modal -->
-          <button
-            id="subscribe"
-            type="button"
-            class="btn btn-maroon"
-            data-toggle="modal"
-            data-target="#exampleModalCenter"
-          >
-            Subscribe to our newsletter <i class="far fa-paper-plane fa-fw"></i>
-          </button>
-        </div>
-      </div>
-      <div class="social-icons text-center row">
-        <div class="col-lg-1 col-2 offset-lg-4 offset-2">
-          <a
-            href="https://www.facebook.com/ottawapopsorchestra/"
-            class="social"
-            target="_blank"
-            ><i class="fab fa-facebook-f fa-2x"></i
-          ></a>
-        </div>
-        <div class="col-lg-1 col-2">
-          <a
-            href="https://twitter.com/OttawaPopsOrch"
-            class="social"
-            target="_blank"
-            ><i class="fab fa-twitter fa-2x"></i
-          ></a>
-        </div>
-        <div class="col-lg-1 col-2">
-          <a
-            href="https://www.instagram.com/ottawapops/"
-            class="social"
-            target="_blank"
-            ><i class="fab fa-instagram fa-2x"></i
-          ></a>
-        </div>
-        <div class="col-lg-1 col-2">
-          <a
-            href="https://www.youtube.com/channel/UCvD4B1NFC_2HD5jxXl3U-SQ?pbjreload=10"
-            class="social"
-            target="_blank"
-            ><i class="fab fa-youtube fa-2x"></i
-          ></a>
-        </div>
-        <!-- Modal -->
-        <div
-          class="modal fade"
-          id="exampleModalCenter"
-          tabindex="-1"
-          role="dialog"
-          aria-labelledby="exampleModalCenterTitle"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-body">
-                <div id="fd-form-5ede4946b9c153002b5adc0f"></div>
-                <script>
-                  window.fd("form", {
-                    formId: "5ede4946b9c153002b5adc0f",
-                    containerEl: "#fd-form-5ede4946b9c153002b5adc0f",
-                  });
-                </script>
-              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="col-lg-3 footer-col" style="color: white;">
-      <hr class="footer-hr-mobile" />
-      <p style="font-size: 22px;">Box Office</p>
-      <hr class="footer-hr" />
-      <p id="box_office">
-        Telephone: 613-580-2700, 10 am to 8pm daily<br />
-        Toll-free: 1-866-752-5231<br />
-        In Person: Mon to Sat, 5 pm to 8:30 pm<br />
-        Online: 24/7<br />
-      </p>
-    </div>
-  </div>
+    <footer class="elegant-color">
+      <div
+        class="row justify-content-center"
+        style="display: flex; align-items: center"
+      >
+        <div class="col-lg-2 col-9 footer-col text-center">
+          <img
+            id="footer-logo-full"
+            class="center-block"
+            src="/assets/img/OPO Logo Symbol White.png"
+          />
+          <p style="color: white; margin-top: 1rem">
+            The Ottawa Pops Orchestra is a Registered Not-for-Profit Corporation
+            1017269-3
+          </p>
+        </div>
+        <div class="col-lg-6 footer-col text-center">
+          <hr class="footer-hr-mobile" />
+          <div class="row">
+            <div class="col">
+              <!-- Button trigger modal -->
+              <button
+                id="subscribe"
+                type="button"
+                class="btn btn-maroon"
+                data-toggle="modal"
+                data-target="#exampleModalCenter"
+              >
+                Subscribe to our newsletter
+                <i class="far fa-paper-plane fa-fw"></i>
+              </button>
+            </div>
+          </div>
+          <div class="social-icons text-center row">
+            <div class="col-lg-1 col-2 offset-lg-4 offset-2">
+              <a
+                href="https://www.facebook.com/ottawapopsorchestra/"
+                class="social"
+                target="_blank"
+                ><i class="fab fa-facebook-f fa-2x"></i
+              ></a>
+            </div>
+            <div class="col-lg-1 col-2">
+              <a
+                href="https://twitter.com/OttawaPopsOrch"
+                class="social"
+                target="_blank"
+                ><i class="fab fa-twitter fa-2x"></i
+              ></a>
+            </div>
+            <div class="col-lg-1 col-2">
+              <a
+                href="https://www.instagram.com/ottawapops/"
+                class="social"
+                target="_blank"
+                ><i class="fab fa-instagram fa-2x"></i
+              ></a>
+            </div>
+            <div class="col-lg-1 col-2">
+              <a
+                href="https://www.youtube.com/channel/UCvD4B1NFC_2HD5jxXl3U-SQ?pbjreload=10"
+                class="social"
+                target="_blank"
+                ><i class="fab fa-youtube fa-2x"></i
+              ></a>
+            </div>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModalCenter"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalCenterTitle"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div id="fd-form-5ede4946b9c153002b5adc0f"></div>
+                    <script>
+                      window.fd("form", {
+                        formId: "5ede4946b9c153002b5adc0f",
+                        containerEl: "#fd-form-5ede4946b9c153002b5adc0f",
+                      });
+                    </script>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 footer-col" style="color: white">
+          <hr class="footer-hr-mobile" />
+          <p style="font-size: 22px">Box Office</p>
+          <hr class="footer-hr" />
+          <p id="box_office">
+            Telephone: 613-580-2700, 10 am to 8pm daily<br />
+            Toll-free: 1-866-752-5231<br />
+            In Person: Mon to Sat, 5 pm to 8:30 pm<br />
+            Online: 24/7<br />
+          </p>
+        </div>
+      </div>
 
-  <div class="row justify-content-center pages-row">
-    
-    <div class="col-md-2 text-center pages">
-      <a href="/">home</a>
-    </div>
-    
-    <div class="col-md-2 text-center pages">
-      <a href="/about">About Us</a>
-    </div>
-    <div class="col-md-2 text-center pages">
-      <a href="/2019-2020/">Concerts</a>
-    </div>
-    <div class="col-md-2 text-center pages">
-      <a href="/conductors/">Orchestra</a>
-    </div>
-    <!-- <div class="col-md-2 text-center pages"><a href="news.html">News & Media</a></div> -->
-    <div class="col-md-2 text-center pages">
-      <a href="/contact/">contact</a>
-    </div>
-  </div>
-</footer>
+      <div class="row justify-content-center pages-row">
+        <div class="col-md-2 text-center pages">
+          <a href="/">home</a>
+        </div>
 
+        <div class="col-md-2 text-center pages">
+          <a href="/about">About Us</a>
+        </div>
+        <div class="col-md-2 text-center pages">
+          <a href="/2019-2020/">Concerts</a>
+        </div>
+        <div class="col-md-2 text-center pages">
+          <a href="/conductors/">Orchestra</a>
+        </div>
+        <!-- <div class="col-md-2 text-center pages"><a href="news.html">News & Media</a></div> -->
+        <div class="col-md-2 text-center pages">
+          <a href="/contact/">contact</a>
+        </div>
+      </div>
+    </footer>
 
     <!-- JQuery -->
     <script

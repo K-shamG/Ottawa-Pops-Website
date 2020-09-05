@@ -202,30 +202,6 @@
       );
     </script>
     <!-- End Flowdesk Newsletter -->
-
-    <!-- Flodesk Newsletter FR-->
-    <script>
-      (function (w, d, t, s, n) {
-        w.FlodeskObject = n;
-        var fn = function () {
-          (w[n].q = w[n].q || []).push(arguments);
-        };
-        w[n] = w[n] || fn;
-        var f = d.getElementsByTagName(t)[0];
-        var e = d.createElement(t);
-        var h = "?v=" + new Date().getTime();
-        e.async = true;
-        e.src = s + h;
-        f.parentNode.insertBefore(e, f);
-      })(
-        window,
-        document,
-        "script",
-        "https://assets.flodesk.com/universal.js",
-        "fd"
-      );
-    </script>
-    <!-- End Flodesk Newsletter FR-->
   </head>
 
   <body>
@@ -240,245 +216,433 @@
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!--Navbar-->
-<nav id="navbar" class="navbar navbar-expand-lg navbar-dark grey darken-1 justify-content-center fixed-top scrolling-navbar">
-    <!-- Navbar brand -->
-    
-        <a style="padding-left: 3%" class="navbar-brand" href="/">
-            
-            <img id="logo" src="/assets/img/OPO-Logo-Primary.png" height="100" alt="">
-        </a>
-        <!-- Collapse button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Collapsible content -->
-        <div class="collapse navbar-collapse" id="basicExampleNav">
-            <!-- Links -->
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="/about">About Us</a>
-                </li>
-                <!-- Concerts -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Concerts</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <!-- <a class="dropdown-item" href="/2018-2019/">2018 - 2019</a> -->
-                        <a class="dropdown-item" href="/2019-2020/">2019 - 2020</a>
-                        <a class="dropdown-item" href="/season-tickets/">Season Tickets</a>
-                    </div>
-                </li>
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-lg navbar-dark grey darken-1 justify-content-center fixed-top scrolling-navbar"
+    >
+      <!-- Navbar brand -->
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Orchestra</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/auditions/">Auditions</a>
-                        <a class="dropdown-item" href="/conductors/">Conductors</a>
-                        <!-- <a class="dropdown-item" href="musicians.html">Musicians</a> -->
-                    </div>
-                </li>
+      <a style="padding-left: 3%" class="navbar-brand" href="/">
+        <img
+          id="logo"
+          src="/assets/img/OPO-Logo-Primary.png"
+          height="100"
+          alt=""
+        />
+      </a>
+      <!-- Collapse button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#basicExampleNav"
+        aria-controls="basicExampleNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="basicExampleNav">
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About Us</a>
+          </li>
+          <!-- Concerts -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Concerts</a
+            >
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <!-- <a class="dropdown-item" href="/2018-2019/">2018 - 2019</a> -->
+              <a class="dropdown-item" href="/2019-2020/">2019 - 2020</a>
+              <a class="dropdown-item" href="/season-tickets/"
+                >Season Tickets</a
+              >
+            </div>
+          </li>
 
-                <li class="nav-item dropdown">
-                    <div class="btn-group">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">community</a>
-                    </div>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/student-matinees/">Student Matinees</a>
-                        <a class="dropdown-item" href="/stories/">OPO Stories</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/support/">Support Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/contact/">contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/covid-19/">COVID-19</a>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li class="nav-item ">
-                    
-                    <a class="nav-link" href="/fr/conductors/">FR</a>
-                    
-                </li>
-            </ul>
-        </div>
-</nav>
-<!--/.Navbar--> <div class="main content container-fluid">
-    <div class="conductor-banner">
-        <img id="conductor-img" src="/assets/img/conductors/conductor.jpg" width="100%" />
-        <h1 id="conductor" data-aos="fade-in" data-aos-delay="100" data-aos-duration="2000">Meet Our Conductors</h1>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink2"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Orchestra</a
+            >
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/auditions/">Auditions</a>
+              <a class="dropdown-item" href="/conductors/">Conductors</a>
+              <!-- <a class="dropdown-item" href="musicians.html">Musicians</a> -->
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <div class="btn-group">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink3"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >community</a
+              >
+            </div>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/student-matinees/"
+                >Student Matinees</a
+              >
+              <a class="dropdown-item" href="/stories/">OPO Stories</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/support/">Support Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact/">contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/covid-19/">COVID-19</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item">
+            <a class="nav-link" href="/fr/conductors/">FR</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--/.Navbar-->
+    <div class="main content container-fluid">
+      <div class="conductor-banner">
+        <img
+          id="conductor-img"
+          src="/assets/img/conductors/conductor.jpg"
+          width="100%"
+        />
+        <h1
+          id="conductor"
+          data-aos="fade-in"
+          data-aos-delay="100"
+          data-aos-duration="2000"
+        >
+          Meet Our Conductors
+        </h1>
       </div>
       <div class="row conductor">
-        <div class="col-md-3 offset-md-1" data-aos="fade-right" data-aos-duration="700">
-          <img id="scroll" src="/assets/img/conductors/Jonathan-Dagenais.jpeg" width="100%" />
+        <div
+          class="col-md-3 offset-md-1"
+          data-aos="fade-right"
+          data-aos-duration="700"
+        >
+          <img
+            id="scroll"
+            src="/assets/img/conductors/Jonathan-Dagenais.jpeg"
+            width="100%"
+          />
         </div>
         <div class="col-md-7">
-          <div class="conductor-name" data-aos="zoom-in" data-aos-duration="1000">
+          <div
+            class="conductor-name"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          >
             <h1><b>Jonathan Dagenais</b></h1>
           </div>
-          <div class="conductor-bio" data-aos="fade-left" data-aos-duration="1000">
-            <p>Jonathan Dagenais holds a Master’s degree in Conducting from McGill University and a Bachelor’s degree in Composition from the Université de Montréal.</p>
-            <p>In addition to teaching at CEGEP and university, (music theory, composition, ear training, musicianship and conducting), Mr. Dagenais enjoys an active career as a composer and arranger for wind orchestra. His works have been performed repeatedly by numerous Canadian university and high school ensembles. They also  appear on several professional recordings. His compositions are found in many North American concert band music festival syllabus and are currently published worldwide.</p>
-            <p>Jonathan Dagenais is also a sought after conductor. He is the conductor and artistic director of the Orchestre à Vents Non Identifié (OVNI), a Montreal wind orchestra he co-founded in 2005. OVNI is an ensemble dedicated to collaborative and active listening, tone quality, refined interpretation as well as humour. In 2010 and 2017, he was appointed conductor of the McGill Wind Orchestra. In 2012 he was a guest conductor for the Montreal Pop Symphony Orchestra (OSPM). Jonathan Dagenais is also the conductor of the Cercle Philharmonique de Saint-Jean-sur-Richelieu, a position he has held since September 2012. In September 2015, he was named conductor of the Orchestre de jeux vidéo - OJV (Montreal Video Game Orchestra), an ensemble dedicated to video game soundtracks. A  longtime fan of video games and their music, this was a natural marriage of two of his passions. Most recently in 2019, he was appointed principal conductor of  the Ottawa Pops Orchestra.</p>
-            <p>Mr. Dagenais has been invited to adjudicate and/or give clinics at more than 25 North American music competitions and festivals. In 2017, he became the artistic director of Musicfest Quebec. Jonathan Dagenais is regularly engaged by Canadian summer music camps to conduct orchestras, bands and chamber ensembles. He has been a guest conductor for many Canadian honour bands. In 2013, Mr. Dagenais was appointed as conductor of The National Youth Band of Canada (NYB), the most prestigious honour band in the country. Jonathan Dagenais is a conductor / clinician / educator for the Twigg Musique Company in Quebec and a Yamaha Canada Master Educational Artist.</p>
-            <p>Mr. Dagenais is currently a guest lecturer at McGill University.</p>
-            <p><strong>Jonathan Dagenais official web site: </strong>
-                <a href="http://www.jonathandagenais.com" target="_blank">http://www.jonathandagenais.com</a>
+          <div
+            class="conductor-bio"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            <p>
+              Jonathan Dagenais holds a Master’s degree in Conducting from
+              McGill University and a Bachelor’s degree in Composition from the
+              Université de Montréal.
+            </p>
+            <p>
+              In addition to teaching at CEGEP and university, (music theory,
+              composition, ear training, musicianship and conducting), Mr.
+              Dagenais enjoys an active career as a composer and arranger for
+              wind orchestra. His works have been performed repeatedly by
+              numerous Canadian university and high school ensembles. They also
+              appear on several professional recordings. His compositions are
+              found in many North American concert band music festival syllabus
+              and are currently published worldwide.
+            </p>
+            <p>
+              Jonathan Dagenais is also a sought after conductor. He is the
+              conductor and artistic director of the Orchestre à Vents Non
+              Identifié (OVNI), a Montreal wind orchestra he co-founded in 2005.
+              OVNI is an ensemble dedicated to collaborative and active
+              listening, tone quality, refined interpretation as well as humour.
+              In 2010 and 2017, he was appointed conductor of the McGill Wind
+              Orchestra. In 2012 he was a guest conductor for the Montreal Pop
+              Symphony Orchestra (OSPM). Jonathan Dagenais is also the conductor
+              of the Cercle Philharmonique de Saint-Jean-sur-Richelieu, a
+              position he has held since September 2012. In September 2015, he
+              was named conductor of the Orchestre de jeux vidéo - OJV (Montreal
+              Video Game Orchestra), an ensemble dedicated to video game
+              soundtracks. A longtime fan of video games and their music, this
+              was a natural marriage of two of his passions. Most recently in
+              2019, he was appointed principal conductor of the Ottawa Pops
+              Orchestra.
+            </p>
+            <p>
+              Mr. Dagenais has been invited to adjudicate and/or give clinics at
+              more than 25 North American music competitions and festivals. In
+              2017, he became the artistic director of Musicfest Quebec.
+              Jonathan Dagenais is regularly engaged by Canadian summer music
+              camps to conduct orchestras, bands and chamber ensembles. He has
+              been a guest conductor for many Canadian honour bands. In 2013,
+              Mr. Dagenais was appointed as conductor of The National Youth Band
+              of Canada (NYB), the most prestigious honour band in the country.
+              Jonathan Dagenais is a conductor / clinician / educator for the
+              Twigg Musique Company in Quebec and a Yamaha Canada Master
+              Educational Artist.
+            </p>
+            <p>
+              Mr. Dagenais is currently a guest lecturer at McGill University.
+            </p>
+            <p>
+              <strong>Jonathan Dagenais official web site: </strong>
+              <a href="http://www.jonathandagenais.com" target="_blank"
+                >http://www.jonathandagenais.com</a
+              >
             </p>
           </div>
         </div>
       </div>
       <div class="row conductor">
-              <div class="col-md-3 offset-md-1" data-aos="fade-right" data-aos-duration="700">
-                <img id="scroll" src="/assets/img/conductors/Trevor_Wilson.jpg" width="100%" />
-              </div>
-              <div class="col-md-7">
-                <div class="conductor-name" data-aos="zoom-in" data-aos-duration="1000">
-                  <h1><b>Trevor Wilson</b></h1>
-                </div>
-                <div class="conductor-bio" data-aos="fade-left" data-aos-duration="1000">
-                  <p>Trevor Wilson is an Ottawa-born conductor, composer, and violinist currently completing his master’s degree in orchestral conducting at the Peabody Institute under Marin Alsop. As a violinist he has performed frequently as a member of the Ottawa Symphony Orchestra and toured with the National Youth Orchestra of Canada in 2015. During his undergraduate degree Trevor served for two years as conductor of the University of Ottawa Pops Orchestra and performed as a guest conductor with the Pembroke Symphony Orchestra. After obtaining his bachelor’s degree in violin performance at the University of Ottawa under Yehonatan Berick he was appointed Music Director of the newly formed Ottawa Pops Orchestra in Fall 2017. In recent times Trevor has participated in several international conducting festivals and workshops, having studied under such renowned pedagogues as Mark Shapiro, David Effron, and Neil Varon. This has also led him to Budapest where he performed with the Dohnányi Orchestra Budafok as a participant of the 2018 Dohnányi Conducting Academy under the instruction of Maestro Gábor Hollerung. This summer Trevor will be working with Maestro Boris Brott as Assistant Conductor of the National Academy Orchestra.</p>
-                </div>
-              </div>
-          </div>      
-      <div class="row conductor">
-        <div class="col-md-3 offset-md-1" data-aos="fade-right" data-aos-duration="700">
-          <img id="scroll" src="/assets/img/conductors/matthew_larkin.jpeg" width="100%" />
+        <div
+          class="col-md-3 offset-md-1"
+          data-aos="fade-right"
+          data-aos-duration="700"
+        >
+          <img
+            id="scroll"
+            src="/assets/img/conductors/Trevor_Wilson.jpg"
+            width="100%"
+          />
         </div>
         <div class="col-md-7">
-          <div class="conductor-name" data-aos="zoom-in" data-aos-duration="1000">
-            <h1><b>Matthew Larkin</b></h1>
-          </div>
-          <div class="conductor-bio" data-aos="fade-left" data-aos-duration="1000">
-            <p>Formerly the Director of Music of St. Matthew’s Church, Christ Church Cathedral, the Anglican Chorale, the Ottawa Choral Society, and Euphonia Chamber Choir, Matthew Larkin has frequently collaborated with instrumental ensembles as soloist and guest conductor. He has appeared as organist with the Gabrieli Consort, the National Arts Centre Orchestra, the Ottawa Symphony Orchestra, the Victoria Symphony, the Theatre of Early Music, and the Toronto Symphony Orchestra, amongst others. A Fellow of the Royal Canadian College of Organists, he has concertized throughout Canada, the United States, the United Kingdom, France, Italy, and China. Currently, he is Director of Music at St. Thomas’s Church, Toronto, and the Founding Artistic Director of Caelis Academy Ensemble, Ottawa. Matthew is represented by Domoney Artists Management.</p>
-          </div>
-        </div>
-    </div>
-</div>
- <footer class="elegant-color">
-  <div
-    class="row justify-content-center"
-    style="display: flex; align-items: center;"
-  >
-    <div class="col-lg-2 col-9 footer-col text-center">
-      <img
-        id="footer-logo-full"
-        class="center-block"
-        src="/assets/img/OPO Logo Symbol White.png"
-      />
-      <p style="color: white; margin-top: 1rem;">The Ottawa Pops Orchestra is a Registered Not-for-Profit Corporation 1017269-3</p>
-    </div>
-    <div class="col-lg-6 footer-col text-center">
-      <hr class="footer-hr-mobile" />
-      <div class="row">
-        <div class="col">
-          <!-- Button trigger modal -->
-          <button
-            id="subscribe"
-            type="button"
-            class="btn btn-maroon"
-            data-toggle="modal"
-            data-target="#exampleModalCenter"
+          <div
+            class="conductor-name"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
           >
-            Subscribe to our newsletter <i class="far fa-paper-plane fa-fw"></i>
-          </button>
+            <h1><b>Trevor Wilson</b></h1>
+          </div>
+          <div
+            class="conductor-bio"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            <p>
+              Trevor Wilson is an Ottawa-born conductor, composer, and violinist
+              currently completing his master’s degree in orchestral conducting
+              at the Peabody Institute under Marin Alsop. As a violinist he has
+              performed frequently as a member of the Ottawa Symphony Orchestra
+              and toured with the National Youth Orchestra of Canada in 2015.
+              During his undergraduate degree Trevor served for two years as
+              conductor of the University of Ottawa Pops Orchestra and performed
+              as a guest conductor with the Pembroke Symphony Orchestra. After
+              obtaining his bachelor’s degree in violin performance at the
+              University of Ottawa under Yehonatan Berick he was appointed Music
+              Director of the newly formed Ottawa Pops Orchestra in Fall 2017.
+              In recent times Trevor has participated in several international
+              conducting festivals and workshops, having studied under such
+              renowned pedagogues as Mark Shapiro, David Effron, and Neil Varon.
+              This has also led him to Budapest where he performed with the
+              Dohnányi Orchestra Budafok as a participant of the 2018 Dohnányi
+              Conducting Academy under the instruction of Maestro Gábor
+              Hollerung. This summer Trevor will be working with Maestro Boris
+              Brott as Assistant Conductor of the National Academy Orchestra.
+            </p>
+          </div>
         </div>
       </div>
-      <div class="social-icons text-center row">
-        <div class="col-lg-1 col-2 offset-lg-4 offset-2">
-          <a
-            href="https://www.facebook.com/ottawapopsorchestra/"
-            class="social"
-            target="_blank"
-            ><i class="fab fa-facebook-f fa-2x"></i
-          ></a>
-        </div>
-        <div class="col-lg-1 col-2">
-          <a
-            href="https://twitter.com/OttawaPopsOrch"
-            class="social"
-            target="_blank"
-            ><i class="fab fa-twitter fa-2x"></i
-          ></a>
-        </div>
-        <div class="col-lg-1 col-2">
-          <a
-            href="https://www.instagram.com/ottawapops/"
-            class="social"
-            target="_blank"
-            ><i class="fab fa-instagram fa-2x"></i
-          ></a>
-        </div>
-        <div class="col-lg-1 col-2">
-          <a
-            href="https://www.youtube.com/channel/UCvD4B1NFC_2HD5jxXl3U-SQ?pbjreload=10"
-            class="social"
-            target="_blank"
-            ><i class="fab fa-youtube fa-2x"></i
-          ></a>
-        </div>
-        <!-- Modal -->
+      <div class="row conductor">
         <div
-          class="modal fade"
-          id="exampleModalCenter"
-          tabindex="-1"
-          role="dialog"
-          aria-labelledby="exampleModalCenterTitle"
-          aria-hidden="true"
+          class="col-md-3 offset-md-1"
+          data-aos="fade-right"
+          data-aos-duration="700"
         >
-          <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-body">
-                <div id="fd-form-5ede4946b9c153002b5adc0f"></div>
-                <script>
-                  window.fd("form", {
-                    formId: "5ede4946b9c153002b5adc0f",
-                    containerEl: "#fd-form-5ede4946b9c153002b5adc0f",
-                  });
-                </script>
+          <img
+            id="scroll"
+            src="/assets/img/conductors/matthew_larkin.jpeg"
+            width="100%"
+          />
+        </div>
+        <div class="col-md-7">
+          <div
+            class="conductor-name"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          >
+            <h1><b>Matthew Larkin</b></h1>
+          </div>
+          <div
+            class="conductor-bio"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            <p>
+              Formerly the Director of Music of St. Matthew’s Church, Christ
+              Church Cathedral, the Anglican Chorale, the Ottawa Choral Society,
+              and Euphonia Chamber Choir, Matthew Larkin has frequently
+              collaborated with instrumental ensembles as soloist and guest
+              conductor. He has appeared as organist with the Gabrieli Consort,
+              the National Arts Centre Orchestra, the Ottawa Symphony Orchestra,
+              the Victoria Symphony, the Theatre of Early Music, and the Toronto
+              Symphony Orchestra, amongst others. A Fellow of the Royal Canadian
+              College of Organists, he has concertized throughout Canada, the
+              United States, the United Kingdom, France, Italy, and China.
+              Currently, he is Director of Music at St. Thomas’s Church,
+              Toronto, and the Founding Artistic Director of Caelis Academy
+              Ensemble, Ottawa. Matthew is represented by Domoney Artists
+              Management.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="elegant-color">
+      <div
+        class="row justify-content-center"
+        style="display: flex; align-items: center"
+      >
+        <div class="col-lg-2 col-9 footer-col text-center">
+          <img
+            id="footer-logo-full"
+            class="center-block"
+            src="/assets/img/OPO Logo Symbol White.png"
+          />
+          <p style="color: white; margin-top: 1rem">
+            The Ottawa Pops Orchestra is a Registered Not-for-Profit Corporation
+            1017269-3
+          </p>
+        </div>
+        <div class="col-lg-6 footer-col text-center">
+          <hr class="footer-hr-mobile" />
+          <div class="row">
+            <div class="col">
+              <!-- Button trigger modal -->
+              <button
+                id="subscribe"
+                type="button"
+                class="btn btn-maroon"
+                data-toggle="modal"
+                data-target="#exampleModalCenter"
+              >
+                Subscribe to our newsletter
+                <i class="far fa-paper-plane fa-fw"></i>
+              </button>
+            </div>
+          </div>
+          <div class="social-icons text-center row">
+            <div class="col-lg-1 col-2 offset-lg-4 offset-2">
+              <a
+                href="https://www.facebook.com/ottawapopsorchestra/"
+                class="social"
+                target="_blank"
+                ><i class="fab fa-facebook-f fa-2x"></i
+              ></a>
+            </div>
+            <div class="col-lg-1 col-2">
+              <a
+                href="https://twitter.com/OttawaPopsOrch"
+                class="social"
+                target="_blank"
+                ><i class="fab fa-twitter fa-2x"></i
+              ></a>
+            </div>
+            <div class="col-lg-1 col-2">
+              <a
+                href="https://www.instagram.com/ottawapops/"
+                class="social"
+                target="_blank"
+                ><i class="fab fa-instagram fa-2x"></i
+              ></a>
+            </div>
+            <div class="col-lg-1 col-2">
+              <a
+                href="https://www.youtube.com/channel/UCvD4B1NFC_2HD5jxXl3U-SQ?pbjreload=10"
+                class="social"
+                target="_blank"
+                ><i class="fab fa-youtube fa-2x"></i
+              ></a>
+            </div>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModalCenter"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalCenterTitle"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div id="fd-form-5ede4946b9c153002b5adc0f"></div>
+                    <script>
+                      window.fd("form", {
+                        formId: "5ede4946b9c153002b5adc0f",
+                        containerEl: "#fd-form-5ede4946b9c153002b5adc0f",
+                      });
+                    </script>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="col-lg-3 footer-col" style="color: white">
+          <hr class="footer-hr-mobile" />
+          <p style="font-size: 22px">Box Office</p>
+          <hr class="footer-hr" />
+          <p id="box_office">
+            Telephone: 613-580-2700, 10 am to 8pm daily<br />
+            Toll-free: 1-866-752-5231<br />
+            In Person: Mon to Sat, 5 pm to 8:30 pm<br />
+            Online: 24/7<br />
+          </p>
+        </div>
       </div>
-    </div>
-    <div class="col-lg-3 footer-col" style="color: white;">
-      <hr class="footer-hr-mobile" />
-      <p style="font-size: 22px;">Box Office</p>
-      <hr class="footer-hr" />
-      <p id="box_office">
-        Telephone: 613-580-2700, 10 am to 8pm daily<br />
-        Toll-free: 1-866-752-5231<br />
-        In Person: Mon to Sat, 5 pm to 8:30 pm<br />
-        Online: 24/7<br />
-      </p>
-    </div>
-  </div>
 
-  <div class="row justify-content-center pages-row">
-    
-    <div class="col-md-2 text-center pages">
-      <a href="/">home</a>
-    </div>
-    
-    <div class="col-md-2 text-center pages">
-      <a href="/about">About Us</a>
-    </div>
-    <div class="col-md-2 text-center pages">
-      <a href="/2019-2020/">Concerts</a>
-    </div>
-    <div class="col-md-2 text-center pages">
-      <a href="/conductors/">Orchestra</a>
-    </div>
-    <!-- <div class="col-md-2 text-center pages"><a href="news.html">News & Media</a></div> -->
-    <div class="col-md-2 text-center pages">
-      <a href="/contact/">contact</a>
-    </div>
-  </div>
-</footer>
+      <div class="row justify-content-center pages-row">
+        <div class="col-md-2 text-center pages">
+          <a href="/">home</a>
+        </div>
 
+        <div class="col-md-2 text-center pages">
+          <a href="/about">About Us</a>
+        </div>
+        <div class="col-md-2 text-center pages">
+          <a href="/2019-2020/">Concerts</a>
+        </div>
+        <div class="col-md-2 text-center pages">
+          <a href="/conductors/">Orchestra</a>
+        </div>
+        <!-- <div class="col-md-2 text-center pages"><a href="news.html">News & Media</a></div> -->
+        <div class="col-md-2 text-center pages">
+          <a href="/contact/">contact</a>
+        </div>
+      </div>
+    </footer>
 
     <!-- JQuery -->
     <script
