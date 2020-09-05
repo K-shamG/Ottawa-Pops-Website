@@ -604,6 +604,24 @@ a:hover {
   background-color: white;
 }
 
+.support-us-item {
+  background-image: url("/assets/img/DonationsBanner10.png");
+  background-size: 100% 100%;
+  color: white;
+  height: 450px;
+}
+
+.support-info {
+  padding: 2em;
+}
+
+.support-us-title {
+  color: white;
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 900;
+}
+
 .concert-title {
   color: #920503;
   text-transform: uppercase;
@@ -958,6 +976,15 @@ h6 {
 #seating-prices {
   width: 45vw;
   height: auto;
+}
+
+@media (max-width: 1200px) {
+  .support-us-item {
+    background-image: none;
+    background-color: #920503;
+    background-size: 100% 100%;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 800px) {
