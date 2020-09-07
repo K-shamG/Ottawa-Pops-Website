@@ -179,6 +179,30 @@
     ></script>
     <!-- End Google Ad Sense -->
 
+    <!-- Flodesk Newsletter -->
+    <script>
+      (function (w, d, t, s, n) {
+        w.FlodeskObject = n;
+        var fn = function () {
+          (w[n].q = w[n].q || []).push(arguments);
+        };
+        w[n] = w[n] || fn;
+        var f = d.getElementsByTagName(t)[0];
+        var e = d.createElement(t);
+        var h = "?v=" + new Date().getTime();
+        e.async = true;
+        e.src = s + h;
+        f.parentNode.insertBefore(e, f);
+      })(
+        window,
+        document,
+        "script",
+        "https://assets.flodesk.com/universal.js",
+        "fd"
+      );
+    </script>
+    <!-- End Flowdesk Newsletter -->
+
     <!-- Flodesk Newsletter FR-->
     <script>
       (function (w, d, t, s, n) {
@@ -216,431 +240,312 @@
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!--Navbar-->
-    <nav
-      id="navbar"
-      class="navbar navbar-expand-lg navbar-dark grey darken-1 justify-content-center fixed-top scrolling-navbar"
-    >
-      <!-- Navbar brand -->
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark grey darken-1 justify-content-center fixed-top scrolling-navbar">
+    <!-- Navbar brand -->
+    
+    <a style="padding-left: 3%" class="navbar-brand" href="/fr">
+        
+            <img id="logo" src="/assets/img/OPO-Logo-Primary.png" height="100" alt="">
+        </a>
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="basicExampleNav">
+            <!-- Links -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/fr/about">À propos</a>
+                </li>
+                <!-- Concerts -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Concerts</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <!-- <a class="dropdown-item" href="/fr/2018-2019/">2018 - 2019</a> -->
+                        <a class="dropdown-item" href="/fr/2019-2020/">2019 - 2020</a>
+                        <a class="dropdown-item" href="/fr/season-tickets/">Billets de saison</a>
+                    </div>
+                </li>
 
-      <a style="padding-left: 3%" class="navbar-brand" href="/fr">
-        <img
-          id="logo"
-          src="/assets/img/OPO-Logo-Primary.png"
-          height="100"
-          alt=""
-        />
-      </a>
-      <!-- Collapse button -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#basicExampleNav"
-        aria-controls="basicExampleNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- Collapsible content -->
-      <div class="collapse navbar-collapse" id="basicExampleNav">
-        <!-- Links -->
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="/fr/about">À propos</a>
-          </li>
-          <!-- Concerts -->
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdownMenuLink"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              >Concerts</a
-            >
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <!-- <a class="dropdown-item" href="/fr/2018-2019/">2018 - 2019</a> -->
-              <a class="dropdown-item" href="/fr/2019-2020/">2019 - 2020</a>
-              <a class="dropdown-item" href="/fr/season-tickets/"
-                >Billets de saison</a
-              >
-            </div>
-          </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Orchestre</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/fr/auditions/">Auditions</a>
+                        <a class="dropdown-item" href="/fr/conductors/">Chefs d’orchestre</a>
+                        <!-- <a class="dropdown-item" href="musicians.html">Musicians</a> -->
+                    </div>
+                </li>
 
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdownMenuLink2"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              >Orchestre</a
-            >
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="/fr/auditions/">Auditions</a>
-              <a class="dropdown-item" href="/fr/conductors/"
-                >Chefs d’orchestre</a
-              >
-              <!-- <a class="dropdown-item" href="musicians.html">Musicians</a> -->
-            </div>
-          </li>
-
-          <li class="nav-item dropdown">
-            <div class="btn-group">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdownMenuLink3"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-                >Communauté</a
-              >
-            </div>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="/fr/student-matinees/"
-                >LA MATINÉE SCOLAIRE</a
-              >
-              <a class="dropdown-item" href="/fr/stories/"
-                >Histoires de l'OPO</a
-              >
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/fr/support/">Soutenez-nous</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/fr/contact/">Contactez-nous</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/fr/covid-19/">COVID-19</a>
-          </li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li class="nav-item">
-            <a class="nav-link" href="/2019-2020/">EN</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!--/.Navbar-->
-    <div class="content main container-fluid">
-      <div class="concert">
-        <p
-          style="
-            margin: 0 auto;
-            color: #920503;
-            text-transform: uppercase;
-            font-weight: 700;
-          "
-        >
-          Billets vendus à la billetterie des Théâtres Meridian à Centrepointe
-        </p>
+                <li class="nav-item dropdown">
+                    <div class="btn-group">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Communauté</a>
+                    </div>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/fr/student-matinees/">LA MATINÉE SCOLAIRE</a>
+                        <a class="dropdown-item" href="/fr/stories/">Histoires de l'OPO</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/fr/support/">Soutenez-nous</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/fr/contact/">Contactez-nous</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/fr/covid-19/">COVID-19</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item ">
+                    
+                    <a class="nav-link" href="/2019-2020/">EN</a>
+                    
+                </li>
+            </ul>
+        </div>
+</nav>
+<!--/.Navbar--> <div class="content main container-fluid">
+    <div class="concert">
+        <p style="margin: 0 auto; color: #920503; text-transform: uppercase;font-weight: 700">Billets vendus à la billetterie des Théâtres Meridian à Centrepointe</p>
         <!-- <p style="margin: 0 auto; color: #920503; text-transform: uppercase;font-weight: 400">
             <a href="/fr/season-tickets/" style="color: #920503;">Pour abonnés</a> en vente <b>le 17 mai!</b>
         </p>
         <p style="margin: 0 auto; color: #920503; text-transform: uppercase;font-weight: 400">Billets simples en vente <b>le 26 juin!</b></p> -->
-      </div>
-      <div class="concert">
+    </div>
+    <div class="concert">
         <div class="row">
-          <div class="col-lg-3">
-            <a href="/fr/2019-2020/videogamesymphony/" target="_blank"
-              ><img
-                title="Symphonie de jeux vidéo "
-                alt="Symphonie de jeux vidéo "
-                class="concert-detail"
-                src="/assets/img/concerts-full/2019-2020/VGSDetail.jpeg"
-            /></a>
-          </div>
-          <div class="col-lg-9 concert-info">
-            <div class="row">
-              <div class="col-md-8">
-                <a href="/fr/2019-2020/videogamesymphony/" target="_blank"
-                  ><h5 class="concert-title">Symphonie de jeux vidéo</h5></a
-                >
-              </div>
-              <div class="col-md ticket">
-                <div class="col-md">
-                  <a
-                    onclick="return gtag_report_conversion('https://meridianshenkman.evenue.net/cgi-bin/ncommerce3/SEGetEventInfo?ticketCode=GS%3ACP%3AC1920%3ACT0320N%3A&amp;linkID=centrepointe&amp;shopperContext');"
-                    href="https://meridianshenkman.evenue.net/cgi-bin/ncommerce3/SEGetEventInfo?ticketCode=GS%3ACP%3AC1920%3ACT0320N%3A&amp;linkID=centrepointe&amp;shopperContext"
-                    class="btn btn-maroon btn-block"
-                    target="_blank"
-                    >Achetez vos billets</a
-                  >
-                </div>
-              </div>
+            <div class="col-lg-3">
+                <a href="/fr/2019-2020/videogamesymphony/" target="_blank"><img title="Symphonie de jeux vidéo " alt="Symphonie de jeux vidéo " class="concert-detail" src="/assets/img/concerts-full/2019-2020/VGSDetail.jpeg" /></a>
             </div>
-            <div class="concert-description">
-              <a
-                onclick="return gtag_report_conversion('https://meridianshenkman.evenue.net/cgi-bin/ncommerce3/SEGetEventInfo?ticketCode=GS%3ACP%3AC1920%3ACT0320N%3A&amp;linkID=centrepointe&amp;shopperContext');"
-                class="ticket-link"
-                href="https://meridianshenkman.evenue.net/cgi-bin/ncommerce3/SEGetEventInfo?ticketCode=GS%3ACP%3AC1920%3ACT0320N%3A&amp;linkID=centrepointe&amp;shopperContext"
-                target="_blank"
-              >
+            <div class="col-lg-9 concert-info">
                 <div class="row">
-                  <div class="col-md">
-                    <p>Remis au 9 octobre 2020</p>
-                  </div>
-                  <!-- <div class="col-md-4">
+                    <div class="col-md-8">
+                        <a href="/fr/2019-2020/videogamesymphony/" target="_blank"><h5 class="concert-title">Symphonie de jeux vidéo </h5></a>
+                    </div>
+                    <div class="col-md ticket">
+                    <div class="col-md">
+                            <a onclick="return gtag_report_conversion('https://meridianshenkman.evenue.net/cgi-bin/ncommerce3/SEGetEventInfo?ticketCode=GS%3ACP%3AC1920%3ACT0320N%3A&amp;linkID=centrepointe&amp;shopperContext');" href="https://meridianshenkman.evenue.net/cgi-bin/ncommerce3/SEGetEventInfo?ticketCode=GS%3ACP%3AC1920%3ACT0320N%3A&amp;linkID=centrepointe&amp;shopperContext" class="btn btn-maroon btn-block" target="_blank">Achetez vos billets</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="concert-description">
+                    <a onclick="return gtag_report_conversion('https://meridianshenkman.evenue.net/cgi-bin/ncommerce3/SEGetEventInfo?ticketCode=GS%3ACP%3AC1920%3ACT0320N%3A&amp;linkID=centrepointe&amp;shopperContext');" class="ticket-link" href="https://meridianshenkman.evenue.net/cgi-bin/ncommerce3/SEGetEventInfo?ticketCode=GS%3ACP%3AC1920%3ACT0320N%3A&amp;linkID=centrepointe&amp;shopperContext" target="_blank">
+                        <div class="row">
+                            <div class="col-md">
+                                <p>Remis au 9 octobre 2020</p>
+                            </div>
+                            <!-- <div class="col-md-4">
                                 <i class="far fa-clock"></i> 19 h 30<br><br>
                             </div> -->
+                        </div>
+                    </a>
+                    <button class="btn btn-outline-maroon read-more" onclick="location.href='/fr/2019-2020/videogamesymphony/';">En lire plus</button>
                 </div>
-              </a>
-              <button
-                class="btn btn-outline-maroon read-more"
-                onclick="location.href='/fr/2019-2020/videogamesymphony/';"
-              >
-                En lire plus
-              </button>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="concert">
+    </div>
+    <div class="concert">
         <div class="row">
-          <div class="col-lg-3">
-            <a href="/fr/2019-2020/popsonbroadway/" target="_blank"
-              ><img
-                title="Pops sur Broadway!"
-                alt="Pops sur Broadway!"
-                class="concert-detail"
-                src="/assets/img/concerts-full/2019-2020/BroadwayDetail.png"
-            /></a>
-          </div>
-          <div class="col-lg-9 concert-info">
-            <div class="row">
-              <div class="col-md-8">
-                <a href="/fr/2019-2020/popsonbroadway/" target="_blank"
-                  ><h5 class="concert-title">Pops sur Broadway!</h5></a
-                >
-              </div>
-              <div class="col-md">
-                <a
-                  onclick="return gtag_report_conversion('https://meridianshenkman.evenue.net/cgi-bin/ncommerce3/SEGetEventList?groupCode=CT0516N&amp;linkID=centrepointe&amp;shopperContext=undefined&amp;caller=&amp;appCode=');"
-                  href="https://meridianshenkman.evenue.net/cgi-bin/ncommerce3/SEGetEventList?groupCode=CT0516N&amp;linkID=centrepointe&amp;shopperContext=undefined&amp;caller=&amp;appCode="
-                  class="btn btn-maroon btn-block"
-                  target="_blank"
-                  >Achetez vos billets</a
-                >
-              </div>
+            <div class="col-lg-3">
+                <a href="/fr/2019-2020/popsonbroadway/" target="_blank"><img title="Pops sur Broadway!" alt="Pops sur Broadway!" class="concert-detail" src="/assets/img/concerts-full/2019-2020/BroadwayDetail.png" /></a>
             </div>
-            <div class="concert-description" style="padding-bottom: 30px">
-              <a
-                onclick="return gtag_report_conversion('https://meridianshenkman.evenue.net/cgi-bin/ncommerce3/SEGetEventList?groupCode=CT0516N&amp;linkID=centrepointe&amp;shopperContext=undefined&amp;caller=&amp;appCode=');"
-                href="https://meridianshenkman.evenue.net/cgi-bin/ncommerce3/SEGetEventList?groupCode=CT0516N&amp;linkID=centrepointe&amp;shopperContext=undefined&amp;caller=&amp;appCode="
-                class="ticket-link"
-                target="_blank"
-              >
+            <div class="col-lg-9 concert-info">
                 <div class="row">
-                  <div class="col-md-8">
-                    <!-- <i class="far fa-calendar-alt"></i> le 14 novembre 2020 -->
-                    <p>Remis au 14 novembre 2020</p>
-                  </div>
-                  <!-- <div class="col-md-4">
+                    <div class="col-md-8">
+                        <a href="/fr/2019-2020/popsonbroadway/" target="_blank"><h5 class="concert-title">Pops sur Broadway!</h5></a>
+                    </div>
+                    <div class="col-md">
+                            <a onclick="return gtag_report_conversion('https://meridianshenkman.evenue.net/cgi-bin/ncommerce3/SEGetEventList?groupCode=CT0516N&amp;linkID=centrepointe&amp;shopperContext=undefined&amp;caller=&amp;appCode=');" href="https://meridianshenkman.evenue.net/cgi-bin/ncommerce3/SEGetEventList?groupCode=CT0516N&amp;linkID=centrepointe&amp;shopperContext=undefined&amp;caller=&amp;appCode=" class="btn btn-maroon btn-block" target="_blank">Achetez vos billets</a>
+                    </div>
+                </div>
+                <div class="concert-description" style="padding-bottom: 30px;">
+                    <a onclick="return gtag_report_conversion('https://meridianshenkman.evenue.net/cgi-bin/ncommerce3/SEGetEventList?groupCode=CT0516N&amp;linkID=centrepointe&amp;shopperContext=undefined&amp;caller=&amp;appCode=');" href="https://meridianshenkman.evenue.net/cgi-bin/ncommerce3/SEGetEventList?groupCode=CT0516N&amp;linkID=centrepointe&amp;shopperContext=undefined&amp;caller=&amp;appCode=" class="ticket-link" target="_blank">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <!-- <i class="far fa-calendar-alt"></i> le 14 novembre 2020 -->
+                                 <p>Remis au 14 novembre 2020</p>
+                            </div>
+                            <!-- <div class="col-md-4">
                                 <i class="far fa-clock"></i> 14 h 30<br><br>
                             </div> -->
+                        </div>
+                    </a>
+                    <button class="btn btn-outline-maroon read-more" onclick="location.href='/fr/2019-2020/popsonbroadway/';">En lire plus</button>
                 </div>
-              </a>
-              <button
-                class="btn btn-outline-maroon read-more"
-                onclick="location.href='/fr/2019-2020/popsonbroadway/';"
-              >
-                En lire plus
-              </button>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="concert">
+    </div>
+        <div class="concert">
         <div class="row">
-          <div class="col-lg-3">
-            <a href="/fr/2019-2020/hmw/" target="_blank"
-              ><img
-                title="Le Monde Musical de Harry"
-                alt="Le Monde Musical de Harry"
-                class="concert-detail"
-                src="/assets/img/concerts-full/2019-2020/HMW2Detail.png"
-            /></a>
-          </div>
-          <div class="col-lg-9 concert-info">
-            <div class="row">
-              <div class="col-md-8">
-                <a href="/fr/2019-2020/hmw/" target="_blank"
-                  ><h5 class="concert-title">Le Monde Musical de Harry</h5>
-                </a>
-              </div>
-              <!-- <div class="col-md">
+            <div class="col-lg-3">
+                <a href="/fr/2019-2020/hmw/" target="_blank"><img title="Le Monde Musical de Harry" alt="Le Monde Musical de Harry" class="concert-detail" src="/assets/img/concerts-full/2019-2020/HMW2Detail.png" /></a>
+            </div>
+            <div class="col-lg-9 concert-info">
+                <div class="row">
+                    <div class="col-md-8">
+                        <a href="/fr/2019-2020/hmw/" target="_blank"><h5 class="concert-title">
+                        Le Monde Musical de Harry</h5>
+                        </a>
+                    </div>
+                    <!-- <div class="col-md">
                             <a onclick="return gtag_report_conversion('https://meridianshenkman.evenue.net/cgi-bin/ncommerce3/SEGetEventList?groupCode=CT1108N&linkID=centrepointe&shopperContext=&caller=&appCode=');" href="https://meridianshenkman.evenue.net/cgi-bin/ncommerce3/SEGetEventList?groupCode=CT1108N&linkID=centrepointe&shopperContext=&caller=&appCode=" class="btn btn-maroon btn-block" target="_blank">Achetez vos billets</a>
                     </div> -->
-              <div class="col-md ticket">
-                <button class="btn btn-maroon btn-block" disabled="">
-                  Cet événement a déjà eu lieu
-                </button>
+                    <div class="col-md ticket">
+                        <button class="btn btn-maroon btn-block" disabled="">Cet événement a déjà eu lieu</button>
+                    </div>
+                </div>
+                <div class="concert-description">
+                    <!-- <a onclick="return gtag_report_conversion('https://meridianshenkman.evenue.net/cgi-bin/ncommerce3/SEGetEventInfo?ticketCode=GS%3ACP%3AC1920%3ACT1108N%3A&linkID=centrepointe&shopperContext=&pc=&caller=&appCode=&groupCode=CT1108N&cgc=');" class="ticket-link" href="https://meridianshenkman.evenue.net/cgi-bin/ncommerce3/SEGetEventInfo?ticketCode=GS%3ACP%3AC1920%3ACT1108N%3A&linkID=centrepointe&shopperContext=&pc=&caller=&appCode=&groupCode=CT1108N&cgc=" target="_blank"> -->
+                        <div class="row">
+                            <div class="col-md-4">
+                                <i class="far fa-calendar-alt"></i> le 8 novembre 2019
+                            </div>
+                            <div class="col-md-4">
+                                <i class="far fa-clock"></i> 19 h 30<br />
+                            </div>
+                        </div>
+                    <!-- </a> -->
+                    <!-- <a onclick="return gtag_report_conversion('https://meridianshenkman.evenue.net/cgi-bin/ncommerce3/SEGetEventInfo?ticketCode=GS%3ACP%3AC1920%3ACT1109N%3A&linkID=centrepointe&shopperContext=&pc=&caller=&appCode=&groupCode=CT1108N&cgc=');" class="ticket-link" href="https://meridianshenkman.evenue.net/cgi-bin/ncommerce3/SEGetEventInfo?ticketCode=GS%3ACP%3AC1920%3ACT1109N%3A&linkID=centrepointe&shopperContext=&pc=&caller=&appCode=&groupCode=CT1108N&cgc=" target="_blank"> -->
+                        <div class="row">
+                            <div class="col-md-4">
+                                <i class="far fa-calendar-alt"></i> le 9 novembre 2019
+                            </div>
+                            <div class="col-md-4">
+                                <i class="far fa-clock"></i> 14 h 30<br /><br />
+                            </div>
+                        </div>
+                    <!-- </a> -->
+                </div>
+                <button class="btn btn-outline-maroon read-more" onclick="location.href='/fr/2019-2020/hmw/';">En lire plus</button>
+            </div>
+        </div>
+    </div>
+</div>
+ <footer class="elegant-color">
+  <div
+    class="row justify-content-center"
+    style="display: flex; align-items: center"
+  >
+    <div class="col-lg-2 col-9 footer-col text-center">
+      <img
+        id="footer-logo-full"
+        class="center-block"
+        src="/assets/img/OPO Logo Symbol White.png"
+      />
+      <p style="color: white; margin-top: 1rem">L’Orchestre Pop d’Ottawa est un organisme sans but lucratif 1017269-3</p>
+    </div>
+    <div class="col-lg-6 footer-col text-center">
+      <hr class="footer-hr-mobile" />
+      <div class="row">
+        <div class="col">
+          <!-- Button trigger modal -->
+          <button
+            id="subscribe"
+            type="button"
+            class="btn btn-maroon"
+            data-toggle="modal"
+            data-target="#exampleModalCenter"
+          >
+            Inscrivez-vous à notre infolettre <i class="far fa-paper-plane fa-fw"></i>
+          </button>
+        </div>
+      </div>
+      <div class="social-icons text-center row">
+        <div class="col-lg-1 col-2 offset-lg-4 offset-2">
+          <a
+            href="https://www.facebook.com/ottawapopsorchestra/"
+            class="social"
+            target="_blank"
+            ><i class="fab fa-facebook-f fa-2x"></i
+          ></a>
+        </div>
+        <div class="col-lg-1 col-2">
+          <a
+            href="https://twitter.com/OttawaPopsOrch"
+            class="social"
+            target="_blank"
+            ><i class="fab fa-twitter fa-2x"></i
+          ></a>
+        </div>
+        <div class="col-lg-1 col-2">
+          <a
+            href="https://www.instagram.com/ottawapops/"
+            class="social"
+            target="_blank"
+            ><i class="fab fa-instagram fa-2x"></i
+          ></a>
+        </div>
+        <div class="col-lg-1 col-2">
+          <a
+            href="https://www.youtube.com/channel/UCvD4B1NFC_2HD5jxXl3U-SQ?pbjreload=10"
+            class="social"
+            target="_blank"
+            ><i class="fab fa-youtube fa-2x"></i
+          ></a>
+        </div>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModalCenter"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalCenterTitle"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                
+                <div id="fd-form-5ede4dd1b9c153002b5adc11"></div>
+                <script>
+                  window.fd("form", {
+                    formId: "5ede4dd1b9c153002b5adc11",
+                    containerEl: "#fd-form-5ede4dd1b9c153002b5adc11",
+                  });
+                </script>
+                
               </div>
             </div>
-            <div class="concert-description">
-              <!-- <a onclick="return gtag_report_conversion('https://meridianshenkman.evenue.net/cgi-bin/ncommerce3/SEGetEventInfo?ticketCode=GS%3ACP%3AC1920%3ACT1108N%3A&linkID=centrepointe&shopperContext=&pc=&caller=&appCode=&groupCode=CT1108N&cgc=');" class="ticket-link" href="https://meridianshenkman.evenue.net/cgi-bin/ncommerce3/SEGetEventInfo?ticketCode=GS%3ACP%3AC1920%3ACT1108N%3A&linkID=centrepointe&shopperContext=&pc=&caller=&appCode=&groupCode=CT1108N&cgc=" target="_blank"> -->
-              <div class="row">
-                <div class="col-md-4">
-                  <i class="far fa-calendar-alt"></i> le 8 novembre 2019
-                </div>
-                <div class="col-md-4">
-                  <i class="far fa-clock"></i> 19 h 30<br />
-                </div>
-              </div>
-              <!-- </a> -->
-              <!-- <a onclick="return gtag_report_conversion('https://meridianshenkman.evenue.net/cgi-bin/ncommerce3/SEGetEventInfo?ticketCode=GS%3ACP%3AC1920%3ACT1109N%3A&linkID=centrepointe&shopperContext=&pc=&caller=&appCode=&groupCode=CT1108N&cgc=');" class="ticket-link" href="https://meridianshenkman.evenue.net/cgi-bin/ncommerce3/SEGetEventInfo?ticketCode=GS%3ACP%3AC1920%3ACT1109N%3A&linkID=centrepointe&shopperContext=&pc=&caller=&appCode=&groupCode=CT1108N&cgc=" target="_blank"> -->
-              <div class="row">
-                <div class="col-md-4">
-                  <i class="far fa-calendar-alt"></i> le 9 novembre 2019
-                </div>
-                <div class="col-md-4">
-                  <i class="far fa-clock"></i> 14 h 30<br /><br />
-                </div>
-              </div>
-              <!-- </a> -->
-            </div>
-            <button
-              class="btn btn-outline-maroon read-more"
-              onclick="location.href='/fr/2019-2020/hmw/';"
-            >
-              En lire plus
-            </button>
           </div>
         </div>
       </div>
     </div>
-    <footer class="elegant-color">
-      <div
-        class="row justify-content-center"
-        style="display: flex; align-items: center"
-      >
-        <div class="col-lg-2 col-9 footer-col text-center">
-          <img
-            id="footer-logo-full"
-            class="center-block"
-            src="/assets/img/OPO Logo Symbol White.png"
-          />
-          <p style="color: white; margin-top: 1rem">
-            L’Orchestre Pop d’Ottawa est un organisme sans but lucratif
-            1017269-3
-          </p>
-        </div>
-        <div class="col-lg-6 footer-col text-center">
-          <hr class="footer-hr-mobile" />
-          <div class="row">
-            <div class="col">
-              <!-- Button trigger modal -->
-              <button
-                id="subscribe"
-                type="button"
-                class="btn btn-maroon"
-                data-toggle="modal"
-                data-target="#exampleModalCenter"
-              >
-                Inscrivez-vous à notre infolettre
-                <i class="far fa-paper-plane fa-fw"></i>
-              </button>
-            </div>
-          </div>
-          <div class="social-icons text-center row">
-            <div class="col-lg-1 col-2 offset-lg-4 offset-2">
-              <a
-                href="https://www.facebook.com/ottawapopsorchestra/"
-                class="social"
-                target="_blank"
-                ><i class="fab fa-facebook-f fa-2x"></i
-              ></a>
-            </div>
-            <div class="col-lg-1 col-2">
-              <a
-                href="https://twitter.com/OttawaPopsOrch"
-                class="social"
-                target="_blank"
-                ><i class="fab fa-twitter fa-2x"></i
-              ></a>
-            </div>
-            <div class="col-lg-1 col-2">
-              <a
-                href="https://www.instagram.com/ottawapops/"
-                class="social"
-                target="_blank"
-                ><i class="fab fa-instagram fa-2x"></i
-              ></a>
-            </div>
-            <div class="col-lg-1 col-2">
-              <a
-                href="https://www.youtube.com/channel/UCvD4B1NFC_2HD5jxXl3U-SQ?pbjreload=10"
-                class="social"
-                target="_blank"
-                ><i class="fab fa-youtube fa-2x"></i
-              ></a>
-            </div>
-            <!-- Modal -->
-            <div
-              class="modal fade"
-              id="exampleModalCenter"
-              tabindex="-1"
-              role="dialog"
-              aria-labelledby="exampleModalCenterTitle"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                  <div class="modal-body">
-                    <div id="fd-form-5ede4dd1b9c153002b5adc11"></div>
-                    <script>
-                      window.fd("form", {
-                        formId: "5ede4dd1b9c153002b5adc11",
-                        containerEl: "#fd-form-5ede4dd1b9c153002b5adc11",
-                      });
-                    </script>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 footer-col" style="color: white">
-          <hr class="footer-hr-mobile" />
-          <p style="font-size: 22px">Billetterie</p>
-          <hr class="footer-hr" />
-          <p id="box_office">
-            Téléphone : 613-580-2700, 10 h à 20 h tous les jours<br />
-            Sans frais : 1-866 752-5231 <br />
-            En personne : lundi au samedi, 17 h à 20 h 30<br />
-            En ligne : 24/7<br />
-          </p>
-        </div>
-      </div>
+    <div class="col-lg-3 footer-col" style="color: white">
+      <hr class="footer-hr-mobile" />
+      <p style="font-size: 22px">Billetterie</p>
+      <hr class="footer-hr" />
+      <p id="box_office">
+        Téléphone : 613-580-2700, 10 h à 20 h tous les jours<br />
+        Sans frais : 1-866 752-5231 <br />
+        En personne : lundi au samedi, 17 h à 20 h 30<br />
+        En ligne : 24/7<br />
+      </p>
+    </div>
+  </div>
 
-      <div class="row justify-content-center pages-row">
-        <div class="col-md-2 text-center pages">
-          <a href="/fr">Page principale</a>
-        </div>
+  <div class="row justify-content-center pages-row">
+    
+    <div class="col-md-2 text-center pages">
+      <a href="/fr">Page principale</a>
+    </div>
+    
+    <div class="col-md-2 text-center pages">
+      <a href="/fr/about">À propos</a>
+    </div>
+    <div class="col-md-2 text-center pages">
+      <a href="/fr/2019-2020/">Concerts</a>
+    </div>
+    <div class="col-md-2 text-center pages">
+      <a href="/fr/conductors/">Orchestre</a>
+    </div>
+    <!-- <div class="col-md-2 text-center pages"><a href="news.html">News & Media</a></div> -->
+    <div class="col-md-2 text-center pages">
+      <a href="/fr/contact/">Contactez-nous</a>
+    </div>
+  </div>
+</footer>
 
-        <div class="col-md-2 text-center pages">
-          <a href="/fr/about">À propos</a>
-        </div>
-        <div class="col-md-2 text-center pages">
-          <a href="/fr/2019-2020/">Concerts</a>
-        </div>
-        <div class="col-md-2 text-center pages">
-          <a href="/fr/conductors/">Orchestre</a>
-        </div>
-        <!-- <div class="col-md-2 text-center pages"><a href="news.html">News & Media</a></div> -->
-        <div class="col-md-2 text-center pages">
-          <a href="/fr/contact/">Contactez-nous</a>
-        </div>
-      </div>
-    </footer>
 
     <!-- JQuery -->
     <script

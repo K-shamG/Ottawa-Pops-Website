@@ -488,25 +488,10 @@ h6 {
 
 .profile-pic img {
   width: 150px;
-<<<<<<< HEAD
   height: 150px;
   object-fit: cover;
   border-radius: 50% !important;
   border: 5px solid grey;
-}
-
-.profile-pic i {
-  width: 150px;
-=======
->>>>>>> 43fbc38893c50f0a1bb189a4e9b72e1835c06191
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50% !important;
-  border: 5px solid grey;
-  color: grey;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .profile-pic i {
