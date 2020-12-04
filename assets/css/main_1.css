@@ -260,6 +260,10 @@ h6 {
   margin-top: 140px;
 }
 
+#donate-button {
+  
+}
+
 .about-us-main {
   color: white;
   font-size: 20px;
@@ -615,6 +619,15 @@ a:hover {
   padding: 2em;
 }
 
+.donate-info {
+  padding-bottom: 2em;
+}
+
+.donate-description {
+  padding: 2em;
+  font-size: 20px;
+}
+
 .support-us-title {
   color: white;
   text-transform: uppercase;
@@ -678,6 +691,11 @@ a:hover {
 }
 
 .concert-single {
+  padding: 50px 80px;
+  background-color: white;
+}
+
+.support-single {
   padding: 50px 80px;
   background-color: white;
 }
@@ -1065,6 +1083,25 @@ h6 {
 }
 
 @media screen and (max-width: 576px) {
+  .support-info {
+    padding: 1em;
+  }
+
+  .donate-info {
+    padding-bottom: 1em;
+    text-align: center;
+  }
+
+  .donate-description {
+    padding: 0em;
+    font-size: 18px;
+  }
+
+  .support-single {
+    margin: 0 auto;
+    padding: 1em;
+  }
+
   #contact-us {
     font-size: 30px;
   }
