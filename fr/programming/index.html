@@ -64,6 +64,44 @@
       content="x49o7938jqprsn5b9qbv8jz0uqpjze"
     />
 
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "181383629171984");
+      fbq("track", "PageView");
+    </script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        src="https://www.facebook.com/tr?id=181383629171984&ev=PageView
+  &noscript=1"
+      />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
     <!-- Reddit Pixel -->
     <script>
       !(function (w, d) {
@@ -345,18 +383,6 @@
         </div>
 </nav>
 <!--/.Navbar--> <div class="content main container-fluid">
-    <!-- <div class="concert"> -->
-        <!-- <p style="margin: 0 auto; color: #920503; text-transform: uppercase;font-weight: 700">Billets vendus à la billetterie des Théâtres Meridian à Centrepointe</p> -->
-        <!-- <p style="margin: 0 auto; color: #920503; text-transform: uppercase;font-weight: 400">
-            <a href="/fr/season-tickets/" style="color: #920503;">Pour abonnés</a> en vente <b>le 17 mai!</b>
-        </p>
-        <p style="margin: 0 auto; color: #920503; text-transform: uppercase;font-weight: 400">Billets simples en vente <b>le 26 juin!</b></p> -->
-    <!-- </div> -->
-    <div style="overflow: auto;display: flex;
-    justify-content: flex-end;
-    padding: 1em 4em 0em 0em;">
-    <a id="donate-button" target="_blank" href="" class="btn btn-outline-maroon"></a>
-    </div>
     <div class="concert">
         <div class="row">
             <div class="col-lg-3">
@@ -395,6 +421,40 @@
                         </div>
                     </a>
                     <button class="btn btn-outline-maroon read-more" onclick="location.href='/fr/programming/videogamesymphony/';">En lire plus</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="concert">
+        <div class="row">
+            <div class="col-lg-3">
+                <a href="/fr/programming/newworks/" target="_blank"><img title="Symphonie de jeux vidéo " alt="Projet Nouvelles Oeuvres " class="concert-detail" src="/assets/img/concerts-full/programming/New works project FR.png" /></a>
+            </div>
+            <div class="col-lg-9 concert-info">
+                <div class="row">
+                    <div class="col-md-8">
+                        <a href="/fr/programming/newworks/" target="_blank"><h5 class="concert-title">Projet Nouvelles Oeuvres </h5></a>
+                    </div>
+                    <div class="col-md ticket">
+                    <div class="col-md">
+                            <a onclick="fbq('track', 'InitiateCheckout', {content_ids: ['partner_event_id'], eventref: 'fb_oea' // or set to empty string }
+);return gtag_report_conversion('https://www.eventbrite.ca/e/new-works-project-tickets-310866589337');" href="https://www.eventbrite.ca/e/new-works-project-tickets-310866589337" class="btn btn-maroon btn-block" target="_blank">Achetez vos billets</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="concert-description">
+                    <a onclick="fbq('track', 'InitiateCheckout', {content_ids: ['partner_event_id'], eventref: 'fb_oea' // or set to empty string }
+);return gtag_report_conversion('https://www.eventbrite.ca/e/new-works-project-tickets-310866589337');" class="ticket-link" href="https://www.eventbrite.ca/e/new-works-project-tickets-310866589337" target="_blank">
+                        <div class="row" style="height: 30px;">
+                            <div class="col-md-4">
+                                <i class="far fa-calendar-alt"></i> le 21 mai 2022
+                            </div>
+                            <div class="col-md-4">
+                                <i class="far fa-clock"></i> 19h00<br /><br />
+                            </div>
+                        </div>
+                    </a>
+                    <button class="btn btn-outline-maroon read-more" onclick="location.href='/fr/programming/newworks/';">En lire plus</button>
                 </div>
             </div>
         </div>

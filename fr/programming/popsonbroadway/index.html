@@ -64,6 +64,44 @@
       content="x49o7938jqprsn5b9qbv8jz0uqpjze"
     />
 
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "181383629171984");
+      fbq("track", "PageView");
+    </script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        src="https://www.facebook.com/tr?id=181383629171984&ev=PageView
+  &noscript=1"
+      />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
     <!-- Reddit Pixel -->
     <script>
       !(function (w, d) {
@@ -435,17 +473,6 @@
   <div id="showAll" class="col-md-4 text-right">
     <a href="/fr/programming/" class="btn btn-outline-maroon show-all">Tous les concerts <i class="fas fa-calendar-alt fa-fw"></i></a>
   </div>
-  <!-- <div class="col-md-4 center">
-        <a href="/fr/programming/gladstone-waldeinsamkeit/" target="_blank">
-            <div class="card">
-                <img class="card-img-top" src="/assets/img/stories/story7/Gladstone_Thumbnail_FR.png">
-                <div class="card-body center">
-                    <h4 class="card-title">Pops at the Gladstone: Waldeinsamkeit</h4>
-                    <p class="card-text" style="color: #920503;">le 18 déc</p>
-                </div>
-            </div>
-        </a>
-    </div> -->
   <div class="col-md-4 center">
     <a href="/fr/programming/videogamesymphony/" target="_blank">
       <div class="card">
@@ -454,6 +481,19 @@
           <h4 class="card-title">Symphonie de jeux vidéo</h4>
           <p class="card-text" style="color: #920503">
             le 13 mai
+          </p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col-md-4 center">
+    <a href="/fr/programming/newworks/" target="_blank">
+      <div class="card">
+        <img class="card-img-top" src="/assets/img/concerts-full/programming/New works project FR.png" />
+        <div class="card-body center">
+          <h4 class="card-title">Projet Nouvelles Oeuvres</h4>
+          <p class="card-text" style="color: #920503">
+            le 21 mai
           </p>
         </div>
       </div>
